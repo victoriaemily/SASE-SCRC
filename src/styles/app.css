@@ -12,34 +12,50 @@
 
 html {
   scroll-behavior: smooth;
-  font-size: 12px;
+  font-size: 0.75em;
 }
 
-body {
-  position: fixed;
-  width: 100dvw;
-  margin: 0;
-  font-size: 1.5rem;
-  font-family: system-ui;
-  line-height: 1.5;
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
 }
-
-.scroll-container {
-  margin: 0 5dvw;
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 }
-
-.wrapper {
-  padding-top: var(--header-size);
-  height: 100dvh;
-  position: relative;
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 }
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  body {
+    position: absolute;
+    font-size: 1.5rem;
+    font-family: system-ui;
+    line-height: 1.5;
+  }
 
-.wrapper > h2 {
-  display: block;
-  font-size: 1.5em;
-  margin-block-start: 0.4em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
+  .scroll-container {
+    margin: 0 5dvw;
+  }
+
+  .wrapper {
+    padding-top: var(--header-size);
+    height: 100dvh;
+    position: relative;
+  }
+
+  .wrapper > h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.4em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+  }
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
 }

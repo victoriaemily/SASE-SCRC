@@ -1,44 +1,66 @@
-.splash-title h1 {
-  line-height: 0.9em;
+@media (min-width: 320px) {
+  /* smartphones, iPhone, portrait 480x320 phones */
 }
-
-.splash-title {
-  float: left;
-  margin-top: 5dvh;
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 }
-
-.sase-title {
-  font-size: 15rem;
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
 }
-
-.sc-title {
-  font-size: 10rem;
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
 }
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  .splash-title h1 {
+    line-height: 0.9em;
+  }
 
-.rc-title {
-  font-size: 10rem;
+  .splash-title {
+    float: left;
+    margin-top: 5dvh;
+  }
+
+  .sase-title {
+    font-size: 15rem;
+  }
+
+  .sc-title {
+    font-size: 10rem;
+  }
+
+  .rc-title {
+    font-size: 10rem;
+  }
+
+  .registration-link {
+    font-size: 3rem;
+    position: absolute;
+    left: 45dvw;
+    bottom: 20%;
+    margin-left: -200px;
+    width: 400px;
+    height: 100px;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+    border-radius: 50px;
+    transition: border 0.2s ease-in;
+    transition: background-color 0.2s ease-in;
+  }
+
+  .registration-link:hover {
+    background-color: rgba(163, 206, 250, 0.5);
+    border: 1px solid var(--blue2);
+  }
+
+  #landing-page {
+    text-align: -webkit-center;
+  }
 }
-
-.registration-link {
-  font-size: 3rem;
-  position: absolute;
-  left: 45dvw;
-  bottom: 20%;
-  margin-left: -200px;
-  width: 400px;
-  height: 100px;
-  padding: 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid black;
-  border-radius: 50px;
-  transition: border 0.2s ease-in;
-  transition: background-color 0.2s ease-in;
-}
-
-.registration-link:hover {
-  background-color: rgba(163, 206, 250, 0.5);
-  border: 1px solid var(--blue2);
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
 }

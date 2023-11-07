@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./navbar.css";
+@import "./landing-page.css";
+
+:root {
+  --header-size: 10dvh;
+  --blue1: rgba(163, 206, 250, 1);
+  --blue2: rgba(115, 180, 247, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 12px;
+}
+
+body {
+  position: fixed;
+  width: 100dvw;
+  margin: 0;
+  font-size: 1.5rem;
+  font-family: system-ui;
+  line-height: 1.5;
+}
+
+.scroll-container {
+  margin: 0 5dvw;
+}
+
+.wrapper {
+  padding-top: var(--header-size);
+  height: 100dvh;
+  position: relative;
+}
+
+.wrapper > h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.4em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}

@@ -1,0 +1,44 @@
+.splash-title h1 {
+  line-height: 0.9em;
+}
+
+.splash-title {
+  float: left;
+  margin-top: 5dvh;
+}
+
+.sase-title {
+  font-size: 15rem;
+}
+
+.sc-title {
+  font-size: 10rem;
+}
+
+.rc-title {
+  font-size: 10rem;
+}
+
+.registration-link {
+  font-size: 3rem;
+  position: absolute;
+  left: 45dvw;
+  bottom: 20%;
+  margin-left: -200px;
+  width: 400px;
+  height: 100px;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid black;
+  border-radius: 50px;
+  transition: border 0.2s ease-in;
+  transition: background-color 0.2s ease-in;
+}
+
+.registration-link:hover {
+  background-color: rgba(163, 206, 250, 0.5);
+  border: 1px solid var(--blue2);
+}

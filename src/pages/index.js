@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from "react";
 import {
   LandingPage,
   About,
@@ -9,6 +10,22 @@ import {
 } from "./components";
 
 export default function Home() {
+  const isWindowDefined = typeof window !== "undefined";
+
+  const [isDesktop, setDesktop] = useState(
+    isWindowDefined ? window.innerWidth > 640 : false
+  );
+
+  const updateMedia = () => {
+    setDesktop(isWindowDefined ? window.innerWidth > 640 : false);
+  };
+
+  useEffect(() => {
+    if (isWindowDefined) {
+      window.addEventListener("resize", updateMedia);
+      return () => window.removeEventListener("resize", updateMedia);
+    }
+  }, [isWindowDefined]);
   return (
     <main>
       <div className="scroll-container">
@@ -24,26 +41,40 @@ export default function Home() {
         <a className="name-header" href="#">
           SCRC
         </a>
-        <nav className="navbar">
-          <div className="navbar-link-container">
-            <a href="#about">About</a>
-          </div>
-          <div className="navbar-link-container">
-            <a href="#key-dates">Key Dates</a>
-          </div>
-          <div className="navbar-link-container">
-            <a href="#sponsors">Sponsors</a>
-          </div>
-          <div className="navbar-link-container">
-            <a href="#faq">FAQ</a>
-          </div>
-          <div className="navbar-link-container">
-            <a href="#scrc-team">SCRC Team</a>
-          </div>
-          <div className="navbar-link-container">
-            <a href="#tamu-sase">TAMU SASE</a>
-          </div>
-        </nav>
+        {isDesktop ? (
+          <nav className="navbar">
+            <a id="about" className="navbar-link" href="#about">
+              About
+            </a>
+            <a id="key-dates" className="navbar-link" href="#key-dates">
+              Key Dates
+            </a>
+            <a id="sponsors" className="navbar-link" href="#sponsors">
+              Sponsors
+            </a>
+            <a id="faq" className="navbar-link" href="#faq">
+              FAQ
+            </a>
+            <a id="scrc-team" className="navbar-link" href="#scrc-team">
+              SCRC Team
+            </a>
+            <a id="tamu-sase" className="navbar-link" href="#tamu-sase">
+              TAMU SASE
+            </a>
+          </nav>
+        ) : (
+          <nav className="navbar">
+            <a id="key-dates" className="navbar-link" href="#key-dates">
+              Key Dates
+            </a>
+            <a id="sponsors" className="navbar-link" href="#sponsors">
+              Sponsors
+            </a>
+            <a id="faq" className="navbar-link" href="#faq">
+              FAQ
+            </a>
+          </nav>
+        )}
       </header>
       <a className="nav-return-top" href="#">
         Return to Top

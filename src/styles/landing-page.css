@@ -55,3 +55,17 @@ section#landing-page {
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */
 }
+@media (min-width: 1921px) {
+  /* hi-res desktops */
+  .sase-title {
+    font-size: 9em;
+  }
+
+  .sc-title {
+    font-size: 5em;
+  }
+
+  .rc-title {
+    font-size: 5em;
+  }
+}

@@ -75,3 +75,6 @@ body {
     width: 100%;
   }
 }
+@media (min-width: 1921px) {
+  /* hi-res desktops */
+}

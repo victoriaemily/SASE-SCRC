@@ -6,7 +6,7 @@
 @import "./scrollbar.css";
 
 :root {
-  --header-size: 10dvh;
+  --header-size: 7.5dvh;
   --blue1: rgba(163, 206, 250, 1);
   --blue2: rgba(115, 180, 247, 1);
 }
@@ -53,7 +53,7 @@ body {
 @media (min-width: 641px) {
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
   body {
-    font-size: 1.2em;
+    font-size: 1.15em;
   }
 }
 @media (min-width: 961px) {

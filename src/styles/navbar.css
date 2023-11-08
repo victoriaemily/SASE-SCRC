@@ -1,6 +1,43 @@
-@media (min-width: 320px) {
-  /* smartphones, iPhone, portrait 480x320 phones */
+/* smartphones, iPhone, portrait 480x320 phones */
+.nav-container {
+  position: fixed;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100dvw;
+  height: var(--header-size);
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px outset var(--blue1);
+  backdrop-filter: blur(3px);
 }
+
+.name-header {
+  float: left;
+  color: black;
+  text-transform: uppercase;
+  display: block;
+  font-size: 2em;
+  font-weight: 700;
+  padding: 0 1rem;
+  text-decoration: none;
+}
+
+.navbar {
+  float: right;
+  display: flex;
+  flex-direction: row;
+  margin-right: 1rem;
+}
+
+.navbar-link-container a {
+  color: black;
+  display: block;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+}
+
 @media (min-width: 481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 }
@@ -12,58 +49,6 @@
 }
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
-  .nav-container {
-    position: fixed;
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: 100dvw;
-    height: var(--header-size);
-    background-color: rgba(255, 255, 255, 0.9);
-    border-bottom: 1px outset var(--blue1);
-    backdrop-filter: blur(3px);
-  }
-
-  .name-header {
-    float: left;
-    color: black;
-    text-transform: uppercase;
-    display: block;
-    font-size: 2em;
-    font-weight: 700;
-    padding: 0 1rem;
-    text-decoration: none;
-    margin-left: 30px;
-  }
-
-  .navbar {
-    float: right;
-    display: flex;
-    flex-direction: row;
-    margin-right: 1rem;
-  }
-
-  .navbar-link-container {
-    padding: 2rem 0;
-  }
-
-  .navbar-link-container a {
-    color: black;
-    display: block;
-    padding: 0.5rem 1.5rem;
-    text-decoration: none;
-    border-bottom: 1px solid transparent;
-    border-top: 1px solid transparent;
-    transition: border-bottom 0.05s ease;
-    transition: border-top 0.05s ease;
-  }
-
-  .navbar-link-container:hover > a {
-    border-bottom: 1px solid var(--blue1);
-    border-top: 1px solid var(--blue1);
-  }
 }
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */

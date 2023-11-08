@@ -3,6 +3,7 @@
 @tailwind utilities;
 @import "./navbar.css";
 @import "./landing-page.css";
+@import "./scrollbar.css";
 
 :root {
   --header-size: 10dvh;
@@ -15,47 +16,62 @@ html {
   font-size: 0.75em;
 }
 
-@media (min-width: 320px) {
-  /* smartphones, iPhone, portrait 480x320 phones */
+/* smartphones, iPhone, portrait 480x320 phones */
+body {
+  position: absolute;
+  font-family: system-ui;
+  font-size: 1em;
+  line-height: 1.5;
 }
+
+.scroll-container {
+  margin: 0 5dvw;
+}
+
+.wrapper {
+  padding-top: var(--header-size);
+  height: 100dvh;
+  position: relative;
+}
+
+.wrapper > h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.4em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
 @media (min-width: 481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  body {
+    font-size: 1.1em;
+  }
 }
 @media (min-width: 641px) {
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  body {
+    font-size: 1.2em;
+  }
 }
 @media (min-width: 961px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
+  body {
+    font-size: 1.35em;
+  }
 }
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
   body {
-    position: absolute;
-    font-size: 1.5rem;
-    font-family: system-ui;
-    line-height: 1.5;
-  }
-
-  .scroll-container {
-    margin: 0 5dvw;
-  }
-
-  .wrapper {
-    padding-top: var(--header-size);
-    height: 100dvh;
-    position: relative;
-  }
-
-  .wrapper > h2 {
-    display: block;
     font-size: 1.5em;
-    margin-block-start: 0.4em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
   }
 }
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */
+  body {
+    font-size: 2em;
+    width: 100%;
+  }
 }

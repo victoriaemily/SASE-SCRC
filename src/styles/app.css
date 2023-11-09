@@ -9,6 +9,8 @@
   --header-size: 7.5dvh;
   --blue1: rgba(163, 206, 250, 1);
   --blue2: rgba(115, 180, 247, 1);
+  --blue3: rgb(68, 88, 136);
+  --blue4: rgba(40, 57, 99, 1);
 }
 
 html {

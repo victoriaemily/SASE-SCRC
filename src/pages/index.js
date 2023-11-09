@@ -10,22 +10,18 @@ import {
 } from "./components";
 
 export default function Home() {
-  const isWindowDefined = typeof window !== "undefined";
-
-  const [isDesktop, setDesktop] = useState(
-    isWindowDefined ? window.innerWidth > 640 : false
-  );
+  const [isDesktop, setDesktop] = useState(true);
 
   const updateMedia = () => {
-    setDesktop(isWindowDefined ? window.innerWidth > 640 : false);
+    setDesktop(window.innerWidth > 640);
   };
 
   useEffect(() => {
-    if (isWindowDefined) {
+    if (!(typeof window === "undefined")) {
       window.addEventListener("resize", updateMedia);
       return () => window.removeEventListener("resize", updateMedia);
     }
-  }, [isWindowDefined]);
+  }, []);
   return (
     <main>
       <div className="scroll-container">

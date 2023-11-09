@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }) {
       <Head>
         <title>SCRC 2024</title>
       </Head>
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </>
   );
 }

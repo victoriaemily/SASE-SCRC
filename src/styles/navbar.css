@@ -38,6 +38,21 @@
 .navbar-link {
   padding: 0.5rem 1.5rem;
   text-decoration: none;
+  transition: color 0.3s ease-in;
+}
+
+.navbar-link:hover {
+  color: var(--blue3);
+}
+
+.nav-return-top.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
 }
 
 @media (min-width: 481px) {

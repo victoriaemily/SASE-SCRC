@@ -1,5 +1,10 @@
 import React, { useEffect, useState } from "react";
-import { LandingPage, About, FAQ, Guide, Sponsors, Team } from "./components";
+import LandingPage from "./components/LandingPage";
+import About from "./components/About";
+import Guide from "./components/Guide";
+import Sponsors from "./components/Sponsors";
+import FAQ from "./components/FAQ";
+import Team from "./components/Team";
 import Background from "./components/Background";
 
 export default function Home() {

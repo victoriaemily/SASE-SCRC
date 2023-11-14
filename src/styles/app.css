@@ -3,10 +3,11 @@
 @tailwind utilities;
 @import "./navbar.css";
 @import "./landing-page.css";
-@import "./scrollbar.css";
+@import "./cloud-animation.css";
 
 :root {
   --header-size: 7.5dvh;
+  --blue: rgb(187, 216, 245);
   --blue1: rgba(163, 206, 250, 1);
   --blue2: rgba(115, 180, 247, 1);
   --blue3: rgb(68, 88, 136);

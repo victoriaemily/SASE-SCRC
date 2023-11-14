@@ -4,6 +4,7 @@ section#landing-page {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
+  user-select: none;
 }
 
 .splash-title h1 {
@@ -37,8 +38,8 @@ section#landing-page {
 }
 
 .registration-link:hover {
-  background-color: rgba(163, 206, 250, 0.5);
-  border: 1px solid var(--blue2);
+  background-color: var(--blue1);
+  border: 1px solid var(--blue3);
 }
 @media (min-width: 481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */

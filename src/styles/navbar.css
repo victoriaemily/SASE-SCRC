@@ -11,6 +11,7 @@
   background-color: rgba(255, 255, 255, 0.9);
   border-bottom: 1px outset var(--blue1);
   backdrop-filter: blur(3px);
+  user-select: none;
 }
 
 .name-header {
@@ -24,6 +25,11 @@
   font-weight: 700;
   padding: 0 1rem;
   text-decoration: none;
+  transition: color 0.3s ease-in;
+}
+
+.name-header:hover {
+  color: var(--blue3);
 }
 
 .navbar {

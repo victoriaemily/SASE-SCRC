@@ -1,13 +1,6 @@
 import React, { useEffect, useState } from "react";
-import {
-  LandingPage,
-  About,
-  FAQ,
-  Guide,
-  SASE,
-  Sponsors,
-  Team,
-} from "./components";
+import { LandingPage, About, FAQ, Guide, Sponsors, Team } from "./components";
+import Background from "./components/Background";
 
 export default function Home() {
   const [isDesktop, setDesktop] = useState(true);
@@ -31,7 +24,6 @@ export default function Home() {
         <Sponsors />
         <FAQ />
         <Team />
-        <SASE />
       </div>
       <header className="nav-container">
         <a className="name-header" href="#">
@@ -54,9 +46,6 @@ export default function Home() {
             <a id="scrc-team" className="navbar-link" href="#scrc-team">
               SCRC Team
             </a>
-            <a id="tamu-sase" className="navbar-link" href="#tamu-sase">
-              TAMU SASE
-            </a>
           </nav>
         ) : (
           <nav className="navbar">
@@ -72,9 +61,10 @@ export default function Home() {
           </nav>
         )}
       </header>
-      <a className="nav-return-top" href="#">
+      <Background />
+      {/* <a className="nav-return-top" href="#">
         Return to Top
-      </a>
+      </a> */}
     </main>
   );
 }

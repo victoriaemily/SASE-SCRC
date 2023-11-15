@@ -1,0 +1,26 @@
+.banner-plane {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.date-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  margin: 2em 0em 2em 2em;
+  width: 13em;
+  border: 1px solid var(--blue3);
+  background-color: white;
+  animation: banner-fly-in-left 4s ease-out;
+}
+
+@keyframes banner-fly-in-left {
+  from {
+    transform: translateX(-100dvw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}

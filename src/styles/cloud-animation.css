@@ -16,7 +16,7 @@ body {
   background-size: contain;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 15s;
 }
 
@@ -28,7 +28,7 @@ body {
   margin-top: 16dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 0s;
 }
 
@@ -40,7 +40,7 @@ body {
   margin-top: 43dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 30s;
 }
 
@@ -52,7 +52,7 @@ body {
   margin-top: 58dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 45s;
 }
 
@@ -64,7 +64,7 @@ body {
   margin-top: 81dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 20s;
 }
 
@@ -76,7 +76,7 @@ body {
   margin-top: 109dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 40s;
 }
 
@@ -88,7 +88,7 @@ body {
   margin-top: 121dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 30s;
 }
 
@@ -100,7 +100,7 @@ body {
   margin-top: 137dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 0s;
 }
 
@@ -112,7 +112,7 @@ body {
   margin-top: 164dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 20s;
 }
 
@@ -124,7 +124,7 @@ body {
   margin-top: 178dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 45s;
 }
 
@@ -136,7 +136,7 @@ body {
   margin-top: 198dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 15s;
 }
 
@@ -148,7 +148,7 @@ body {
   margin-top: 225dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 45s;
 }
 
@@ -160,7 +160,7 @@ body {
   margin-top: 236dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 0s;
 }
 
@@ -172,7 +172,7 @@ body {
   margin-top: 261dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 30s;
 }
 
@@ -184,7 +184,7 @@ body {
   margin-top: 283dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 10s;
 }
 
@@ -196,7 +196,7 @@ body {
   margin-top: 304dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 45s;
 }
 
@@ -208,7 +208,7 @@ body {
   margin-top: 319dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 15s;
 }
 
@@ -220,7 +220,7 @@ body {
   margin-top: 340dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 0s;
 }
 
@@ -232,7 +232,7 @@ body {
   margin-top: 362dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 35s;
 }
 
@@ -244,7 +244,7 @@ body {
   margin-top: 380dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 30s;
 }
 
@@ -256,7 +256,7 @@ body {
   margin-top: 404dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 10s;
 }
 
@@ -268,7 +268,7 @@ body {
   margin-top: 418dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 30s;
 }
 
@@ -280,7 +280,7 @@ body {
   margin-top: 434dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 0s;
 }
 
@@ -292,7 +292,7 @@ body {
   margin-top: 469dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 45s;
 }
 
@@ -304,7 +304,7 @@ body {
   margin-top: 481dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 15s;
 }
 
@@ -316,7 +316,7 @@ body {
   margin-top: 500dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 0s;
 }
 
@@ -328,7 +328,7 @@ body {
   margin-top: 523dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 50s;
 }
 
@@ -340,7 +340,7 @@ body {
   margin-top: 548dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 30s;
 }
 
@@ -352,7 +352,7 @@ body {
   margin-top: 560dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 15s;
 }
 
@@ -364,107 +364,118 @@ body {
   margin-top: 582dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation1 60s linear infinite;
   animation-delay: 45s;
 }
 
 .cloud30 {
-  background: url("../../public/clouds/cloud29.svg") no-repeat;
-  width: 85px;
-  height: 43px;
+  background: url("../../public/clouds/cloud30.svg") no-repeat;
+  width: 170px;
+  height: 86px;
   background-size: contain;
-  margin-top: 606dvh;
+  margin-top: 10dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation2 80s linear infinite;
   animation-delay: 25s;
 }
 
 .cloud31 {
-  background: url("../../public/clouds/cloud29.svg") no-repeat;
-  width: 85px;
-  height: 43px;
+  background: url("../../public/clouds/cloud31.svg") no-repeat;
+  width: 170px;
+  height: 86px;
   background-size: contain;
-  margin-top: 623dvh;
+  margin-top: 30dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
-  animation-delay: 0s;
+  animation: cloud-animation2 40s linear infinite;
+  animation-delay: 45s;
 }
 
 .cloud32 {
   background: url("../../public/clouds/cloud9.svg") no-repeat;
-  width: 85px;
-  height: 43px;
+  width: 170px;
+  height: 86px;
   background-size: contain;
-  margin-top: 637dvh;
+  margin-top: 50dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
-  animation-delay: 45s;
+  animation: cloud-animation2 90s linear infinite;
+  animation-delay: 0s;
 }
 
 .cloud33 {
   background: url("../../public/clouds/cloud15.svg") no-repeat;
-  width: 85px;
-  height: 43px;
+  width: 170px;
+  height: 86px;
   background-size: contain;
-  margin-top: 661dvh;
+  margin-top: 70dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation2 70s linear infinite;
   animation-delay: 15s;
 }
 
 .cloud34 {
   background: url("../../public/clouds/cloud21.svg") no-repeat;
-  width: 85px;
-  height: 43px;
+  width: 170px;
+  height: 86px;
   background-size: contain;
   margin-top: 680dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation2 60s linear infinite;
   animation-delay: 30s;
 }
 
 .cloud35 {
   background: url("../../public/clouds/cloud5.svg") no-repeat;
-  width: 85px;
-  height: 43px;
+  width: 170px;
+  height: 86px;
   background-size: contain;
   margin-top: 695dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation2 60s linear infinite;
   animation-delay: 55s;
 }
 
 .cloud36 {
   background: url("../../public/clouds/cloud13.svg") no-repeat;
-  width: 85px;
-  height: 43px;
+  width: 170px;
+  height: 86px;
   background-size: contain;
   margin-top: 695dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation2 60s linear infinite;
   animation-delay: 55s;
 }
 
 .cloud37 {
   background: url("../../public/clouds/cloud18.svg") no-repeat;
-  width: 85px;
-  height: 43px;
+  width: 170px;
+  height: 86px;
   background-size: contain;
   margin-top: 695dvh;
   position: absolute;
   opacity: 0;
-  animation: cloud-animation 60s linear infinite;
+  animation: cloud-animation2 60s linear infinite;
   animation-delay: 55s;
 }
 
-@keyframes cloud-animation {
+@keyframes cloud-animation1 {
+  from {
+    transform: translateX(-100%); /* Start off-screen to the left */
+    opacity: 0.6;
+  }
+  to {
+    transform: translateX(100dvw); /* Move to the right edge of the viewport */
+    opacity: 0.6;
+  }
+}
+
+@keyframes cloud-animation2 {
   from {
     transform: translateX(-100%); /* Start off-screen to the left */
     opacity: 0.6;

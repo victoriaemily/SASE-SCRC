@@ -4,6 +4,7 @@
 @import "./navbar.css";
 @import "./landing-page.css";
 @import "./cloud-animation.css";
+@import "./plane-animation.css";
 
 :root {
   --header-size: 7.5dvh;

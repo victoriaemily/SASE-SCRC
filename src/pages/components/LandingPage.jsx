@@ -8,9 +8,15 @@ export default function LandingPage() {
         <h1 className="sc-title">South Central</h1>
         <h1 className="rc-title">Regional Conference</h1>
       </div>
-      <a className="registration-link" target="_blank" href="about:blank">
-        Register
-      </a>
+      <div className="bottom-page-half">
+        <a className="registration-link" target="_blank" href="about:blank">
+          Register
+        </a>
+        <div className="banner-plane">
+          <div className="date-banner">March 2nd, 2024</div>
+          <div className="right-plane">plane</div>
+        </div>
+      </div>
     </section>
   );
 }

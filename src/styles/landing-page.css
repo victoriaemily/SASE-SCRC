@@ -23,6 +23,12 @@ section#landing-page {
   font-size: 2.5em;
 }
 
+.bottom-page-half {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .registration-link {
   font-size: 1.5em;
   display: flex;
@@ -41,6 +47,7 @@ section#landing-page {
   background-color: var(--blue1);
   border: 1px solid var(--blue3);
 }
+
 @media (min-width: 481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 }

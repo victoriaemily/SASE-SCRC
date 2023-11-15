@@ -14,17 +14,17 @@ body {
   opacity: 0;
 }
 
-.small-cloud {
+.sm-cloud {
   width: 85px;
   height: 43px;
 }
 
-.medium-cloud {
+.md-cloud {
   width: 170px;
   height: 86px;
 }
 
-.large-cloud {
+.lg-cloud {
   width: 170px;
   height: 86px;
 }
@@ -337,7 +337,7 @@ body {
   background-size: contain;
   margin-top: 5dvh;
   margin-left: 49dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud1 {
@@ -345,7 +345,7 @@ body {
   background-size: contain;
   margin-top: 19dvh;
   margin-left: 32dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud2 {
@@ -353,7 +353,7 @@ body {
   background-size: contain;
   margin-top: 40dvh;
   margin-left: 18dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud3 {
@@ -361,7 +361,7 @@ body {
   background-size: contain;
   margin-top: 56dvh;
   margin-left: 78dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud4 {
@@ -369,7 +369,7 @@ body {
   background-size: contain;
   margin-top: 78dvh;
   margin-left: 57dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud5 {
@@ -377,7 +377,7 @@ body {
   background-size: contain;
   margin-top: 111dvh;
   margin-left: 70dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud6 {
@@ -385,7 +385,7 @@ body {
   background-size: contain;
   margin-top: 121dvh;
   margin-left: 28dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud7 {
@@ -393,7 +393,7 @@ body {
   background-size: contain;
   margin-top: 137dvh;
   margin-left: 49dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud8 {
@@ -401,7 +401,7 @@ body {
   background-size: contain;
   margin-top: 164dvh;
   margin-left: 10dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud9 {
@@ -409,7 +409,7 @@ body {
   background-size: contain;
   margin-top: 178dvh;
   margin-left: 63dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud10 {
@@ -417,7 +417,7 @@ body {
   background-size: contain;
   margin-top: 198dvh;
   margin-left: 42dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud11 {
@@ -425,7 +425,7 @@ body {
   background-size: contain;
   margin-top: 225dvh;
   margin-left: 73dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud12 {
@@ -433,7 +433,7 @@ body {
   background-size: contain;
   margin-top: 236dvh;
   margin-left: 56dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud13 {
@@ -441,7 +441,7 @@ body {
   background-size: contain;
   margin-top: 261dvh;
   margin-left: 15dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud14 {
@@ -449,7 +449,7 @@ body {
   background-size: contain;
   margin-top: 283dvh;
   margin-left: 34dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud15 {
@@ -457,7 +457,7 @@ body {
   background-size: contain;
   margin-top: 304dvh;
   margin-left: 10dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud16 {
@@ -465,7 +465,7 @@ body {
   background-size: contain;
   margin-top: 319dvh;
   margin-left: 53dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud17 {
@@ -473,7 +473,7 @@ body {
   background-size: contain;
   margin-top: 340dvh;
   margin-left: 45dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud18 {
@@ -481,7 +481,7 @@ body {
   background-size: contain;
   margin-top: 362dvh;
   margin-left: 76dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud19 {
@@ -489,7 +489,7 @@ body {
   background-size: contain;
   margin-top: 380dvh;
   margin-left: 31dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud20 {
@@ -497,7 +497,7 @@ body {
   background-size: contain;
   margin-top: 404dvh;
   margin-left: 48dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud21 {
@@ -505,7 +505,7 @@ body {
   background-size: contain;
   margin-top: 418dvh;
   margin-left: 14dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud22 {
@@ -513,7 +513,7 @@ body {
   background-size: contain;
   margin-top: 434dvh;
   margin-left: 62dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud23 {
@@ -521,7 +521,7 @@ body {
   background-size: contain;
   margin-top: 469dvh;
   margin-left: 81dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud24 {
@@ -529,7 +529,7 @@ body {
   background-size: contain;
   margin-top: 481dvh;
   margin-left: 32dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud25 {
@@ -537,7 +537,7 @@ body {
   background-size: contain;
   margin-top: 500dvh;
   margin-left: 56dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud26 {
@@ -545,7 +545,7 @@ body {
   background-size: contain;
   margin-top: 523dvh;
   margin-left: 17dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud27 {
@@ -553,7 +553,7 @@ body {
   background-size: contain;
   margin-top: 548dvh;
   margin-left: 44dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud28 {
@@ -561,7 +561,7 @@ body {
   background-size: contain;
   margin-top: 560dvh;
   margin-left: 67dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
 }
 
 .initial-cloud29 {
@@ -569,27 +569,87 @@ body {
   background-size: contain;
   margin-top: 582dvh;
   margin-left: 28dvw;
-  animation: cloud-animation1 60s linear infinite;
+  animation: cloud-animation1 60s linear 1 forwards;
+}
+
+.initial-cloud30 {
+  background: url("../../public/clouds/cloud30.svg") no-repeat;
+  background-size: contain;
+  margin-top: 20dvh;
+  margin-left: 67dvw;
+  animation: cloud-animation2 90s linear 1 forwards;
+}
+
+.initial-cloud31 {
+  background: url("../../public/clouds/cloud31.svg") no-repeat;
+  background-size: contain;
+  margin-top: 40dvh;
+  margin-left: 17dvw;
+  animation: cloud-animation2 70s linear 1 forwards;
+}
+
+.initial-cloud32 {
+  background: url("../../public/clouds/cloud9.svg") no-repeat;
+  background-size: contain;
+  margin-top: 60dvh;
+  margin-left: 28dvw;
+  animation: cloud-animation2 40s linear 1 forwards;
+}
+
+.initial-cloud33 {
+  background: url("../../public/clouds/cloud15.svg") no-repeat;
+  background-size: contain;
+  margin-top: 80dvh;
+  margin-left: 81dvw;
+  animation: cloud-animation2 80s linear 1 forwards;
+}
+
+.initial-cloud34 {
+  background: url("../../public/clouds/cloud21.svg") no-repeat;
+  background-size: contain;
+  margin-top: 680dvh;
+  animation: cloud-animation2 60s linear 1 forwards;
+}
+
+.initial-cloud35 {
+  background: url("../../public/clouds/cloud5.svg") no-repeat;
+  background-size: contain;
+  margin-top: 695dvh;
+  animation: cloud-animation2 60s linear 1 forwards;
+}
+
+.initial-cloud36 {
+  background: url("../../public/clouds/cloud13.svg") no-repeat;
+  background-size: contain;
+  margin-top: 695dvh;
+  animation: cloud-animation2 60s linear 1 forwards;
+}
+
+.initial-cloud37 {
+  background: url("../../public/clouds/cloud18.svg") no-repeat;
+  background-size: contain;
+  margin-top: 695dvh;
+  animation: cloud-animation2 60s linear 1 forwards;
 }
 
 @keyframes cloud-animation1 {
   from {
-    transform: translateX(-100%); /* Start off-screen to the left */
+    transform: translateX(-100%);
     opacity: 0.6;
   }
   to {
-    transform: translateX(100dvw); /* Move to the right edge of the viewport */
+    transform: translateX(100dvw);
     opacity: 0.6;
   }
 }
 
 @keyframes cloud-animation2 {
   from {
-    transform: translateX(-100%); /* Start off-screen to the left */
+    transform: translateX(-100%);
     opacity: 0.6;
   }
   to {
-    transform: translateX(100dvw); /* Move to the right edge of the viewport */
+    transform: translateX(100dvw);
     opacity: 0.6;
   }
 }

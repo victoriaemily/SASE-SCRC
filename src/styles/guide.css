@@ -1,0 +1,48 @@
+#schedule-container {
+  position: fixed;
+  top: 10%;
+  left: 10dvw;
+  width: 80dvw;
+  height: 80%;
+  z-index: 1;
+}
+
+#schedule-container.open-schedule {
+  background: white;
+  animation: slide-container-in-left 3s ease-out 1 forwards;
+}
+
+#schedule-container.close-schedule {
+  background: white;
+  animation: slide-container-out-left 2s ease-in 1 forwards;
+}
+
+#schedule-container.open-schedule .schedule-toggle-button {
+  width: 100px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+#schedule-container.close-schedule .schedule-toggle-button {
+  width: 100px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+@keyframes slide-container-in-left {
+  from {
+    transform: translateX(125dvw);
+  }
+  to {
+    transform: translateX(0dvw);
+  }
+}
+
+@keyframes slide-container-out-left {
+  from {
+    transform: translateX(0dvw);
+  }
+  to {
+    transform: translateX(125dvw);
+  }
+}

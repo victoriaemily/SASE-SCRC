@@ -5,22 +5,141 @@
 }
 
 .date-banner {
+  background: url("../../public/banner-plane/banner.svg") no-repeat;
+  background-size: contain;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1em;
-  margin: 2em 0em 2em 2em;
-  width: 13em;
-  border: 1px solid var(--blue3);
-  background-color: white;
-  animation: banner-fly-in-left 4s ease-out;
+  padding-left: 25px;
+  margin: 2em 0em 2em 75px;
+  width: 264px;
+  height: 75px;
+  animation: banner-fly-in-left 5s linear 1 forwards;
+}
+
+.right-facing-plane {
+  background: url("../../public/banner-plane/plane_without_string.svg")
+    no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 35px;
+  animation: plane-fly-in-out-left 8s linear 1 forwards;
 }
 
 @keyframes banner-fly-in-left {
-  from {
-    transform: translateX(-100dvw);
+  0% {
+    transform: translateX(-75dvw);
   }
-  to {
-    transform: translateX(0);
+  64% {
+    transform: translateX(-15dvw);
+  }
+  70% {
+    transform: translateX(-11.25dvw);
+  }
+  76% {
+    transform: translateX(-8dvw);
+  }
+  82% {
+    transform: translateX(-5.25dvw);
+  }
+  88% {
+    transform: translateX(-3dvw);
+  }
+  90% {
+    transform: translateX(-2.25dvw);
+  }
+  92% {
+    transform: translateX(-1.6vw);
+  }
+  94% {
+    transform: translateX(-1.05dvw);
+  }
+  96% {
+    transform: translateX(-0.6dvw);
+  }
+  98% {
+    transform: translateX(-0.25dvw);
+  }
+  100% {
+    transform: translateX(0dvw);
+  }
+}
+
+@keyframes plane-fly-in-out-left {
+  0% {
+    transform: translateX(-75dvw);
+  }
+  35% {
+    background: url("../../public/banner-plane/plane_with_string.svg") no-repeat;
+    background-size: contain;
+  }
+  40% {
+    background: url("../../public/banner-plane/plane_without_string.svg")
+      no-repeat;
+    background-size: contain;
+  }
+  50% {
+    background-size: contain;
+    transform: translateX(0dvw);
+  }
+  52.5% {
+    transform: translateX(3.75dvw);
+  }
+  55% {
+    transform: translateX(8dvw);
+  }
+  57.5% {
+    transform: translateX(12.75dvw);
+  }
+  60% {
+    transform: translateX(18dvw);
+  }
+  62.5% {
+    transform: translateX(23.75dvw);
+  }
+  65% {
+    transform: translateX(30dvw);
+  }
+  67.5% {
+    transform: translateX(36.75dvw);
+  }
+  70% {
+    transform: translateX(44dvw);
+  }
+  72.5% {
+    transform: translateX(51.75dvw);
+  }
+  75% {
+    transform: translateX(60dvw);
+  }
+  77.5% {
+    transform: translateX(68.75dvw);
+  }
+  80% {
+    transform: translateX(78dvw);
+  }
+  82.5% {
+    transform: translateX(87.75dvw);
+  }
+  85% {
+    transform: translateX(98dvw);
+  }
+  87.5% {
+    transform: translateX(108.75dvw);
+  }
+  90% {
+    transform: translateX(120dvw);
+  }
+  92.5% {
+    transform: translateX(131.75dvw);
+  }
+  95% {
+    transform: translateX(144dvw);
+  }
+  97.5% {
+    transform: translateX(156.75dvw);
+  }
+  100% {
+    transform: translateX(170dvw);
   }
 }

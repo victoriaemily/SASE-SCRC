@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export default function LandingPage() {
   return (
@@ -14,7 +14,7 @@ export default function LandingPage() {
         </a>
         <div className="banner-plane">
           <div className="date-banner">March 2nd, 2024</div>
-          <div className="right-plane">plane</div>
+          <div className="right-facing-plane" id="plane"></div>
         </div>
       </div>
     </section>

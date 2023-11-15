@@ -23,6 +23,7 @@
   background-size: contain;
   width: 100px;
   height: 35px;
+  z-index: -1;
   animation: plane-fly-in-out-left 8s linear 1 forwards;
 }
 
@@ -67,6 +68,8 @@
 
 @keyframes plane-fly-in-out-left {
   0% {
+    background: url("../../public/banner-plane/plane_with_string.svg") no-repeat;
+    background-size: contain;
     transform: translateX(-75dvw);
   }
   35% {

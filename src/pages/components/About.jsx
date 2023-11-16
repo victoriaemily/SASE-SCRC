@@ -4,22 +4,42 @@ export default function About() {
   return (
     <section id="about" className="wrapper">
       <h2>About</h2>
+      <h3>Regional Conference</h3>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat.
+      SASE holds 5 annual regional conferences across the nation. Within the
+      south-central area, our regional conference encompasses SASE
+      chapters from Texas, Oklahoma, and Louisiana. Over 200 members are
+      gathered together for professional, cultural, and networking
+      opportunities. From workshops, to career fairs, our members are excited
+      to network with your company representatives.
       </p>
-      <p>
-        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
-        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-      <p>
-        Elementum curabitur vitae nunc sed velit dignissim sodales ut. Augue
-        neque gravida in fermentum et sollicitudin ac. Venenatis a condimentum
-        vitae sapien pellentesque habitant morbi tristique.
-      </p>
+
+      <div className="about-container">
+        <div className="about-wrapper about-left-box">
+          <h3>Participating Chapters</h3>
+          <ul>
+            <li>Texas A&M University</li>
+            <li>University of Texas (Austin)</li>
+            <li>University of Texas (Dallas)</li>
+            <li>University of Texas (Arlington)</li>
+            <li>University of Houston</li>
+            <li>Louisiana State University</li>
+            <li>Oklahoma State University</li>
+            <li>Baylor University</li>
+          </ul>
+        </div>
+
+        <div className="about-wrapper about-right-box">
+          <h3>Corporate Sponsorship</h3>
+          <p>
+          Corporate support is fundamental to the conference. Sponsorships
+          helps fund the venue and opportunity for our members to connect with
+          your recruiters. As sponsors, you are given the opportunity to host
+          information sessions, events, and workshops to give our members
+          insight into your industry.
+          </p>
+        </div>
+      </div>
     </section>
   );
 }

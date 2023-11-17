@@ -20,6 +20,16 @@ export default function Home() {
       return () => window.removeEventListener("resize", updateMedia);
     }
   }, []);
+
+  const handleCloseModals = () => {
+    var scheduleContainer = document.getElementById("schedule-container");
+    if (scheduleContainer.classList.contains("open-schedule")) {
+      scheduleContainer.classList.remove("open-schedule");
+      scheduleContainer.classList.add("close-schedule");
+      document.body.style.overflow = "auto";
+    }
+  };
+
   return (
     <main>
       <div className="scroll-container">
@@ -36,31 +46,71 @@ export default function Home() {
         </a>
         {isDesktop ? (
           <nav className="navbar">
-            <a id="about" className="navbar-link" href="#about">
+            <a
+              id="about"
+              className="navbar-link"
+              href="#about"
+              onClick={handleCloseModals}
+            >
               About
             </a>
-            <a id="key-dates" className="navbar-link" href="#key-dates">
+            <a
+              id="key-dates"
+              className="navbar-link"
+              href="#key-dates"
+              onClick={handleCloseModals}
+            >
               Key Dates
             </a>
-            <a id="sponsors" className="navbar-link" href="#sponsors">
+            <a
+              id="sponsors"
+              className="navbar-link"
+              href="#sponsors"
+              onClick={handleCloseModals}
+            >
               Sponsors
             </a>
-            <a id="faq" className="navbar-link" href="#faq">
+            <a
+              id="faq"
+              className="navbar-link"
+              href="#faq"
+              onClick={handleCloseModals}
+            >
               FAQ
             </a>
-            <a id="scrc-team" className="navbar-link" href="#scrc-team">
+            <a
+              id="scrc-team"
+              className="navbar-link"
+              href="#scrc-team"
+              onClick={handleCloseModals}
+            >
               SCRC Team
             </a>
           </nav>
         ) : (
           <nav className="navbar">
-            <a id="key-dates" className="navbar-link" href="#key-dates">
+            <a
+              id="key-dates"
+              className="navbar-link"
+              href="#key-dates"
+              onClick={handleCloseModals}
+            >
               Key Dates
             </a>
-            <a id="sponsors" className="navbar-link" href="#sponsors">
+            <a
+              id="sponsors"
+              className="navbar-link"
+              href="#sponsors"
+              onClick={handleCloseModals}
+            >
               Sponsors
             </a>
-            <a id="faq" className="navbar-link" href="#faq">
+            <a
+              id="faq"
+              className="navbar-link"
+              href="#faq"
+              onClick={handleCloseModals}
+            >
               FAQ
             </a>
           </nav>

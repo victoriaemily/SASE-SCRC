@@ -1,10 +1,12 @@
 #schedule-container {
   position: fixed;
-  top: 10%;
-  left: 10dvw;
-  width: 80dvw;
-  height: 80%;
-  z-index: 1;
+  top: var(--header-size);
+  left: 0dvw;
+  /* width: 80dvw;
+  height: 80%; */
+  height: calc(100% - var(--header-size));
+  width: 100dvw;
+  z-index: -1;
 }
 
 #schedule-container.open-schedule {
@@ -31,18 +33,25 @@
 
 @keyframes slide-container-in-left {
   from {
+    z-index: 1;
     transform: translateX(125dvw);
   }
   to {
+    z-index: 1;
     transform: translateX(0dvw);
   }
 }
 
 @keyframes slide-container-out-left {
-  from {
+  0% {
+    z-index: 1;
     transform: translateX(0dvw);
   }
-  to {
+  99% {
+    z-index: 1;
+  }
+  100% {
+    z-index: -1;
     transform: translateX(125dvw);
   }
 }

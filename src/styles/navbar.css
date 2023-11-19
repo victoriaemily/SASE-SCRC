@@ -1,0 +1,126 @@
+/* smartphones, iPhone, portrait 480x320 phones */
+.nav-container {
+  position: fixed;
+  top: 0;
+  width: 100dvw;
+  min-height: var(--header-size);
+  background-color: rgba(255, 255, 255, 0.9);
+  border-bottom: 1px outset var(--blue1);
+  backdrop-filter: blur(3px);
+  user-select: none;
+  transition: height 0.5s;
+  z-index: 5;
+}
+
+.navbar-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: inherit;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.name-header {
+  float: left;
+  color: black;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-size: 2em;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color 0.3s ease-in;
+  padding: 1rem 0 1rem 1rem;
+  width: 100%;
+  margin-right: 1rem;
+}
+
+.name-header:hover {
+  color: var(--blue3);
+}
+
+.horizontal-navbar {
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  float: right;
+}
+
+.dropdown-navbar {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0.5rem 0.75rem 0.5rem;
+}
+
+.dropdown-navbar-icon {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
+  align-items: center;
+}
+
+.horizontal-navbar .navbar-link {
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  text-decoration: none;
+  transition: color 0.3s ease-in;
+}
+
+.horizontal-navbar .navbar-link:hover {
+  color: var(--blue3);
+}
+
+.dropdown-navbar .navbar-link {
+  display: block;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.dropdown-navbar .navbar-link:hover {
+  background-color: var(--blue);
+  color: var(--blue4);
+  transition: background-color 0.3s ease;
+}
+
+.nav-return-top.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  bottom: 0;
+  right: 0;
+  z-index: 3;
+}
+
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  .horizontal-navbar {
+    display: flex;
+  }
+
+  .dropdown-navbar {
+    display: none;
+  }
+
+  .dropdown-navbar-icon {
+    display: none;
+  }
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}
+@media (min-width: 1921px) {
+  /* hi-res desktops */
+}

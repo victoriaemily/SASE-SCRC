@@ -3,8 +3,12 @@ section#landing-page {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: center;
   user-select: none;
+}
+
+.title-button-container {
+  position: relative;
+  top: -5%;
 }
 
 .splash-title h1 {
@@ -12,15 +16,50 @@ section#landing-page {
 }
 
 .sase-title {
-  font-size: 4em;
+  font-size: 5.5em;
+  margin-block-end: 0.05em;
 }
 
 .sc-title {
-  font-size: 2.5em;
+  font-size: 3.375em;
 }
 
 .rc-title {
-  font-size: 2.5em;
+  font-size: 3.375em;
+  margin-block-end: 0.3em;
+}
+
+.at-title {
+  font-size: 2;
+  margin-inline-start: 0.5em;
+}
+
+.registration-link:hover {
+  background-color: var(--blue2);
+}
+
+.title-left {
+  float: left;
+  width: 50%;
+  position: relative;
+}
+
+.splash-title {
+  position: relative;
+  left: 20%;
+}
+
+.title-right {
+  float: right;
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.bottom-page-half {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .bottom-page-half {
@@ -37,15 +76,27 @@ section#landing-page {
   width: 12em;
   height: 2.5em;
   background-color: rgb(255, 255, 255);
-  border: 1px solid black;
-  border-radius: 3em;
+  border-radius: 1em;
   transition: border 0.2s ease-in;
   transition: background-color 0.2s ease-in;
 }
 
-.registration-link:hover {
-  background-color: var(--blue1);
-  border: 1px solid var(--blue3);
+.reg-button {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-25%, -50%);
+}
+
+.landing-date {
+  position: relative;
+  left: 50%;
+  top: 40%;
+  transform: translate(-14%, -50%);
+}
+
+.landing-date > h2 {
+  font-size: 1.5em;
 }
 
 @media (min-width: 481px) {

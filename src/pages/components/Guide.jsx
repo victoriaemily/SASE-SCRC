@@ -5,14 +5,16 @@ export default function Guide() {
     var scheduleContainer = document.getElementById("schedule-container");
     scheduleContainer.classList.remove("close-schedule");
     scheduleContainer.classList.add("open-schedule");
-    document.body.style.overflow = "hidden";
+    document.body.classList.add("open-schedule");
+    document.body.classList.remove("close-schedule");
   };
 
   const handleScheduleClose = () => {
     var scheduleContainer = document.getElementById("schedule-container");
     scheduleContainer.classList.remove("open-schedule");
     scheduleContainer.classList.add("close-schedule");
-    document.body.style.overflow = "auto";
+    document.body.classList.remove("open-schedule");
+    document.body.classList.add("close-schedule");
   };
 
   return (

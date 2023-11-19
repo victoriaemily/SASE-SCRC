@@ -2,21 +2,27 @@
   position: fixed;
   top: var(--header-size);
   left: 0dvw;
-  /* width: 80dvw;
-  height: 80%; */
   height: calc(100% - var(--header-size));
   width: 100dvw;
   z-index: -1;
 }
 
+body.open-schedule {
+  overflow: hidden;
+}
+
+body.close-schedule {
+  overflow: hidden auto;
+}
+
 #schedule-container.open-schedule {
   background: white;
-  animation: slide-container-in-left 3s ease-out 1 forwards;
+  animation: slide-container-in-left 2s ease-out 1 forwards;
 }
 
 #schedule-container.close-schedule {
   background: white;
-  animation: slide-container-out-left 2s ease-in 1 forwards;
+  animation: slide-container-out-left 1s ease-in 1 forwards;
 }
 
 #schedule-container.open-schedule .schedule-toggle-button {

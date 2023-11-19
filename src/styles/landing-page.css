@@ -6,18 +6,12 @@ section#landing-page {
   user-select: none;
 }
 
-.title-button-container {
-  position: relative;
-  top: -5%;
-}
-
 .splash-title h1 {
   line-height: 1em;
 }
 
 .sase-title {
   font-size: 5.5em;
-  margin-block-end: 0.05em;
 }
 
 .sc-title {
@@ -30,7 +24,6 @@ section#landing-page {
 }
 
 .at-title {
-  font-size: 2;
   margin-inline-start: 0.5em;
 }
 
@@ -38,34 +31,20 @@ section#landing-page {
   background-color: var(--blue2);
 }
 
-.title-left {
-  float: left;
-  width: 50%;
-  position: relative;
-}
-
 .splash-title {
-  position: relative;
-  left: 20%;
-}
-
-.title-right {
-  float: right;
+  display: flex;
+  flex-direction: column;
+  min-width: 260px;
   width: 50%;
-  height: 100%;
-  position: relative;
+  margin: 0 auto;
 }
 
-.bottom-page-half {
+.key-info-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.bottom-page-half {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  width: 75%;
+  margin: 0 auto;
 }
 
 .registration-link {
@@ -79,13 +58,6 @@ section#landing-page {
   border-radius: 1em;
   transition: border 0.2s ease-in;
   transition: background-color 0.2s ease-in;
-}
-
-.reg-button {
-  position: relative;
-  left: 50%;
-  top: 50%;
-  transform: translate(-25%, -50%);
 }
 
 .landing-date {
@@ -104,6 +76,9 @@ section#landing-page {
 }
 @media (min-width: 641px) {
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  .splash-title {
+    width: fit-content;
+  }
 }
 @media (min-width: 961px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */

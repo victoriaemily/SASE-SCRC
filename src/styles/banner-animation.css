@@ -1,33 +1,3 @@
-.banner-plane {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.date-banner {
-  background: url("../../public/banner-plane/banner.svg") no-repeat;
-  background-size: contain;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-left: 25px;
-  margin: 2em 0em 2em 75px;
-  width: 264px;
-  height: 75px;
-  font-size: 20px;
-  animation: banner-fly-in-left 5s linear 1 forwards;
-}
-
-.right-facing-plane {
-  background: url("../../public/banner-plane/plane_without_string.svg")
-    no-repeat;
-  background-size: contain;
-  width: 100px;
-  height: 35px;
-  z-index: -1;
-  animation: plane-fly-in-out-left 8s linear 1 forwards;
-}
-
 @keyframes banner-fly-in-left {
   0% {
     transform: translateX(-75dvw);
@@ -145,5 +115,17 @@
   }
   100% {
     transform: translateX(170dvw);
+  }
+}
+
+@keyframes balloon-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1.5dvh);
+  }
+  100% {
+    transform: translateY(0);
   }
 }

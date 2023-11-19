@@ -5,7 +5,7 @@
 @import "./landing-page.css";
 @import "./guide.css";
 @import "./cloud-animation.css";
-@import "./plane-animation.css";
+@import "./banner-animation.css";
 
 :root {
   --header-size: 7.5dvh;

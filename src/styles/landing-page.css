@@ -6,37 +6,33 @@ section#landing-page {
   user-select: none;
 }
 
-.splash-title h1 {
-  line-height: 1em;
-}
-
-.sase-title {
-  font-size: 5.5em;
-}
-
-.sc-title {
-  font-size: 3.375em;
-}
-
-.rc-title {
-  font-size: 3.375em;
-  margin-block-end: 0.3em;
-}
-
-.at-title {
-  margin-inline-start: 0.5em;
-}
-
-.registration-link:hover {
-  background-color: var(--blue2);
-}
-
 .splash-title {
   display: flex;
   flex-direction: column;
   min-width: 260px;
   width: 50%;
   margin: 0 auto;
+}
+
+.splash-title h1 {
+  font-size: 3.375em;
+  line-height: 1em;
+}
+
+#sase-title {
+  font-size: 5.5em;
+}
+
+#rc-title {
+  margin-block-end: 0.3em;
+}
+
+#at-title {
+  margin-inline-start: 0.5em;
+}
+
+.registration-link:hover {
+  background-color: var(--blue2);
 }
 
 .key-info-container {
@@ -70,14 +66,76 @@ section#landing-page {
 .landing-date > h2 {
   font-size: 1.5em;
 }
+.banner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.date-banner {
+  background: url("../../public/banner-plane/banner.svg") no-repeat;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 25px;
+  margin: 2em 0em 2em 75px;
+  width: 264px;
+  height: 75px;
+  font-size: 20px;
+  animation: banner-fly-in-left 5s linear 1 forwards;
+}
+
+.right-facing-plane {
+  background: url("../../public/banner-plane/plane_without_string.svg")
+    no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 35px;
+  z-index: -1;
+  animation: plane-fly-in-out-left 8s linear 1 forwards;
+}
 
 @media (min-width: 481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 }
 @media (min-width: 641px) {
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  section#landing-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: inherit;
+    user-select: none;
+  }
+
   .splash-title {
     width: fit-content;
+    margin: auto 0;
+  }
+
+  .key-info-container {
+    margin: auto 0;
+  }
+
+  .banner {
+    display: inherit;
+    animation: balloon-float 8s ease-in-out infinite;
+  }
+
+  .date-banner {
+    background: url("../../public/airship/zeppelin.svg") no-repeat;
+    background-size: contain;
+    width: 300px;
+    height: 150px;
+    padding-left: 0;
+    margin: 2em 0 0 0;
+    animation: none;
+  }
+
+  .right-facing-plane {
+    visibility: hidden;
+    width: 0;
+    height: 0;
   }
 }
 @media (min-width: 961px) {

@@ -1,6 +1,22 @@
 import React from "react";
 
 export default function Guide() {
+  const handleScheduleOpen = () => {
+    var scheduleContainer = document.getElementById("schedule-container");
+    scheduleContainer.classList.remove("close-schedule");
+    scheduleContainer.classList.add("open-schedule");
+    document.body.classList.add("open-schedule");
+    document.body.classList.remove("close-schedule");
+  };
+
+  const handleScheduleClose = () => {
+    var scheduleContainer = document.getElementById("schedule-container");
+    scheduleContainer.classList.remove("open-schedule");
+    scheduleContainer.classList.add("close-schedule");
+    document.body.classList.remove("open-schedule");
+    document.body.classList.add("close-schedule");
+  };
+
   return (
     <section id="key-dates" className="wrapper">
       <h2>Key Dates</h2>
@@ -23,6 +39,22 @@ export default function Guide() {
         laoreet id donec ultrices tincidunt. Mauris in aliquam sem fringilla ut
         morbi.
       </p>
+      <button
+        className="schedule-toggle-button"
+        id="open-schedule-button"
+        type="button"
+        onClick={handleScheduleOpen}
+      >
+        See Schedule
+      </button>
+      <div id="schedule-container">
+        <button
+          className="schedule-toggle-button"
+          id="close-schedule-button"
+          type="button"
+          onClick={handleScheduleClose}
+        ></button>
+      </div>
     </section>
   );
 }

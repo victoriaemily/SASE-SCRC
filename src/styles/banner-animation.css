@@ -1,0 +1,131 @@
+@keyframes banner-fly-in-left {
+  0% {
+    transform: translateX(-75dvw);
+  }
+  64% {
+    transform: translateX(-15dvw);
+  }
+  70% {
+    transform: translateX(-11.25dvw);
+  }
+  76% {
+    transform: translateX(-8dvw);
+  }
+  82% {
+    transform: translateX(-5.25dvw);
+  }
+  88% {
+    transform: translateX(-3dvw);
+  }
+  90% {
+    transform: translateX(-2.25dvw);
+  }
+  92% {
+    transform: translateX(-1.6vw);
+  }
+  94% {
+    transform: translateX(-1.05dvw);
+  }
+  96% {
+    transform: translateX(-0.6dvw);
+  }
+  98% {
+    transform: translateX(-0.25dvw);
+  }
+  100% {
+    transform: translateX(0dvw);
+  }
+}
+
+@keyframes plane-fly-in-out-left {
+  0% {
+    background: url("../../public/banner-plane/plane_with_string.svg") no-repeat;
+    background-size: contain;
+    transform: translateX(-75dvw);
+  }
+  35% {
+    background: url("../../public/banner-plane/plane_with_string.svg") no-repeat;
+    background-size: contain;
+  }
+  40% {
+    background: url("../../public/banner-plane/plane_without_string.svg")
+      no-repeat;
+    background-size: contain;
+  }
+  50% {
+    background-size: contain;
+    transform: translateX(0dvw);
+  }
+  52.5% {
+    transform: translateX(3.75dvw);
+  }
+  55% {
+    transform: translateX(8dvw);
+  }
+  57.5% {
+    transform: translateX(12.75dvw);
+  }
+  60% {
+    transform: translateX(18dvw);
+  }
+  62.5% {
+    transform: translateX(23.75dvw);
+  }
+  65% {
+    transform: translateX(30dvw);
+  }
+  67.5% {
+    transform: translateX(36.75dvw);
+  }
+  70% {
+    transform: translateX(44dvw);
+  }
+  72.5% {
+    transform: translateX(51.75dvw);
+  }
+  75% {
+    transform: translateX(60dvw);
+  }
+  77.5% {
+    transform: translateX(68.75dvw);
+  }
+  80% {
+    transform: translateX(78dvw);
+  }
+  82.5% {
+    transform: translateX(87.75dvw);
+  }
+  85% {
+    transform: translateX(98dvw);
+  }
+  87.5% {
+    transform: translateX(108.75dvw);
+  }
+  90% {
+    transform: translateX(120dvw);
+  }
+  92.5% {
+    transform: translateX(131.75dvw);
+  }
+  95% {
+    transform: translateX(144dvw);
+  }
+  97.5% {
+    transform: translateX(156.75dvw);
+  }
+  100% {
+    transform: translateX(170dvw);
+  }
+}
+
+@keyframes balloon-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1.5dvh);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

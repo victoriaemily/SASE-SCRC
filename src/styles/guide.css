@@ -1,0 +1,63 @@
+#schedule-container {
+  position: fixed;
+  top: var(--header-size);
+  left: 0dvw;
+  height: calc(100% - var(--header-size));
+  width: 100dvw;
+  z-index: -1;
+}
+
+body.open-schedule {
+  overflow: hidden;
+}
+
+body.close-schedule {
+  overflow: hidden auto;
+}
+
+#schedule-container.open-schedule {
+  background: white;
+  animation: slide-container-in-left 2s ease-out 1 forwards;
+}
+
+#schedule-container.close-schedule {
+  background: white;
+  animation: slide-container-out-left 1s ease-in 1 forwards;
+}
+
+#schedule-container.open-schedule .schedule-toggle-button {
+  width: 100px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+#schedule-container.close-schedule .schedule-toggle-button {
+  width: 100px;
+  height: 40px;
+  border: 1px solid black;
+}
+
+@keyframes slide-container-in-left {
+  from {
+    z-index: 1;
+    transform: translateX(125dvw);
+  }
+  to {
+    z-index: 1;
+    transform: translateX(0dvw);
+  }
+}
+
+@keyframes slide-container-out-left {
+  0% {
+    z-index: 1;
+    transform: translateX(0dvw);
+  }
+  99% {
+    z-index: 1;
+  }
+  100% {
+    z-index: -1;
+    transform: translateX(125dvw);
+  }
+}

@@ -3,7 +3,9 @@
 @tailwind utilities;
 @import "./navbar.css";
 @import "./landing-page.css";
+@import "./guide.css";
 @import "./cloud-animation.css";
+@import "./banner-animation.css";
 
 :root {
   --header-size: 7.5dvh;
@@ -25,6 +27,8 @@ body {
   font-family: system-ui;
   font-size: 1em;
   line-height: 1.5;
+  min-width: 320px;
+  width: 100dvw;
 }
 
 .scroll-container {
@@ -57,7 +61,6 @@ body {
   font-weight: bold;
 }
 
-
 .about-wrapper > h3 {
   display: block;
   font-size: 1.1em;
@@ -69,18 +72,17 @@ body {
 }
 
 .about-left-box {
-  float:left; 
-  width:50%;
+  float: left;
+  width: 50%;
 }
 
 .about-right-box {
-  float:right;
-  width:50%;
+  float: right;
+  width: 50%;
 }
 
 .about-wrapper > p {
   display: block;
-
 }
 .about-wrapper > ul {
   list-style-type: disc;

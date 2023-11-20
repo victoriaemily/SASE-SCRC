@@ -3,34 +3,9 @@ import React, { useEffect, useState } from "react";
 export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
 
-  const [isDesktop, setDesktop] = useState(true);
-
   const toggleNavbar = () => {
     setIsNavOpen(!isNavOpen);
   };
-
-  const updateMedia = () => {
-    setDesktop(window.innerWidth > 640);
-  };
-
-  useEffect(() => {
-    var headerTitle = document.getElementById("header-title");
-    var dropdownButton = document.getElementById("dropdown-navbar-button");
-    if (isNavOpen) {
-      headerTitle.classList.add("navbar-fill");
-      dropdownButton.classList.remove("navbar-fill");
-    } else {
-      dropdownButton.classList.add("navbar-fill");
-      headerTitle.classList.remove("navbar-fill");
-    }
-  }, [isNavOpen]);
-
-  useEffect(() => {
-    if (!(typeof window === "undefined")) {
-      window.addEventListener("resize", updateMedia);
-      return () => window.removeEventListener("resize", updateMedia);
-    }
-  }, []);
 
   const handleSelectNavLink = () => {
     var scheduleContainer = document.getElementById("schedule-container");

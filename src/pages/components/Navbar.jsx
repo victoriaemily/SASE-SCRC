@@ -1,24 +1,11 @@
 import React, { useEffect, useState } from "react";
 
 export default function Navbar() {
-  const [isClick, setIsClick] = useState(false);
-
-  const [isDesktop, setDesktop] = useState(true);
+  const [isNavOpen, setIsNavOpen] = useState(false);
 
   const toggleNavbar = () => {
-    setIsClick(!isClick);
+    setIsNavOpen(!isNavOpen);
   };
-
-  const updateMedia = () => {
-    setDesktop(window.innerWidth > 640);
-  };
-
-  useEffect(() => {
-    if (!(typeof window === "undefined")) {
-      window.addEventListener("resize", updateMedia);
-      return () => window.removeEventListener("resize", updateMedia);
-    }
-  }, []);
 
   const handleSelectNavLink = () => {
     var scheduleContainer = document.getElementById("schedule-container");
@@ -27,13 +14,15 @@ export default function Navbar() {
       scheduleContainer.classList.add("close-schedule");
       document.body.style.overflow = "auto";
     }
-    toggleNavbar();
+    if (isNavOpen) {
+      toggleNavbar();
+    }
   };
 
   return (
     <header className="nav-container">
       <div className="navbar-box">
-        <a className="name-header" href="#" onClick={handleSelectNavLink}>
+        <a id="header-title" href="#" onClick={handleSelectNavLink}>
           SCRC
         </a>
         <nav className="horizontal-navbar">
@@ -78,8 +67,12 @@ export default function Navbar() {
             SCRC Team
           </a>
         </nav>
-        <button className="dropdown-navbar-icon" onClick={toggleNavbar}>
-          {isClick ? (
+        <button
+          id="dropdown-navbar-button"
+          className="dropdown-navbar-icon navbar-fill"
+          onClick={toggleNavbar}
+        >
+          {isNavOpen ? (
             <svg
               className="h-8 w-8"
               xmlns="http://www.w3.org/2000/svg"
@@ -112,7 +105,7 @@ export default function Navbar() {
           )}
         </button>
       </div>
-      {isClick && (
+      {isNavOpen && (
         <nav className="dropdown-navbar">
           <a
             id="about"

@@ -83,7 +83,7 @@ section#landing-page {
   width: 264px;
   height: 75px;
   font-size: 20px;
-  animation: banner-fly-in-left 5s linear 1 forwards;
+  animation: banner-fly-in-left 3.125s linear 1 forwards;
 }
 
 .right-facing-plane {
@@ -91,8 +91,7 @@ section#landing-page {
   background-size: contain;
   width: 100px;
   height: 35px;
-  z-index: -1;
-  animation: plane-fly-in-out-left 8s linear 1 forwards;
+  animation: plane-fly-in-out-left 5s linear 1 forwards;
 }
 
 @media (min-width: 481px) {
@@ -132,7 +131,7 @@ section#landing-page {
   }
 
   .right-facing-plane {
-    visibility: hidden;
+    display: none;
     width: 0;
     height: 0;
   }

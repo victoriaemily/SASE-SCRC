@@ -22,14 +22,20 @@ html {
   font-size: 0.75em;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 /* smartphones, iPhone, portrait 480x320 phones */
 body {
+  background-color: var(--blue);
   position: absolute;
   font-family: system-ui;
   font-size: 1em;
   line-height: 1.5;
   min-width: 320px;
-  width: 100dvw;
+  max-width: 100dvw;
 }
 
 .scroll-container {

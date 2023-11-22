@@ -8,11 +8,11 @@
 }
 
 body.open-schedule {
-  overflow: hidden;
+  overflow-y: hidden;
 }
 
 body.close-schedule {
-  overflow: hidden auto;
+  overflow-y: visible;
 }
 
 #schedule-container.open-schedule {

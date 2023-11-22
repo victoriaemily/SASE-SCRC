@@ -12,7 +12,6 @@ export default function Navbar() {
     if (scheduleContainer.classList.contains("open-schedule")) {
       scheduleContainer.classList.remove("open-schedule");
       scheduleContainer.classList.add("close-schedule");
-      document.body.style.overflow = "auto";
     }
     if (isNavOpen) {
       toggleNavbar();

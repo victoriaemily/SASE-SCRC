@@ -1,0 +1,74 @@
+#about {
+  display: flex;
+}
+
+.plane-tv-frame {
+  background: white;
+  border: 1em solid black;
+  border-radius: 25px;
+  width: 90%;
+  height: 80%;
+  margin: auto;
+}
+
+.plane-tv-nav-container {
+  width: 100%;
+  height: 6%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: solid black;
+}
+
+.plane-tv-nav-button {
+  width: calc(100% / 3);
+  height: 100%;
+}
+
+.plane-tv-nav-button.left-button {
+  border-radius: 5px 0 0 0;
+}
+
+.plane-tv-nav-button.middle-button {
+  border-right: solid black;
+  border-left: solid black;
+}
+
+.plane-tv-nav-button.right-button {
+  border-radius: 0 5px 0 0;
+}
+
+.about-tab-container {
+  width: 100%;
+  height: 94%;
+  padding: 1em;
+}
+
+.about-tab-container h3 {
+  font-size: 1.1em;
+  font-weight: bold;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.about-tab-container p {
+  margin-block-end: 1em;
+  text-align: center;
+}
+
+#trip-details-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.tamu-map {
+  width: 100%;
+  height: 70%;
+  color: white;
+  background: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

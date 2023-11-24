@@ -44,7 +44,7 @@ body {
 
 .wrapper {
   padding-top: var(--header-size);
-  height: 100dvh;
+  min-height: 100dvh;
   position: relative;
 }
 

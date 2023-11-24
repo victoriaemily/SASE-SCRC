@@ -1,10 +1,18 @@
+#key-dates {
+  display: flex;
+}
+
 #schedule-container {
   position: fixed;
-  top: var(--header-size);
+  top: 0;
   left: 0dvw;
-  height: calc(100% - var(--header-size));
+  height: 100dvh;
   width: 100dvw;
   z-index: -1;
+}
+
+#schedule-content-container {
+  margin-top: var(--header-size);
 }
 
 body.open-schedule {
@@ -17,12 +25,12 @@ body.close-schedule {
 
 #schedule-container.open-schedule {
   background: white;
-  animation: slide-container-in-left 2s ease-out 1 forwards;
+  animation: slide-container-in-from-top 2s ease-out 1 forwards;
 }
 
 #schedule-container.close-schedule {
   background: white;
-  animation: slide-container-out-left 1s ease-in 1 forwards;
+  animation: slide-container-out-to-top 1s ease-in 1 forwards;
 }
 
 #schedule-container.open-schedule .schedule-toggle-button {
@@ -37,27 +45,179 @@ body.close-schedule {
   border: 1px solid black;
 }
 
-@keyframes slide-container-in-left {
+.schedule-board {
+  background: white;
+  width: 100%;
+  height: 90dvh;
+  margin: auto;
+}
+
+.schedule-board .header-container {
+  border-bottom: 0.5px solid black;
+  border-top: 0.5px solid black;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  padding: 0.5em;
+}
+
+.header-container > .logo {
+  flex: 1;
+  text-align: center;
+}
+
+.header-container > .event-title {
+  flex: 2;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.header-container > .long-title {
+  display: none;
+  flex: 4;
+  font-size: 1.5em;
+  text-align: right;
+}
+
+.header-container > .short-title {
+  flex: 4;
+  font-size: 1.5em;
+  text-align: right;
+}
+
+.schedule-board .divider-pad {
+  padding: 0 0.5em;
+}
+
+.schedule-board .label {
+  border-bottom: 0.5px solid black;
+  background: var(--blue4);
+  color: white;
+  width: 100%;
+  height: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+}
+
+.label > h2,
+.event-divider > h2,
+.transition-divider > h2 {
+  flex: 1;
+  margin: auto;
+}
+
+h2.departure-label {
+  flex: 2;
+  text-align: left;
+}
+
+h2.gate-label {
+  text-align: center;
+}
+
+h2.start-time-label {
+  text-align: center;
+  flex: 2;
+}
+
+h2.status-label {
+  display: none;
+  text-align: center;
+}
+
+.schedule-board .time-divider {
+  border-bottom: 0.5px solid black;
+  background: var(--blue3);
+  color: white;
+  width: 100%;
+  height: 6.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3em;
+}
+
+.schedule-board .event-divider {
+  border-bottom: 0.5px solid black;
+  width: 100%;
+  height: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9em;
+}
+
+.schedule-board .event-divider:hover {
+  background: var(--blue2);
+  color: white;
+}
+
+.schedule-board .transition-divider {
+  border-bottom: 0.5px solid black;
+  background: var(--blue3);
+  color: white;
+  width: 100%;
+  height: 3.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8em;
+}
+
+@keyframes slide-container-in-from-top {
   from {
     z-index: 1;
-    transform: translateX(125dvw);
+    transform: translateY(-125dvh);
   }
   to {
     z-index: 1;
-    transform: translateX(0dvw);
+    transform: translateY(0dvh);
   }
 }
 
-@keyframes slide-container-out-left {
+@keyframes slide-container-out-to-top {
   0% {
     z-index: 1;
-    transform: translateX(0dvw);
+    transform: translateY(0dvh);
   }
   99% {
     z-index: 1;
   }
   100% {
     z-index: -1;
-    transform: translateX(125dvw);
+    transform: translateY(-125dvh);
   }
+}
+
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  .header-container > .long-title {
+    display: block;
+  }
+
+  .header-container > .short-title {
+    display: none;
+  }
+
+  h2.status-label {
+    display: block;
+  }
+}
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}
+@media (min-width: 1921px) {
+  /* hi-res desktops */
 }

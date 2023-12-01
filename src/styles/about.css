@@ -81,6 +81,9 @@
 }
 @media (min-width: 961px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .plane-tv-frame {
+    height: 70dvh;
+  }
 }
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */

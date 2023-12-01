@@ -55,7 +55,7 @@ export default function About() {
             <br />
             275 Joe Routt Blvd, College Station, TX 77843
           </p>
-          <div className="tamu-map">map of tamu goes here</div>
+          <div className="tamu-map">map of tamu</div>
         </div>
         <div id="scrc-tab" className="about-tab-container hidden">
           <h3>South Central Regional Conference</h3>

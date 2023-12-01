@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
-import Navbar from "./components/Navbar";
-import LandingPage from "./components/LandingPage";
-import About from "./components/About";
-import Guide from "./components/Guide";
-import Sponsors from "./components/Sponsors";
-import FAQ from "./components/FAQ";
-import Team from "./components/Team";
-import Background from "./components/Background";
+import React from "react";
+import Navbar from "./Navbar";
+import LandingPage from "./LandingPage";
+import About from "./About";
+import Guide from "./Guide";
+import Sponsors from "./Sponsors";
+import FAQ from "./FAQ";
+import Team from "./Team";
+import Background from "./Background";
 
 export default function Home() {
   return (
@@ -21,9 +21,6 @@ export default function Home() {
       </div>
       <Navbar />
       <Background />
-      {/* <a className="nav-return-top" href="#">
-        Return to Top
-      </a> */}
     </main>
   );
 }

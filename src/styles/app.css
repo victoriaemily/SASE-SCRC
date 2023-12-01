@@ -22,14 +22,20 @@ html {
   font-size: 0.75em;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 /* smartphones, iPhone, portrait 480x320 phones */
 body {
+  background-color: var(--blue);
   position: absolute;
   font-family: system-ui;
   font-size: 1em;
   line-height: 1.5;
   min-width: 320px;
-  width: 100dvw;
+  max-width: 100dvw;
 }
 
 .scroll-container {
@@ -38,7 +44,7 @@ body {
 
 .wrapper {
   padding-top: var(--header-size);
-  height: 100dvh;
+  min-height: 100dvh;
   position: relative;
 }
 
@@ -60,6 +66,15 @@ body {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
   font-weight: bold;
+}
+
+.black-background {
+  background: black;
+  color: white;
+}
+
+.no-display {
+  display: none;
 }
 
 @media (min-width: 481px) {

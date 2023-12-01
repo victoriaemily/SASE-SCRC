@@ -2,47 +2,8 @@
   display: flex;
 }
 
-#schedule-container {
-  position: fixed;
-  top: 0;
-  left: 0dvw;
-  height: 100dvh;
-  width: 100dvw;
-  z-index: -1;
-}
-
 #schedule-content-container {
   margin-top: var(--header-size);
-}
-
-body.open-schedule {
-  overflow-y: hidden;
-}
-
-body.close-schedule {
-  overflow-y: visible;
-}
-
-#schedule-container.open-schedule {
-  background: white;
-  animation: slide-container-in-from-top 2s ease-out 1 forwards;
-}
-
-#schedule-container.close-schedule {
-  background: white;
-  animation: slide-container-out-to-top 1s ease-in 1 forwards;
-}
-
-#schedule-container.open-schedule .schedule-toggle-button {
-  width: 100px;
-  height: 40px;
-  border: 1px solid black;
-}
-
-#schedule-container.close-schedule .schedule-toggle-button {
-  width: 100px;
-  height: 40px;
-  border: 1px solid black;
 }
 
 .schedule-board {
@@ -50,61 +11,55 @@ body.close-schedule {
   width: 100%;
   height: 90dvh;
   margin: auto;
+  transition: background-color 2s ease;
+}
+
+.schedule-board .schedule-divider {
+  transition: transform 1s ease;
+  transform-style: preserve-3d;
+  width: 100%;
+  position: relative;
 }
 
 .schedule-board .header-container {
-  border-bottom: 0.5px solid black;
-  border-top: 0.5px solid black;
   width: 100%;
   height: 10%;
-  display: flex;
-  align-items: center;
-  padding: 0.5em;
 }
 
-.header-container > .logo {
+.header-container .logo {
   flex: 1;
   text-align: center;
 }
 
-.header-container > .event-title {
+.header-container .event-title {
   flex: 2;
   font-size: 1.2em;
   text-align: left;
 }
 
-.header-container > .long-title {
+.header-container .long-title {
   display: none;
   flex: 4;
   font-size: 1.5em;
   text-align: right;
 }
 
-.header-container > .short-title {
+.header-container .short-title {
   flex: 4;
   font-size: 1.5em;
   text-align: right;
 }
 
-.schedule-board .divider-pad {
-  padding: 0 0.5em;
-}
-
-.schedule-board .label {
-  border-bottom: 0.5px solid black;
+.schedule-board > .label {
   background: var(--blue4);
   color: white;
   width: 100%;
   height: 4.5%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 0.8em;
 }
 
-.label > h2,
-.event-divider > h2,
-.transition-divider > h2 {
+.label > div > h2,
+.front-divider > h2 {
   flex: 1;
   margin: auto;
 }
@@ -128,43 +83,62 @@ h2.status-label {
   text-align: center;
 }
 
-.schedule-board .time-divider {
-  border-bottom: 0.5px solid black;
+.schedule-board > .time-divider {
   background: var(--blue3);
   color: white;
   width: 100%;
   height: 7%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 1.3em;
 }
 
 .schedule-board .event-divider {
-  border-bottom: 0.5px solid black;
   width: 100%;
   height: 6%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 0.9em;
 }
 
-.schedule-board .event-divider:hover {
+.schedule-board .event-divider > button:hover {
   background: var(--blue2);
   color: white;
 }
 
 .schedule-board .transition-divider {
-  border-bottom: 0.5px solid black;
   background: var(--blue3);
   color: white;
   width: 100%;
   height: 3.5%;
+  font-size: 0.8em;
+}
+
+.schedule-board .pad-divider {
+  padding: 0 0.5em;
+}
+
+.flip-divider {
+  transform: rotateX(180deg);
+}
+
+.header-container .front-divider {
+  border-top: 0.5px solid black;
+  padding: 0.5em;
+}
+
+.front-divider,
+.back-divider {
+  border-bottom: 0.5px solid black;
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.8em;
+  position: absolute;
+}
+
+.back-divider {
+  background: black;
+  color: white;
+  transform: rotateX(180deg);
 }
 
 @keyframes slide-container-in-from-top {

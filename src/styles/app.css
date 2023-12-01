@@ -68,6 +68,15 @@ body {
   font-weight: bold;
 }
 
+.black-background {
+  background: black;
+  color: white;
+}
+
+.no-display {
+  display: none;
+}
+
 @media (min-width: 481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
   body {

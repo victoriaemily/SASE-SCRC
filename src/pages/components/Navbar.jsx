@@ -8,11 +8,6 @@ export default function Navbar() {
   };
 
   const handleSelectNavLink = () => {
-    var scheduleContainer = document.getElementById("schedule-container");
-    if (scheduleContainer.classList.contains("open-schedule")) {
-      scheduleContainer.classList.remove("open-schedule");
-      scheduleContainer.classList.add("close-schedule");
-    }
     if (isNavOpen) {
       toggleNavbar();
     }

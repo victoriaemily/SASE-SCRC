@@ -2,20 +2,17 @@ import React from "react";
 import { morningEvents, afternoonEvents } from "@/assets/events";
 
 export default function Guide() {
-  const handleScheduleOpen = () => {
-    var scheduleContainer = document.getElementById("schedule-container");
-    scheduleContainer.classdivst.remove("close-schedule");
-    scheduleContainer.classdivst.add("open-schedule");
-    document.body.classdivst.add("open-schedule");
-    document.body.classdivst.remove("close-schedule");
-  };
-
-  const handleScheduleClose = () => {
-    var scheduleContainer = document.getElementById("schedule-container");
-    scheduleContainer.classdivst.remove("open-schedule");
-    scheduleContainer.classdivst.add("close-schedule");
-    document.body.classdivst.remove("open-schedule");
-    document.body.classdivst.add("close-schedule");
+  const handleFlipDivider = () => {
+    document.querySelectorAll(".schedule-divider").forEach((divider, idx) => {
+      const flipAnimationDelay = 0.08 * idx;
+      divider.style.transitionDelay = `${flipAnimationDelay}s`;
+      divider.classList.add("flip-divider");
+      setTimeout(() => {
+        document
+          .querySelector(".schedule-board")
+          .classList.add("black-background");
+      }, 500);
+    });
   };
 
   const renderEvent = (event, idx) => {
@@ -35,27 +32,43 @@ export default function Guide() {
     const endTime = `${String(end_hours % 12 || 12).padStart(2, "0")}:${String(
       end_minutes
     ).padStart(2, "0")} ${end_AMPM}`;
+
     if (event.isTransition) {
       return (
-        <div key={idx} className="transition-divider divider-pad">
-          <h2 className="departure-label">{event.name}</h2>
-          <h2 className="gate-label"></h2>
-          <h2 className="start-time-label">
-            {startTime} - {endTime}
-          </h2>
-          <h2 className="status-label"></h2>
+        <div className="schedule-divider transition-divider">
+          <div key={idx} className="pad-divider front-divider">
+            <h2 className="departure-label">{event.name}</h2>
+            <h2 className="gate-label"></h2>
+            <h2 className="start-time-label">
+              {startTime} - {endTime}
+            </h2>
+            <h2 className="status-label"></h2>
+          </div>
+          <div key={idx * 10 + idx} className="pad-divider back-divider">
+            test
+          </div>
         </div>
       );
     } else {
       return (
-        <button key={idx} className="event-divider divider-pad">
-          <h2 className="departure-label">{event.name}</h2>
-          <h2 className="gate-label">{event.location}</h2>
-          <h2 className="start-time-label">
-            {startTime} - {endTime}
-          </h2>
-          <h2 className="status-label">{event.status}</h2>
-        </button>
+        <div className="schedule-divider event-divider">
+          <button
+            key={idx}
+            className="pad-divider front-divider"
+            type="button"
+            onClick={handleFlipDivider}
+          >
+            <h2 className="departure-label">{event.name}</h2>
+            <h2 className="gate-label">{event.location}</h2>
+            <h2 className="start-time-label">
+              {startTime} - {endTime}
+            </h2>
+            <h2 className="status-label">{event.status}</h2>
+          </button>
+          <div key={idx * 10 + idx} className="pad-divider back-divider">
+            test
+          </div>
+        </div>
       );
     }
   };
@@ -63,34 +76,37 @@ export default function Guide() {
   return (
     <section id="key-dates" className="wrapper">
       <div className="schedule-board">
-        <div className="header-container">
-          <div className="logo">scrc logo</div>
-          <h2 className="event-title">SASE/SCRC</h2>
-          <>
-            <h2 className="long-title">EVENT & WORKSHOP DEPARTURES</h2>
-            <h2 className="short-title">DEPARTURES</h2>
-          </>
+        <div className="schedule-divider header-container">
+          <div className="pad-divider front-divider">
+            <div className="logo">scrc logo</div>
+            <h2 className="event-title">SASE/SCRC</h2>
+            <>
+              <h2 className="long-title">EVENT & WORKSHOP DEPARTURES</h2>
+              <h2 className="short-title">DEPARTURES</h2>
+            </>
+          </div>
+          <div className="pad-divider back-divider">test</div>
         </div>
-        <div className="label divider-pad">
-          <h2 className="departure-label">Departure For</h2>
-          <h2 className="gate-label">Gate</h2>
-          <h2 className="start-time-label">Time (CST)</h2>
-          <h2 className="status-label">Status</h2>
+        <div className="schedule-divider label">
+          <div className="pad-divider front-divider">
+            <h2 className="departure-label">Departure For</h2>
+            <h2 className="gate-label">Gate</h2>
+            <h2 className="start-time-label">Time (CST)</h2>
+            <h2 className="status-label">Status</h2>
+          </div>
+          <div className="pad-divider back-divider">test</div>
         </div>
-        <h3 className="time-divider divider-pad">Morning Block</h3>
+        <div className="schedule-divider time-divider">
+          <h3 className="pad-divider front-divider">Morning Block</h3>
+          <div className="pad-divider back-divider">test</div>
+        </div>
         {morningEvents.map((event, idx) => renderEvent(event, idx))}
-        <h3 className="time-divider divider-pad">Afternoon Block</h3>
-        {afternoonEvents.map((event, idx) => renderEvent(event, idx))}
-      </div>
-      <div id="schedule-container">
-        <div id="schedule-content-container">
-          <button
-            className="schedule-toggle-button"
-            id="close-schedule-button"
-            type="button"
-            onClick={handleScheduleClose}
-          ></button>
+        <div className="schedule-divider time-divider">
+          <h3 className="pad-divider front-divider">Afternoon Block</h3>
+          <div className="pad-divider back-divider">test</div>
         </div>
+        {afternoonEvents.map((event, idx) => renderEvent(event, idx))}
+        <div className="back-divider"></div>
       </div>
     </section>
   );

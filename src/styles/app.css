@@ -7,6 +7,7 @@
 @import "./cloud-animation.css";
 @import "./banner-animation.css";
 @import "./about.css";
+@import "./event-page.css";
 
 :root {
   --header-size: 5dvh;
@@ -68,6 +69,11 @@ body {
   font-weight: bold;
 }
 
+.white-background {
+  background: white;
+  color: black;
+}
+
 .black-background {
   background: black;
   color: white;
@@ -75,6 +81,19 @@ body {
 
 .no-display {
   display: none;
+}
+
+.no-border {
+  border: none;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 @media (min-width: 481px) {

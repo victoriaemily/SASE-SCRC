@@ -6,12 +6,17 @@
   margin-top: var(--header-size);
 }
 
-.schedule-board {
-  background: white;
+.schedule-container {
   width: 100%;
   height: 90dvh;
   margin: auto;
-  transition: background-color 2s ease;
+  position: relative;
+}
+
+.schedule-board {
+  background: white;
+  width: 100%;
+  height: 100%;
 }
 
 .schedule-board .schedule-divider {
@@ -26,25 +31,26 @@
   height: 10%;
 }
 
-.header-container .logo {
+.front-divider > .logo {
   flex: 1;
+  margin: auto;
   text-align: center;
 }
 
-.header-container .event-title {
+h2.event-title {
   flex: 2;
   font-size: 1.2em;
   text-align: left;
 }
 
-.header-container .long-title {
+h2.long-title {
   display: none;
   flex: 4;
   font-size: 1.5em;
   text-align: right;
 }
 
-.header-container .short-title {
+h2.short-title {
   flex: 4;
   font-size: 1.5em;
   text-align: right;
@@ -60,7 +66,6 @@
 
 .label > div > h2,
 .front-divider > h2 {
-  flex: 1;
   margin: auto;
 }
 
@@ -70,6 +75,7 @@ h2.departure-label {
 }
 
 h2.gate-label {
+  flex: 1;
   text-align: center;
 }
 
@@ -79,12 +85,12 @@ h2.start-time-label {
 }
 
 h2.status-label {
+  flex: 1;
   display: none;
   text-align: center;
 }
 
 .schedule-board > .time-divider {
-  background: var(--blue3);
   color: white;
   width: 100%;
   height: 7%;
@@ -103,29 +109,22 @@ h2.status-label {
 }
 
 .schedule-board .transition-divider {
-  background: var(--blue3);
   color: white;
   width: 100%;
   height: 3.5%;
   font-size: 0.8em;
 }
 
+.blue3-divider {
+  background: var(--blue3);
+}
+
 .schedule-board .pad-divider {
   padding: 0 0.5em;
 }
 
-.flip-divider {
-  transform: rotateX(180deg);
-}
-
-.header-container .front-divider {
-  border-top: 0.5px solid black;
-  padding: 0.5em;
-}
-
 .front-divider,
 .back-divider {
-  border-bottom: 0.5px solid black;
   backface-visibility: hidden;
   width: 100%;
   height: 100%;
@@ -135,9 +134,21 @@ h2.status-label {
   position: absolute;
 }
 
+.front-divider {
+  border-bottom: 0.5px solid black;
+}
+
+.header-container .front-divider {
+  border-top: 0.5px solid black;
+  padding: 0.5em;
+}
+
 .back-divider {
-  background: black;
-  color: white;
+  background: white;
+  transform: rotateX(180deg);
+}
+
+.flip-divider {
   transform: rotateX(180deg);
 }
 
@@ -171,11 +182,11 @@ h2.status-label {
 }
 @media (min-width: 641px) {
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-  .header-container > .long-title {
+  h2.long-title {
     display: block;
   }
 
-  .header-container > .short-title {
+  h2.short-title {
     display: none;
   }
 

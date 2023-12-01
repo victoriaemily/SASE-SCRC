@@ -4,20 +4,31 @@ export default function FAQ() {
   return (
     <section id="faq" className="wrapper">
       <h2>FAQ</h2>
+      <h3>What is the South Central Regional Conference (SCRC)?</h3>
       <p>
-        In nibh mauris cursus mattis molestie. Nullam eget felis eget nunc
-        lobortis mattis aliquam faucibus. Volutpat maecenas volutpat blandit
-        aliquam etiam.
+        The South Central Regional Conference, abbreviated as SCRC, is one of
+        the five annual conferences hosted by SCRC chapters across the United
+        States. To see more details see our{" "}
+        <a className="paragraph-hyperlink" href="#about">
+          about page
+        </a>
+        .
       </p>
+      <h3>When is SCRC 2024?</h3>
       <p>
-        Eu tincidunt tortor aliquam nulla facilisi cras fermentum. Eu non diam
-        phasellus vestibulum lorem sed risus ultricies tristique. Donec et odio
-        pellentesque diam.
+        The South Central Regional Conference will be held on March 02, 2024.
       </p>
+      <h3>Where is SCRC 2024?</h3>
       <p>
-        Cursus metus aliquam eleifend mi in nulla. Dui nunc mattis enim ut
-        tellus elementum. Aliquet sagittis id consectetur purus ut. Dignissim
-        diam quis enim lobortis.
+        The South Central Regional Conference will be held at Texas A&M
+        University's{" "}
+        <a
+          className="paragraph-hyperlink"
+          href="https://maps.app.goo.gl/U6oZvEzSZeXAEWMi6"
+          target="_blank"
+        >
+          Memorial Student Center (MSC)
+        </a>
       </p>
     </section>
   );

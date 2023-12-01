@@ -55,7 +55,16 @@ export default function About() {
             <br />
             275 Joe Routt Blvd, College Station, TX 77843
           </p>
-          <div className="tamu-map">map of tamu</div>
+          <div className="tamu-map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3433.7697243813577!2d-96.3441192223423!3d30.612257774642714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8646839854d18149%3A0x90311327f8c2221d!2sMemorial%20Student%20Center%20(MSC)!5e0!3m2!1sen!2sus!4v1701457058873!5m2!1sen!2sus"
+              width="100%"
+              height="100%"
+              style={{ border: 0 }}
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
         <div id="scrc-tab" className="about-tab-container hidden">
           <h3>South Central Regional Conference</h3>

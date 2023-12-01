@@ -87,6 +87,15 @@ body {
   border: none;
 }
 
+.paragraph-hyperlink {
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.paragraph-hyperlink:hover {
+  color: var(--blue4);
+}
+
 @keyframes fade-in {
   0% {
     opacity: 0;

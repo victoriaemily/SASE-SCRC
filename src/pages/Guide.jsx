@@ -4,7 +4,6 @@ import EventPages from "./components/EventPages";
 
 export default function Guide() {
   const handleFlipDivider = (eventId) => {
-    console.log(eventId);
     document.querySelectorAll(".schedule-divider").forEach((divider, idx) => {
       const flipAnimationDelay = 0.08 * idx;
       divider.style.transitionDelay = `${flipAnimationDelay}s`;
@@ -132,18 +131,45 @@ export default function Guide() {
           <div className="back-divider"></div>
         </div>
         <EventPages
-          eventId="tba"
-          handleFlipDivider={handleFlipDivider}
+          closeParam="tba"
+          handleClose={handleFlipDivider}
         ></EventPages>
-        {/* <Registration handleFlipDivider={handleFlipDivider} />
-        <OpeningCeremony handleFlipDivider={handleFlipDivider} />
-        <Workshop1 handleFlipDivider={handleFlipDivider} />
-        <Workshop2 handleFlipDivider={handleFlipDivider} />
-        <LunchBreak handleFlipDivider={handleFlipDivider} />
-        <NetworkingSession handleFlipDivider={handleFlipDivider} />
-        <Workshop3 handleFlipDivider={handleFlipDivider} />
-        <ClosingCeremony handleFlipDivider={handleFlipDivider} />
-        <CareerFair handleFlipDivider={handleFlipDivider} /> */}
+        <EventPages
+          closeParam="registration"
+          handleClose={handleFlipDivider}
+        ></EventPages>
+        <EventPages
+          closeParam="opening-ceremony"
+          handleClose={handleFlipDivider}
+        ></EventPages>
+        <EventPages
+          closeParam="workshop-1"
+          handleClose={handleFlipDivider}
+        ></EventPages>
+        <EventPages
+          closeParam="workshop-2"
+          handleClose={handleFlipDivider}
+        ></EventPages>
+        <EventPages
+          closeParam="lunch-break"
+          handleClose={handleFlipDivider}
+        ></EventPages>
+        <EventPages
+          closeParam="networking-session"
+          handleClose={handleFlipDivider}
+        ></EventPages>
+        <EventPages
+          closeParam="workshop-3"
+          handleClose={handleFlipDivider}
+        ></EventPages>
+        <EventPages
+          closeParam="closing-ceremony"
+          handleClose={handleFlipDivider}
+        ></EventPages>
+        <EventPages
+          closeParam="career-fair"
+          handleClose={handleFlipDivider}
+        ></EventPages>
       </div>
     </section>
   );

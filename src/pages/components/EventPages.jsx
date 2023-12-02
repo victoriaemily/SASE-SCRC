@@ -1,26 +1,8 @@
 import React from "react";
-import CloseEventButton from "./CloseEventButton";
+import CloseButton from "./CloseButton";
 
-export default function EventPages({ eventId, handleFlipDivider }) {
-  switch (eventId) {
-    case "tba":
-      return (
-        <div id="tba" className="event-container no-display">
-          <h2>TBA</h2>
-          <div className="event-description-container">
-            <p>
-              Event is still yet to be announced
-              <br />
-              Location is still yet to be announced.
-            </p>
-          </div>
-          <CloseEventButton
-            handleFlipDivider={handleFlipDivider}
-            eventId={"tba"}
-          />
-        </div>
-      );
-
+export default function EventPages({ closeParam, handleClose }) {
+  switch (closeParam) {
     case "registration":
       return (
         <div id="registration" className="event-container no-display">
@@ -32,10 +14,12 @@ export default function EventPages({ eventId, handleFlipDivider }) {
               Location is still yet to be announced.
             </p>
           </div>
-          <CloseEventButton
-            handleFlipDivider={handleFlipDivider}
-            eventId={"registration"}
-          />
+          <div className="event-close-container">
+            <CloseButton
+              handleClose={handleClose}
+              closeParam={"registration"}
+            />
+          </div>
         </div>
       );
     case "opening-ceremony":
@@ -49,10 +33,12 @@ export default function EventPages({ eventId, handleFlipDivider }) {
               Location is still yet to be announced.
             </p>
           </div>
-          <CloseEventButton
-            handleFlipDivider={handleFlipDivider}
-            eventId={"opening-ceremony"}
-          />
+          <div className="event-close-container">
+            <CloseButton
+              handleClose={handleClose}
+              closeParam={"opening-ceremony"}
+            />
+          </div>
         </div>
       );
 
@@ -67,10 +53,9 @@ export default function EventPages({ eventId, handleFlipDivider }) {
               Location is still yet to be announced.
             </p>
           </div>
-          <CloseEventButton
-            handleFlipDivider={handleFlipDivider}
-            eventId={"workshop-1"}
-          />
+          <div className="event-close-container">
+            <CloseButton handleClose={handleClose} closeParam={"workshop-1"} />
+          </div>
         </div>
       );
 
@@ -85,10 +70,9 @@ export default function EventPages({ eventId, handleFlipDivider }) {
               Location is still yet to be announced.
             </p>
           </div>
-          <CloseEventButton
-            handleFlipDivider={handleFlipDivider}
-            eventId={"workshop-2"}
-          />
+          <div className="event-close-container">
+            <CloseButton handleClose={handleClose} closeParam={"workshop-2"} />
+          </div>
         </div>
       );
     case "lunch-break":
@@ -102,10 +86,9 @@ export default function EventPages({ eventId, handleFlipDivider }) {
               Location is still yet to be announced.
             </p>
           </div>
-          <CloseEventButton
-            handleFlipDivider={handleFlipDivider}
-            eventId={"lunch-break"}
-          />
+          <div className="event-close-container">
+            <CloseButton handleClose={handleClose} closeParam={"lunch-break"} />
+          </div>
         </div>
       );
 
@@ -120,10 +103,12 @@ export default function EventPages({ eventId, handleFlipDivider }) {
               Location is still yet to be announced.
             </p>
           </div>
-          <CloseEventButton
-            handleFlipDivider={handleFlipDivider}
-            eventId={"networking-session"}
-          />
+          <div className="event-close-container">
+            <CloseButton
+              handleClose={handleClose}
+              closeParam={"networking-session"}
+            />
+          </div>
         </div>
       );
 
@@ -138,10 +123,9 @@ export default function EventPages({ eventId, handleFlipDivider }) {
               Location is still yet to be announced.
             </p>
           </div>
-          <CloseEventButton
-            handleFlipDivider={handleFlipDivider}
-            eventId={"workshop-3"}
-          />
+          <div className="event-close-container">
+            <CloseButton handleClose={handleClose} closeParam={"workshop-3"} />
+          </div>
         </div>
       );
     case "closing ceremony":
@@ -155,10 +139,12 @@ export default function EventPages({ eventId, handleFlipDivider }) {
               Location is still yet to be announced.
             </p>
           </div>
-          <CloseEventButton
-            handleFlipDivider={handleFlipDivider}
-            eventId={"closing-ceremony"}
-          />
+          <div className="event-close-container">
+            <CloseButton
+              handleClose={handleClose}
+              closeParam={"closing-ceremony"}
+            />
+          </div>
         </div>
       );
 
@@ -173,12 +159,26 @@ export default function EventPages({ eventId, handleFlipDivider }) {
               Location is still yet to be announced.
             </p>
           </div>
-          <CloseEventButton
-            handleFlipDivider={handleFlipDivider}
-            eventId={"career-fair"}
-          />
+          <div className="event-close-container">
+            <CloseButton handleClose={handleClose} closeParam={"career-fair"} />
+          </div>
+        </div>
+      );
+    default:
+      return (
+        <div id="tba" className="event-container no-display">
+          <h2>TBA</h2>
+          <div className="event-description-container">
+            <p>
+              Event is still yet to be announced
+              <br />
+              Location is still yet to be announced.
+            </p>
+          </div>
+          <div className="event-close-container">
+            <CloseButton handleClose={handleClose} closeParam={"tba"} />
+          </div>
         </div>
       );
   }
-  return <div>EventPages</div>;
 }

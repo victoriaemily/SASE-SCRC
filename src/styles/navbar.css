@@ -2,7 +2,7 @@
 .nav-container {
   position: fixed;
   top: 0;
-  width: 100dvw;
+  width: 100%;
   min-height: var(--header-size);
   background-color: rgba(255, 255, 255, 0.9);
   border-bottom: 1px outset var(--blue1);

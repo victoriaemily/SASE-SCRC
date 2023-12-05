@@ -4,7 +4,6 @@ import EventPages from "./components/EventPages";
 
 export default function Guide() {
   const handleFlipDivider = (eventId) => {
-    console.log(eventId);
     document.querySelectorAll(".schedule-divider").forEach((divider, idx) => {
       const flipAnimationDelay = 0.08 * idx;
       divider.style.transitionDelay = `${flipAnimationDelay}s`;

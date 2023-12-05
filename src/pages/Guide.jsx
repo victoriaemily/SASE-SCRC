@@ -104,8 +104,11 @@ export default function Guide() {
         <div className="schedule-board">
           <div className="schedule-divider header-container">
             <div className="pad-divider front-divider">
-              <div className="logo">scrc logo</div>
-              <h2 className="event-title">SASE/SCRC</h2>
+              <div
+                id="schedule-header-logo"
+                className="logo scrc-logo-black"
+              ></div>
+              <h2 className="event-title">SASE x SCRC</h2>
               <>
                 <h2 className="long-title">EVENT & WORKSHOP DEPARTURES</h2>
                 <h2 className="short-title">DEPARTURES</h2>

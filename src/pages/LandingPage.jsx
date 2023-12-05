@@ -14,7 +14,7 @@ export default function LandingPage() {
   return (
     <section id="landing-page" className="wrapper">
       <div className="splash-title">
-        <h1 id="sase-title">SASE</h1>
+        <div id="sase-title" className="logo scrc-logo-black"></div>
         <h1 id="sc-title">South Central</h1>
         <h1 id="rc-title">Regional Conference</h1>
         <h2 id="at-title">@Texas A&M University - College Station</h2>

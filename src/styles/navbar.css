@@ -21,6 +21,10 @@
   margin-right: auto;
 }
 
+#navbar-logo {
+  display: none;
+}
+
 #header-title {
   float: left;
   color: black;
@@ -28,12 +32,14 @@
   display: flex;
   align-items: center;
   height: 100%;
-  font-size: 2em;
-  font-weight: 700;
   text-decoration: none;
   transition: color 0.3s ease-in;
-  padding: 1rem 0 1rem 1rem;
-  margin-right: 1rem;
+  padding: 0.5rem;
+}
+
+#header-title > h1 {
+  font-size: 1.5em;
+  font-weight: 700;
 }
 
 #header-title:hover {
@@ -104,6 +110,11 @@
 }
 @media (min-width: 641px) {
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  #navbar-logo {
+    margin-right: 1rem;
+    display: initial;
+  }
+
   .horizontal-navbar {
     display: flex;
   }

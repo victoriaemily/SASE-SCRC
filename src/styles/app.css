@@ -122,20 +122,18 @@ body {
   background: var(--blue4);
 }
 
-.scrc-logo-1 {
-  background: url("../assets/logos/scrc-logo-1.svg") no-repeat;
-  background-size: contain;
-  height: 100px;
-  width: 100px;
+.logo {
+  height: 100%;
+  aspect-ratio: 1/1;
 }
 
-.scrc-logo-2 {
-  background: url("../assets/logos/scrc-logo-2.svg") no-repeat;
+.scrc-logo-black {
+  background: url("../assets/logos/scrc-logo-black.svg") no-repeat;
   background-size: contain;
 }
 
-.scrc-logo-3 {
-  background: url("../assets/logos/scrc-logo-3.svg") no-repeat;
+.scrc-logo-white {
+  background: url("../assets/logos/scrc-logo-white.svg") no-repeat;
   background-size: contain;
 }
 

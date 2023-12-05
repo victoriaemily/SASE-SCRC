@@ -85,6 +85,10 @@ body {
   display: none;
 }
 
+.flex-display {
+  display: flex;
+}
+
 .no-border {
   border: none;
 }

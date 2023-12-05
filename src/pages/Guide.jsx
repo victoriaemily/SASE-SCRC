@@ -4,6 +4,7 @@ import EventPages from "./components/EventPages";
 
 export default function Guide() {
   const handleFlipDivider = (eventId) => {
+    console.log(eventId);
     document.querySelectorAll(".schedule-divider").forEach((divider, idx) => {
       const flipAnimationDelay = 0.08 * idx;
       divider.style.transitionDelay = `${flipAnimationDelay}s`;
@@ -19,10 +20,12 @@ export default function Guide() {
             .classList.add("white-background");
           setTimeout(() => {
             document.getElementById(eventId).classList.remove("no-display");
+            document.getElementById(eventId).classList.add("flex-display");
           }, 750);
         }, 500);
       } else {
         document.getElementById(eventId).classList.add("no-display");
+        document.getElementById(eventId).classList.remove("flex-display");
         divider.querySelector(".front-divider").classList.remove("no-border");
         document.querySelectorAll(".label").forEach((blueDivider, _) => {
           blueDivider.classList.remove("white-background");

@@ -38,7 +38,6 @@ export default function EventPages({ closeParam, handleClose }) {
           </div>
         </div>
       );
-
     case "workshop-1":
       return (
         <div id="workshop-1" className="event-container no-display">
@@ -119,7 +118,7 @@ export default function EventPages({ closeParam, handleClose }) {
           </div>
         </div>
       );
-    case "closing ceremony":
+    case "closing-ceremony":
       return (
         <div id="closing-ceremony" className="event-container no-display">
           <h2>Closing Ceremony</h2>
@@ -138,7 +137,6 @@ export default function EventPages({ closeParam, handleClose }) {
           </div>
         </div>
       );
-
     case "career-fair":
       return (
         <div id="career-fair" className="event-container no-display">

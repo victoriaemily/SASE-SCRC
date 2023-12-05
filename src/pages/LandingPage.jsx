@@ -28,7 +28,9 @@ export default function LandingPage() {
           Register
         </a>
         <div className="banner">
-          <div className="date-banner">March 2nd, 2024</div>
+          <div className="date-banner">
+            <div className="banner-label">March 2nd, 2024</div>
+          </div>
           <div className="right-facing-plane" id="plane"></div>
         </div>
       </div>

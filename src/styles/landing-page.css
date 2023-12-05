@@ -112,21 +112,22 @@ section#landing-page {
   }
 
   .key-info-container {
-    margin: auto 0;
+    margin: auto;
   }
 
   .banner {
     display: inherit;
     animation: balloon-float 8s ease-in-out infinite;
+    margin: 3em 0 0 0;
   }
 
   .date-banner {
-    background: url("../assets/airship/zeppelin.svg") no-repeat;
+    background: url("../assets/airship/blimp.svg") no-repeat;
     background-size: contain;
     width: 300px;
-    height: 150px;
+    height: 120px;
     padding-left: 0;
-    margin: 2em 0 0 0;
+    margin: 0;
     animation: none;
   }
 
@@ -134,6 +135,12 @@ section#landing-page {
     display: none;
     width: 0;
     height: 0;
+  }
+
+  .banner-label {
+    position: absolute;
+    top: 38px;
+    left: 90px;
   }
 }
 @media (min-width: 961px) {

@@ -1,6 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 @import "./navbar.css";
 @import "./landing-page.css";
 @import "./guide.css";
@@ -9,6 +7,9 @@
 @import "./about.css";
 @import "./event-page.css";
 @import "./modal.css";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root {
   --header-size: 5dvh;
@@ -33,7 +34,7 @@ body {
 body {
   background-color: var(--blue);
   position: absolute;
-  font-family: system-ui;
+  font-family: "Alata", sans-serif;
   font-size: 1em;
   line-height: 1.5;
   min-width: 320px;

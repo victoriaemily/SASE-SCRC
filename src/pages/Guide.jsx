@@ -55,11 +55,13 @@ export default function Guide() {
         end_minutes
       ).padStart(2, "0")} ${end_AMPM}`;
     }
-
     if (event.isTransition) {
       return (
-        <div className="schedule-divider transition-divider blue3-divider">
-          <div key={idx} className="pad-divider front-divider">
+        <div
+          key={idx}
+          className="schedule-divider transition-divider blue3-divider"
+        >
+          <div className="pad-divider front-divider">
             <h2 className="departure-label">{event.name}</h2>
             <h2 className="gate-label"></h2>
             <h2 className="start-time-label">
@@ -67,14 +69,13 @@ export default function Guide() {
             </h2>
             <h2 className="status-label"></h2>
           </div>
-          <div key={idx * 10 + idx} className="pad-divider back-divider"></div>
+          <div className="pad-divider back-divider"></div>
         </div>
       );
     } else {
       return (
-        <div className="schedule-divider event-divider">
+        <div key={idx} className="schedule-divider event-divider">
           <button
-            key={idx}
             className="pad-divider front-divider"
             type="button"
             onClick={() => {
@@ -88,7 +89,7 @@ export default function Guide() {
             </h2>
             <h2 className="status-label">{event.status}</h2>
           </button>
-          <div key={idx * 10 + idx} className="pad-divider back-divider"></div>
+          <div className="pad-divider back-divider"></div>
         </div>
       );
     }
@@ -131,11 +132,7 @@ export default function Guide() {
           <div className="back-divider"></div>
         </div>
         <EventPages
-          closeParam="tba"
-          handleClose={handleFlipDivider}
-        ></EventPages>
-        <EventPages
-          closeParam="registration"
+          closeParam="check-in"
           handleClose={handleFlipDivider}
         ></EventPages>
         <EventPages
@@ -147,19 +144,19 @@ export default function Guide() {
           handleClose={handleFlipDivider}
         ></EventPages>
         <EventPages
-          closeParam="workshop-2"
-          handleClose={handleFlipDivider}
-        ></EventPages>
-        <EventPages
           closeParam="lunch-break"
           handleClose={handleFlipDivider}
         ></EventPages>
         <EventPages
-          closeParam="networking-session"
+          closeParam="workshop-2"
           handleClose={handleFlipDivider}
         ></EventPages>
         <EventPages
           closeParam="workshop-3"
+          handleClose={handleFlipDivider}
+        ></EventPages>
+        <EventPages
+          closeParam="workshop-4"
           handleClose={handleFlipDivider}
         ></EventPages>
         <EventPages

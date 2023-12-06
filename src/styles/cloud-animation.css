@@ -25,14 +25,14 @@
 }
 
 .cloud0 {
-  background: url("../../public/clouds/cloud17.svg") no-repeat;
+  background: url("/clouds/cloud17.svg") no-repeat;
   opacity: 0;
   animation: cloud-animation1 60s linear infinite;
   animation-delay: 15s;
 }
 
 .cloud1 {
-  background: url("../../public/clouds/cloud1.svg") no-repeat;
+  background: url("/clouds/cloud1.svg") no-repeat;
   background-size: contain;
   margin-top: 16dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -40,7 +40,7 @@
 }
 
 .cloud2 {
-  background: url("../../public/clouds/cloud2.svg") no-repeat;
+  background: url("/clouds/cloud2.svg") no-repeat;
   background-size: contain;
   margin-top: 43dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -48,7 +48,7 @@
 }
 
 .cloud3 {
-  background: url("../../public/clouds/cloud3.svg") no-repeat;
+  background: url("/clouds/cloud3.svg") no-repeat;
   background-size: contain;
   margin-top: 58dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -56,7 +56,7 @@
 }
 
 .cloud4 {
-  background: url("../../public/clouds/cloud4.svg") no-repeat;
+  background: url("/clouds/cloud4.svg") no-repeat;
   background-size: contain;
   margin-top: 81dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -64,7 +64,7 @@
 }
 
 .cloud5 {
-  background: url("../../public/clouds/cloud5.svg") no-repeat;
+  background: url("/clouds/cloud5.svg") no-repeat;
   background-size: contain;
   margin-top: 109dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -72,7 +72,7 @@
 }
 
 .cloud6 {
-  background: url("../../public/clouds/cloud6.svg") no-repeat;
+  background: url("/clouds/cloud6.svg") no-repeat;
   background-size: contain;
   margin-top: 121dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -80,7 +80,7 @@
 }
 
 .cloud7 {
-  background: url("../../public/clouds/cloud7.svg") no-repeat;
+  background: url("/clouds/cloud7.svg") no-repeat;
   background-size: contain;
   margin-top: 137dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -88,7 +88,7 @@
 }
 
 .cloud8 {
-  background: url("../../public/clouds/cloud8.svg") no-repeat;
+  background: url("/clouds/cloud8.svg") no-repeat;
   background-size: contain;
   margin-top: 164dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -96,7 +96,7 @@
 }
 
 .cloud9 {
-  background: url("../../public/clouds/cloud9.svg") no-repeat;
+  background: url("/clouds/cloud9.svg") no-repeat;
   background-size: contain;
   margin-top: 178dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -104,7 +104,7 @@
 }
 
 .cloud10 {
-  background: url("../../public/clouds/cloud10.svg") no-repeat;
+  background: url("/clouds/cloud10.svg") no-repeat;
   background-size: contain;
   margin-top: 198dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -112,7 +112,7 @@
 }
 
 .cloud11 {
-  background: url("../../public/clouds/cloud11.svg") no-repeat;
+  background: url("/clouds/cloud11.svg") no-repeat;
   background-size: contain;
   margin-top: 225dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -120,7 +120,7 @@
 }
 
 .cloud12 {
-  background: url("../../public/clouds/cloud12.svg") no-repeat;
+  background: url("/clouds/cloud12.svg") no-repeat;
   background-size: contain;
   margin-top: 236dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -128,7 +128,7 @@
 }
 
 .cloud13 {
-  background: url("../../public/clouds/cloud13.svg") no-repeat;
+  background: url("/clouds/cloud13.svg") no-repeat;
   background-size: contain;
   margin-top: 261dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -136,7 +136,7 @@
 }
 
 .cloud14 {
-  background: url("../../public/clouds/cloud14.svg") no-repeat;
+  background: url("/clouds/cloud14.svg") no-repeat;
   background-size: contain;
   margin-top: 283dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -144,7 +144,7 @@
 }
 
 .cloud15 {
-  background: url("../../public/clouds/cloud15.svg") no-repeat;
+  background: url("/clouds/cloud15.svg") no-repeat;
   background-size: contain;
   margin-top: 304dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -152,7 +152,7 @@
 }
 
 .cloud16 {
-  background: url("../../public/clouds/cloud16.svg") no-repeat;
+  background: url("/clouds/cloud16.svg") no-repeat;
   background-size: contain;
   margin-top: 319dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -160,7 +160,7 @@
 }
 
 .cloud17 {
-  background: url("../../public/clouds/cloud17.svg") no-repeat;
+  background: url("/clouds/cloud17.svg") no-repeat;
   background-size: contain;
   margin-top: 340dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -168,7 +168,7 @@
 }
 
 .cloud18 {
-  background: url("../../public/clouds/cloud18.svg") no-repeat;
+  background: url("/clouds/cloud18.svg") no-repeat;
   background-size: contain;
   margin-top: 362dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -176,7 +176,7 @@
 }
 
 .cloud19 {
-  background: url("../../public/clouds/cloud19.svg") no-repeat;
+  background: url("/clouds/cloud19.svg") no-repeat;
   background-size: contain;
   margin-top: 380dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -184,7 +184,7 @@
 }
 
 .cloud20 {
-  background: url("../../public/clouds/cloud20.svg") no-repeat;
+  background: url("/clouds/cloud20.svg") no-repeat;
   background-size: contain;
   margin-top: 404dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -192,7 +192,7 @@
 }
 
 .cloud21 {
-  background: url("../../public/clouds/cloud21.svg") no-repeat;
+  background: url("/clouds/cloud21.svg") no-repeat;
   background-size: contain;
   margin-top: 418dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -200,7 +200,7 @@
 }
 
 .cloud22 {
-  background: url("../../public/clouds/cloud22.svg") no-repeat;
+  background: url("/clouds/cloud22.svg") no-repeat;
   background-size: contain;
   margin-top: 434dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -208,7 +208,7 @@
 }
 
 .cloud23 {
-  background: url("../../public/clouds/cloud23.svg") no-repeat;
+  background: url("/clouds/cloud23.svg") no-repeat;
   background-size: contain;
   margin-top: 469dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -216,7 +216,7 @@
 }
 
 .cloud24 {
-  background: url("../../public/clouds/cloud24.svg") no-repeat;
+  background: url("/clouds/cloud24.svg") no-repeat;
   background-size: contain;
   margin-top: 481dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -224,7 +224,7 @@
 }
 
 .cloud25 {
-  background: url("../../public/clouds/cloud25.svg") no-repeat;
+  background: url("/clouds/cloud25.svg") no-repeat;
   background-size: contain;
   margin-top: 500dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -232,7 +232,7 @@
 }
 
 .cloud26 {
-  background: url("../../public/clouds/cloud26.svg") no-repeat;
+  background: url("/clouds/cloud26.svg") no-repeat;
   background-size: contain;
   margin-top: 523dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -240,7 +240,7 @@
 }
 
 .cloud27 {
-  background: url("../../public/clouds/cloud27.svg") no-repeat;
+  background: url("/clouds/cloud27.svg") no-repeat;
   background-size: contain;
   margin-top: 548dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -248,7 +248,7 @@
 }
 
 .cloud28 {
-  background: url("../../public/clouds/cloud28.svg") no-repeat;
+  background: url("/clouds/cloud28.svg") no-repeat;
   background-size: contain;
   margin-top: 560dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -256,7 +256,7 @@
 }
 
 .cloud29 {
-  background: url("../../public/clouds/cloud29.svg") no-repeat;
+  background: url("/clouds/cloud29.svg") no-repeat;
   background-size: contain;
   margin-top: 582dvh;
   animation: cloud-animation1 60s linear infinite;
@@ -264,7 +264,7 @@
 }
 
 .cloud30 {
-  background: url("../../public/clouds/cloud30.svg") no-repeat;
+  background: url("/clouds/cloud30.svg") no-repeat;
   background-size: contain;
   margin-top: 10dvh;
   animation: cloud-animation2 80s linear infinite;
@@ -272,7 +272,7 @@
 }
 
 .cloud31 {
-  background: url("../../public/clouds/cloud31.svg") no-repeat;
+  background: url("/clouds/cloud31.svg") no-repeat;
   background-size: contain;
   margin-top: 30dvh;
   animation: cloud-animation2 40s linear infinite;
@@ -280,7 +280,7 @@
 }
 
 .cloud32 {
-  background: url("../../public/clouds/cloud9.svg") no-repeat;
+  background: url("/clouds/cloud9.svg") no-repeat;
   background-size: contain;
   margin-top: 50dvh;
   animation: cloud-animation2 90s linear infinite;
@@ -288,7 +288,7 @@
 }
 
 .cloud33 {
-  background: url("../../public/clouds/cloud15.svg") no-repeat;
+  background: url("/clouds/cloud15.svg") no-repeat;
   background-size: contain;
   margin-top: 70dvh;
   animation: cloud-animation2 70s linear infinite;
@@ -296,7 +296,7 @@
 }
 
 .cloud34 {
-  background: url("../../public/clouds/cloud21.svg") no-repeat;
+  background: url("/clouds/cloud21.svg") no-repeat;
   background-size: contain;
   margin-top: 680dvh;
   animation: cloud-animation2 60s linear infinite;
@@ -304,7 +304,7 @@
 }
 
 .cloud35 {
-  background: url("../../public/clouds/cloud5.svg") no-repeat;
+  background: url("/clouds/cloud5.svg") no-repeat;
   background-size: contain;
   margin-top: 695dvh;
   animation: cloud-animation2 60s linear infinite;
@@ -312,7 +312,7 @@
 }
 
 .cloud36 {
-  background: url("../../public/clouds/cloud13.svg") no-repeat;
+  background: url("/clouds/cloud13.svg") no-repeat;
   background-size: contain;
   margin-top: 695dvh;
   animation: cloud-animation2 60s linear infinite;
@@ -320,7 +320,7 @@
 }
 
 .cloud37 {
-  background: url("../../public/clouds/cloud18.svg") no-repeat;
+  background: url("/clouds/cloud18.svg") no-repeat;
   background-size: contain;
   margin-top: 695dvh;
   animation: cloud-animation2 60s linear infinite;
@@ -328,7 +328,7 @@
 }
 
 .initial-cloud0 {
-  background: url("../../public/clouds/cloud17.svg") no-repeat;
+  background: url("/clouds/cloud17.svg") no-repeat;
   background-size: contain;
   margin-top: 5dvh;
   margin-left: 49dvw;
@@ -336,7 +336,7 @@
 }
 
 .initial-cloud1 {
-  background: url("../../public/clouds/cloud1.svg") no-repeat;
+  background: url("/clouds/cloud1.svg") no-repeat;
   background-size: contain;
   margin-top: 19dvh;
   margin-left: 32dvw;
@@ -344,7 +344,7 @@
 }
 
 .initial-cloud2 {
-  background: url("../../public/clouds/cloud2.svg") no-repeat;
+  background: url("/clouds/cloud2.svg") no-repeat;
   background-size: contain;
   margin-top: 40dvh;
   margin-left: 18dvw;
@@ -352,7 +352,7 @@
 }
 
 .initial-cloud3 {
-  background: url("../../public/clouds/cloud3.svg") no-repeat;
+  background: url("/clouds/cloud3.svg") no-repeat;
   background-size: contain;
   margin-top: 56dvh;
   margin-left: 78dvw;
@@ -360,7 +360,7 @@
 }
 
 .initial-cloud4 {
-  background: url("../../public/clouds/cloud4.svg") no-repeat;
+  background: url("/clouds/cloud4.svg") no-repeat;
   background-size: contain;
   margin-top: 78dvh;
   margin-left: 57dvw;
@@ -368,7 +368,7 @@
 }
 
 .initial-cloud5 {
-  background: url("../../public/clouds/cloud5.svg") no-repeat;
+  background: url("/clouds/cloud5.svg") no-repeat;
   background-size: contain;
   margin-top: 111dvh;
   margin-left: 70dvw;
@@ -376,7 +376,7 @@
 }
 
 .initial-cloud6 {
-  background: url("../../public/clouds/cloud6.svg") no-repeat;
+  background: url("/clouds/cloud6.svg") no-repeat;
   background-size: contain;
   margin-top: 121dvh;
   margin-left: 28dvw;
@@ -384,7 +384,7 @@
 }
 
 .initial-cloud7 {
-  background: url("../../public/clouds/cloud7.svg") no-repeat;
+  background: url("/clouds/cloud7.svg") no-repeat;
   background-size: contain;
   margin-top: 137dvh;
   margin-left: 49dvw;
@@ -392,7 +392,7 @@
 }
 
 .initial-cloud8 {
-  background: url("../../public/clouds/cloud8.svg") no-repeat;
+  background: url("/clouds/cloud8.svg") no-repeat;
   background-size: contain;
   margin-top: 164dvh;
   margin-left: 10dvw;
@@ -400,7 +400,7 @@
 }
 
 .initial-cloud9 {
-  background: url("../../public/clouds/cloud9.svg") no-repeat;
+  background: url("/clouds/cloud9.svg") no-repeat;
   background-size: contain;
   margin-top: 178dvh;
   margin-left: 63dvw;
@@ -408,7 +408,7 @@
 }
 
 .initial-cloud10 {
-  background: url("../../public/clouds/cloud10.svg") no-repeat;
+  background: url("/clouds/cloud10.svg") no-repeat;
   background-size: contain;
   margin-top: 198dvh;
   margin-left: 42dvw;
@@ -416,7 +416,7 @@
 }
 
 .initial-cloud11 {
-  background: url("../../public/clouds/cloud11.svg") no-repeat;
+  background: url("/clouds/cloud11.svg") no-repeat;
   background-size: contain;
   margin-top: 225dvh;
   margin-left: 73dvw;
@@ -424,7 +424,7 @@
 }
 
 .initial-cloud12 {
-  background: url("../../public/clouds/cloud12.svg") no-repeat;
+  background: url("/clouds/cloud12.svg") no-repeat;
   background-size: contain;
   margin-top: 236dvh;
   margin-left: 56dvw;
@@ -432,7 +432,7 @@
 }
 
 .initial-cloud13 {
-  background: url("../../public/clouds/cloud13.svg") no-repeat;
+  background: url("/clouds/cloud13.svg") no-repeat;
   background-size: contain;
   margin-top: 261dvh;
   margin-left: 15dvw;
@@ -440,7 +440,7 @@
 }
 
 .initial-cloud14 {
-  background: url("../../public/clouds/cloud14.svg") no-repeat;
+  background: url("/clouds/cloud14.svg") no-repeat;
   background-size: contain;
   margin-top: 283dvh;
   margin-left: 34dvw;
@@ -448,7 +448,7 @@
 }
 
 .initial-cloud15 {
-  background: url("../../public/clouds/cloud15.svg") no-repeat;
+  background: url("/clouds/cloud15.svg") no-repeat;
   background-size: contain;
   margin-top: 304dvh;
   margin-left: 10dvw;
@@ -456,7 +456,7 @@
 }
 
 .initial-cloud16 {
-  background: url("../../public/clouds/cloud16.svg") no-repeat;
+  background: url("/clouds/cloud16.svg") no-repeat;
   background-size: contain;
   margin-top: 319dvh;
   margin-left: 53dvw;
@@ -464,7 +464,7 @@
 }
 
 .initial-cloud17 {
-  background: url("../../public/clouds/cloud17.svg") no-repeat;
+  background: url("/clouds/cloud17.svg") no-repeat;
   background-size: contain;
   margin-top: 340dvh;
   margin-left: 45dvw;
@@ -472,7 +472,7 @@
 }
 
 .initial-cloud18 {
-  background: url("../../public/clouds/cloud18.svg") no-repeat;
+  background: url("/clouds/cloud18.svg") no-repeat;
   background-size: contain;
   margin-top: 362dvh;
   margin-left: 76dvw;
@@ -480,7 +480,7 @@
 }
 
 .initial-cloud19 {
-  background: url("../../public/clouds/cloud19.svg") no-repeat;
+  background: url("/clouds/cloud19.svg") no-repeat;
   background-size: contain;
   margin-top: 380dvh;
   margin-left: 31dvw;
@@ -488,7 +488,7 @@
 }
 
 .initial-cloud20 {
-  background: url("../../public/clouds/cloud20.svg") no-repeat;
+  background: url("/clouds/cloud20.svg") no-repeat;
   background-size: contain;
   margin-top: 404dvh;
   margin-left: 48dvw;
@@ -496,7 +496,7 @@
 }
 
 .initial-cloud21 {
-  background: url("../../public/clouds/cloud21.svg") no-repeat;
+  background: url("/clouds/cloud21.svg") no-repeat;
   background-size: contain;
   margin-top: 418dvh;
   margin-left: 14dvw;
@@ -504,7 +504,7 @@
 }
 
 .initial-cloud22 {
-  background: url("../../public/clouds/cloud22.svg") no-repeat;
+  background: url("/clouds/cloud22.svg") no-repeat;
   background-size: contain;
   margin-top: 434dvh;
   margin-left: 62dvw;
@@ -512,7 +512,7 @@
 }
 
 .initial-cloud23 {
-  background: url("../../public/clouds/cloud23.svg") no-repeat;
+  background: url("/clouds/cloud23.svg") no-repeat;
   background-size: contain;
   margin-top: 469dvh;
   margin-left: 81dvw;
@@ -520,7 +520,7 @@
 }
 
 .initial-cloud24 {
-  background: url("../../public/clouds/cloud24.svg") no-repeat;
+  background: url("/clouds/cloud24.svg") no-repeat;
   background-size: contain;
   margin-top: 481dvh;
   margin-left: 32dvw;
@@ -528,7 +528,7 @@
 }
 
 .initial-cloud25 {
-  background: url("../../public/clouds/cloud25.svg") no-repeat;
+  background: url("/clouds/cloud25.svg") no-repeat;
   background-size: contain;
   margin-top: 500dvh;
   margin-left: 56dvw;
@@ -536,7 +536,7 @@
 }
 
 .initial-cloud26 {
-  background: url("../../public/clouds/cloud26.svg") no-repeat;
+  background: url("/clouds/cloud26.svg") no-repeat;
   background-size: contain;
   margin-top: 523dvh;
   margin-left: 17dvw;
@@ -544,7 +544,7 @@
 }
 
 .initial-cloud27 {
-  background: url("../../public/clouds/cloud27.svg") no-repeat;
+  background: url("/clouds/cloud27.svg") no-repeat;
   background-size: contain;
   margin-top: 548dvh;
   margin-left: 44dvw;
@@ -552,7 +552,7 @@
 }
 
 .initial-cloud28 {
-  background: url("../../public/clouds/cloud28.svg") no-repeat;
+  background: url("/clouds/cloud28.svg") no-repeat;
   background-size: contain;
   margin-top: 560dvh;
   margin-left: 67dvw;
@@ -560,7 +560,7 @@
 }
 
 .initial-cloud29 {
-  background: url("../../public/clouds/cloud29.svg") no-repeat;
+  background: url("/clouds/cloud29.svg") no-repeat;
   background-size: contain;
   margin-top: 582dvh;
   margin-left: 28dvw;
@@ -568,7 +568,7 @@
 }
 
 .initial-cloud30 {
-  background: url("../../public/clouds/cloud30.svg") no-repeat;
+  background: url("/clouds/cloud30.svg") no-repeat;
   background-size: contain;
   margin-top: 20dvh;
   margin-left: 67dvw;
@@ -576,7 +576,7 @@
 }
 
 .initial-cloud31 {
-  background: url("../../public/clouds/cloud31.svg") no-repeat;
+  background: url("/clouds/cloud31.svg") no-repeat;
   background-size: contain;
   margin-top: 40dvh;
   margin-left: 17dvw;
@@ -584,7 +584,7 @@
 }
 
 .initial-cloud32 {
-  background: url("../../public/clouds/cloud9.svg") no-repeat;
+  background: url("/clouds/cloud9.svg") no-repeat;
   background-size: contain;
   margin-top: 60dvh;
   margin-left: 28dvw;
@@ -592,7 +592,7 @@
 }
 
 .initial-cloud33 {
-  background: url("../../public/clouds/cloud15.svg") no-repeat;
+  background: url("/clouds/cloud15.svg") no-repeat;
   background-size: contain;
   margin-top: 80dvh;
   margin-left: 81dvw;
@@ -600,28 +600,28 @@
 }
 
 .initial-cloud34 {
-  background: url("../../public/clouds/cloud21.svg") no-repeat;
+  background: url("/clouds/cloud21.svg") no-repeat;
   background-size: contain;
   margin-top: 680dvh;
   animation: cloud-animation2 60s linear 1 forwards;
 }
 
 .initial-cloud35 {
-  background: url("../../public/clouds/cloud5.svg") no-repeat;
+  background: url("/clouds/cloud5.svg") no-repeat;
   background-size: contain;
   margin-top: 695dvh;
   animation: cloud-animation2 60s linear 1 forwards;
 }
 
 .initial-cloud36 {
-  background: url("../../public/clouds/cloud13.svg") no-repeat;
+  background: url("/clouds/cloud13.svg") no-repeat;
   background-size: contain;
   margin-top: 695dvh;
   animation: cloud-animation2 60s linear 1 forwards;
 }
 
 .initial-cloud37 {
-  background: url("../../public/clouds/cloud18.svg") no-repeat;
+  background: url("/clouds/cloud18.svg") no-repeat;
   background-size: contain;
   margin-top: 695dvh;
   animation: cloud-animation2 60s linear 1 forwards;

@@ -39,16 +39,17 @@
 
 @keyframes plane-fly-in-out-left {
   0% {
-    background: url("../assets/banner-plane/plane_with_string.svg") no-repeat;
+    background: url("../../public/banner-plane/plane_with_string.svg") no-repeat;
     background-size: contain;
     transform: translateX(-75dvw);
   }
   35% {
-    background: url("../assets/banner-plane/plane_with_string.svg") no-repeat;
+    background: url("../../public/banner-plane/plane_with_string.svg") no-repeat;
     background-size: contain;
   }
   40% {
-    background: url("../assets/banner-plane/plane_without_string.svg") no-repeat;
+    background: url("../../public/banner-plane/plane_without_string.svg")
+      no-repeat;
     background-size: contain;
   }
   50% {

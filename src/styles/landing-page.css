@@ -74,7 +74,7 @@ section#landing-page {
 }
 
 .date-banner {
-  background: url("../assets/banner-plane/banner.svg") no-repeat;
+  background: url("../../public/banner-plane/banner.svg") no-repeat;
   background-size: contain;
   display: flex;
   justify-content: center;
@@ -88,7 +88,8 @@ section#landing-page {
 }
 
 .right-facing-plane {
-  background: url("../assets/banner-plane/plane_without_string.svg") no-repeat;
+  background: url("../../public/banner-plane/plane_without_string.svg")
+    no-repeat;
   background-size: contain;
   width: 100px;
   height: 35px;
@@ -123,7 +124,7 @@ section#landing-page {
   }
 
   .date-banner {
-    background: url("../assets/airship/blimp.svg") no-repeat;
+    background: url("../../public/airship/blimp.svg") no-repeat;
     background-size: contain;
     width: 300px;
     height: 120px;

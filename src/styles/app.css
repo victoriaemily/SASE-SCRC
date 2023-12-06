@@ -128,12 +128,12 @@ body {
 }
 
 .scrc-logo-black {
-  background: url("../assets/logos/scrc-logo-black.svg") no-repeat;
+  background: url("/logos/scrc-logo-black.svg") no-repeat;
   background-size: contain;
 }
 
 .scrc-logo-white {
-  background: url("../assets/logos/scrc-logo-white.svg") no-repeat;
+  background: url("/logos/scrc-logo-white.svg") no-repeat;
   background-size: contain;
 }
 

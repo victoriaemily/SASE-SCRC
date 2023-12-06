@@ -1,6 +1,6 @@
 import React from "react";
 import { morningEvents, afternoonEvents } from "@/assets/events";
-import EventPages from "./components/EventPages";
+import EventPages from "@/pages/components/EventPages";
 
 export default function Guide() {
   const handleFlipDivider = (eventId) => {

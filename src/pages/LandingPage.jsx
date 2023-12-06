@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import WarningModal from "./components/WarningModal";
+import WarningModal from "@/pages/components/WarningModal";
 
 export default function LandingPage() {
   const [isRegisterModalOpen, setIsOpenRegisterModalOpen] = useState(false);

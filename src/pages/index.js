@@ -1,12 +1,12 @@
 import React from "react";
-import Navbar from "./Navbar";
-import LandingPage from "./LandingPage";
-import About from "./About";
-import Guide from "./Guide";
-import Sponsors from "./Sponsors";
-import FAQ from "./FAQ";
-import Team from "./Team";
-import Background from "./Background";
+import Navbar from "@/pages/Navbar";
+import LandingPage from "@/pages/LandingPage";
+import About from "@/pages/About";
+import Guide from "@/pages/Guide";
+import Sponsors from "@/pages/Sponsors";
+import FAQ from "@/pages/FAQ";
+import Team from "@/pages/Team";
+import Background from "@/pages/Background";
 
 export default function Home() {
   return (

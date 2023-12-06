@@ -45,22 +45,22 @@
 }
 
 .plane-tv-nav-button:hover {
-  background-color: var(--blue3);
+  background-color: var(--blue5);
   color: white;
 }
 
 .plane-tv-nav-button:active {
-  background-color: var(--blue4);
+  background-color: var(--blue6);
   color: white;
 }
 
 .tab-selected {
-  background-color: var(--blue4);
+  background-color: var(--blue6);
   color: white;
 }
 
 .tab-selected.plane-tv-nav-button:hover {
-  background-color: var(--blue4);
+  background-color: var(--blue6);
   color: white;
 }
 

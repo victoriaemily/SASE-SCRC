@@ -62,7 +62,7 @@ export default function Guide() {
       return (
         <div
           key={idx}
-          className="schedule-divider transition-divider blue3-divider"
+          className="schedule-divider transition-divider blue5-divider"
         >
           <div className="pad-divider front-divider">
             <h2 className="departure-label">{event.name}</h2>
@@ -125,12 +125,12 @@ export default function Guide() {
             </div>
             <div className="pad-divider back-divider"></div>
           </div>
-          <div className="schedule-divider time-divider blue3-divider">
+          <div className="schedule-divider time-divider blue5-divider">
             <h3 className="pad-divider front-divider">Morning Block</h3>
             <div className="pad-divider back-divider"></div>
           </div>
           {morningEvents.map((event, idx) => renderEvent(event, idx))}
-          <div className="schedule-divider time-divider blue3-divider">
+          <div className="schedule-divider time-divider blue5-divider">
             <h3 className="pad-divider front-divider">Afternoon Block</h3>
             <div className="pad-divider back-divider"></div>
           </div>

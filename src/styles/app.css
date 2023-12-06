@@ -122,6 +122,21 @@ body {
   background: var(--blue4);
 }
 
+.logo {
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+
+.scrc-logo-black {
+  background: url("/logos/scrc-logo-black.svg") no-repeat;
+  background-size: contain;
+}
+
+.scrc-logo-white {
+  background: url("/logos/scrc-logo-white.svg") no-repeat;
+  background-size: contain;
+}
+
 @keyframes fade-in {
   0% {
     opacity: 0;

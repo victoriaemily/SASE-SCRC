@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 
 export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -17,7 +17,8 @@ export default function Navbar() {
     <header className="nav-container">
       <div className="navbar-box">
         <a id="header-title" href="#" onClick={handleSelectNavLink}>
-          SCRC
+          <div id="navbar-logo" className="logo scrc-logo-black"></div>
+          <h1>SCRC</h1>
         </a>
         <nav className="horizontal-navbar">
           <a

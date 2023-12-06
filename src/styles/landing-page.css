@@ -20,7 +20,8 @@ section#landing-page {
 }
 
 #sase-title {
-  font-size: 5.5em;
+  width: 75%;
+  aspect-ratio: 1/1;
 }
 
 #rc-title {
@@ -73,7 +74,7 @@ section#landing-page {
 }
 
 .date-banner {
-  background: url("../assets/banner-plane/banner.svg") no-repeat;
+  background: url("../../public/banner-plane/banner.svg") no-repeat;
   background-size: contain;
   display: flex;
   justify-content: center;
@@ -87,7 +88,8 @@ section#landing-page {
 }
 
 .right-facing-plane {
-  background: url("../assets/banner-plane/plane_without_string.svg") no-repeat;
+  background: url("../../public/banner-plane/plane_without_string.svg")
+    no-repeat;
   background-size: contain;
   width: 100px;
   height: 35px;
@@ -112,21 +114,22 @@ section#landing-page {
   }
 
   .key-info-container {
-    margin: auto 0;
+    margin: auto;
   }
 
   .banner {
     display: inherit;
     animation: balloon-float 8s ease-in-out infinite;
+    margin: 3em 0 0 0;
   }
 
   .date-banner {
-    background: url("../assets/airship/zeppelin.svg") no-repeat;
+    background: url("../../public/airship/blimp.svg") no-repeat;
     background-size: contain;
     width: 300px;
-    height: 150px;
+    height: 120px;
     padding-left: 0;
-    margin: 2em 0 0 0;
+    margin: 0;
     animation: none;
   }
 
@@ -134,6 +137,12 @@ section#landing-page {
     display: none;
     width: 0;
     height: 0;
+  }
+
+  .banner-label {
+    position: absolute;
+    top: 38px;
+    left: 90px;
   }
 }
 @media (min-width: 961px) {

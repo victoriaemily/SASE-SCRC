@@ -31,10 +31,8 @@
   height: 10%;
 }
 
-.front-divider > .logo {
-  flex: 1;
-  margin: auto;
-  text-align: center;
+#schedule-header-logo {
+  margin-right: 1em;
 }
 
 h2.event-title {

@@ -4,11 +4,12 @@
 
 .plane-tv-frame {
   background: white;
-  border: 1em solid black;
-  border-radius: 25px;
+  border: 0.5em solid black;
+  border-radius: 1.8em;
   width: 100%;
   height: 90dvh;
   margin: auto;
+  position: relative;
 }
 
 .plane-tv-nav-container {
@@ -17,25 +18,50 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  border-bottom: solid black;
+  border-top: 0.2em solid black;
+  position: absolute;
+  bottom: 0;
 }
 
 .plane-tv-nav-button {
   width: calc(100% / 3);
   height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .plane-tv-nav-button.left-button {
-  border-radius: 5px 0 0 0;
+  border-radius: 0 0 0 1.2em;
 }
 
 .plane-tv-nav-button.middle-button {
-  border-right: solid black;
-  border-left: solid black;
+  border-right: 0.5px solid black;
+  border-left: 0.5px solid black;
 }
 
 .plane-tv-nav-button.right-button {
-  border-radius: 0 5px 0 0;
+  border-radius: 0 0 1.2em 0;
+}
+
+.plane-tv-nav-button:hover {
+  background-color: var(--blue5);
+  color: white;
+}
+
+.plane-tv-nav-button:active {
+  background-color: var(--blue6);
+  color: white;
+}
+
+.tab-selected {
+  background-color: var(--blue6);
+  color: white;
+}
+
+.tab-selected.plane-tv-nav-button:hover {
+  background-color: var(--blue6);
+  color: white;
 }
 
 .about-tab-container {
@@ -75,6 +101,17 @@
 
 @media (min-width: 481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  .plane-tv-frame {
+    border-radius: 1.6em;
+  }
+
+  .plane-tv-nav-button.left-button {
+    border-radius: 0 0 0 1em;
+  }
+
+  .plane-tv-nav-button.right-button {
+    border-radius: 0 0 1em 0;
+  }
 }
 @media (min-width: 641px) {
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
@@ -83,6 +120,21 @@
   /* tablet, landscape iPad, lo-res laptops ands desktops */
   .plane-tv-frame {
     height: 70dvh;
+    border-radius: 1.3em;
+  }
+
+  .plane-tv-nav-container {
+    position: unset;
+    border-top: none;
+    border-bottom: 0.2em solid black;
+  }
+
+  .plane-tv-nav-button.left-button {
+    border-radius: 0.6em 0 0 0;
+  }
+
+  .plane-tv-nav-button.right-button {
+    border-radius: 0 0.6em 0 0;
   }
 }
 @media (min-width: 1025px) {
@@ -90,6 +142,17 @@
 }
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */
+  .plane-tv-frame {
+    border-radius: 1em;
+  }
+
+  .plane-tv-nav-button.left-button {
+    border-radius: 0.4em 0 0 0;
+  }
+
+  .plane-tv-nav-button.right-button {
+    border-radius: 0 0.4em 0 0;
+  }
 }
 @media (min-width: 1921px) {
   /* hi-res desktops */

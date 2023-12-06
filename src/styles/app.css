@@ -14,10 +14,12 @@
 :root {
   --header-size: 5dvh;
   --blue: rgb(187, 216, 245);
-  --blue1: rgba(163, 206, 250, 1);
-  --blue2: rgba(115, 180, 247, 1);
-  --blue3: rgb(68, 88, 136);
-  --blue4: rgba(40, 57, 99, 1);
+  --blue1: rgb(163, 206, 250);
+  --blue2: rgb(115, 180, 247);
+  --blue3: rgb(125, 145, 189);
+  --blue4: rgb(93, 114, 161);
+  --blue5: rgb(68, 88, 136);
+  --blue6: rgb(40, 57, 99);
 }
 
 html {
@@ -103,11 +105,11 @@ body {
 }
 
 .paragraph-hyperlink:hover {
-  color: var(--blue4);
+  color: var(--blue6);
 }
 
 .close-button {
-  background: var(--blue3);
+  background: var(--blue5);
   flex: 1;
   color: white;
   display: flex;
@@ -119,7 +121,7 @@ body {
 }
 
 .close-button:hover {
-  background: var(--blue4);
+  background: var(--blue6);
 }
 
 .logo {

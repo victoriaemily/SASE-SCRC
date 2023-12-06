@@ -6,10 +6,17 @@ export default function About() {
     const tabID = tabText.toLowerCase().replace(/ /g, "-") + "-tab";
     const tabs = ["scrc-tab", "sase-tab", "trip-details-tab"];
     for (let i = 0; i < 3; ++i) {
+      const tabbedElement = document.getElementById(tabs[i]);
       if (tabs[i] === tabID) {
-        document.getElementById(tabID).classList.remove("hidden");
+        tabbedElement.classList.remove("hidden");
+        document
+          .getElementById(tabs[i] + "-button")
+          .classList.add("tab-selected");
       } else {
-        document.getElementById(tabs[i]).classList.add("hidden");
+        tabbedElement.classList.add("hidden");
+        document
+          .getElementById(tabs[i] + "-button")
+          .classList.remove("tab-selected");
       }
       if (tabID !== "trip-details-tab") {
         document.getElementById("trip-details-tab").style.display = "none";
@@ -23,22 +30,22 @@ export default function About() {
       <div className="plane-tv-frame">
         <nav className="plane-tv-nav-container">
           <button
-            className="plane-tv-nav-button left-button"
-            type="button"
+            id="trip-details-tab-button"
+            className="plane-tv-nav-button left-button tab-selected"
             onClick={(event) => handleSwitchView(event)}
           >
             Trip Details
           </button>
           <button
+            id="sase-tab-button"
             className="plane-tv-nav-button middle-button"
-            type="button"
             onClick={(event) => handleSwitchView(event)}
           >
             SASE
           </button>
           <button
+            id="scrc-tab-button"
             className="plane-tv-nav-button right-button"
-            type="button"
             onClick={(event) => handleSwitchView(event)}
           >
             SCRC

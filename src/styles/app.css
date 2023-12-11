@@ -161,15 +161,16 @@ body {
 }
 @media (min-width: 641px) {
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  .scroll-container {
+    margin: 0 15dvw;
+  }
+
   body {
     font-size: 1.15em;
   }
 }
 @media (min-width: 961px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
-  .scroll-container {
-    margin: 0 15dvw;
-  }
   body {
     font-size: 1.35em;
   }

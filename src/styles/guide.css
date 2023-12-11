@@ -37,33 +37,34 @@
 
 h2.event-title {
   flex: 2;
-  font-size: 1.2em;
+  font-size: 1.08em;
   text-align: left;
 }
 
 h2.long-title {
   display: none;
   flex: 4;
-  font-size: 1.5em;
+  font-size: 1.35em;
   text-align: right;
 }
 
 h2.short-title {
   flex: 4;
-  font-size: 1.5em;
+  font-size: 1.35em;
   text-align: right;
 }
 
 .schedule-board > .label {
-  background: var(--blue4);
+  background: var(--blue6);
   color: white;
   width: 100%;
   height: 4.5%;
-  font-size: 0.8em;
+  font-size: 0.72em;
 }
 
 .label > div > h2,
 .front-divider > h2 {
+  line-height: 100%;
   margin: auto;
 }
 
@@ -92,17 +93,22 @@ h2.status-label {
   color: white;
   width: 100%;
   height: 7%;
-  font-size: 1.3em;
+  font-size: 1.17em;
 }
 
 .schedule-board .event-divider {
   width: 100%;
   height: 6%;
-  font-size: 0.9em;
+  font-size: 0.81em;
 }
 
 .schedule-board .event-divider > button:hover {
-  background: var(--blue2);
+  background: var(--blue3);
+  color: white;
+}
+
+.schedule-board .event-divider > button:active {
+  background: var(--blue4);
   color: white;
 }
 
@@ -110,11 +116,11 @@ h2.status-label {
   color: white;
   width: 100%;
   height: 3.5%;
-  font-size: 0.8em;
+  font-size: 0.72em;
 }
 
-.blue3-divider {
-  background: var(--blue3);
+.blue5-divider {
+  background: var(--blue5);
 }
 
 .schedule-board .pad-divider {
@@ -194,16 +200,62 @@ h2.status-label {
 }
 @media (min-width: 961px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
-  .schedule-container {
-    height: 70dvh;
-  }
 }
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
 }
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */
+  h2.event-title {
+    flex: 2;
+    font-size: 1.2em;
+    text-align: left;
+  }
+
+  h2.long-title {
+    display: none;
+    flex: 4;
+    font-size: 1.5em;
+    text-align: right;
+  }
+
+  h2.short-title {
+    flex: 4;
+    font-size: 1.5em;
+    text-align: right;
+  }
+
+  .schedule-board > .label {
+    background: var(--blue6);
+    color: white;
+    width: 100%;
+    height: 4.5%;
+    font-size: 0.8em;
+  }
+
+  .schedule-board > .time-divider {
+    color: white;
+    width: 100%;
+    height: 7%;
+    font-size: 1.3em;
+  }
+
+  .schedule-board .event-divider {
+    width: 100%;
+    height: 6%;
+    font-size: 0.9em;
+  }
+
+  .schedule-board .transition-divider {
+    color: white;
+    width: 100%;
+    height: 3.5%;
+    font-size: 0.8em;
+  }
 }
 @media (min-width: 1921px) {
   /* hi-res desktops */
+  .schedule-container {
+    height: 70dvh;
+  }
 }

@@ -43,7 +43,7 @@
 }
 
 #header-title:hover {
-  color: var(--blue3);
+  color: var(--blue5);
 }
 
 .horizontal-navbar {
@@ -80,7 +80,7 @@
 }
 
 .horizontal-navbar .navbar-link:hover {
-  color: var(--blue3);
+  color: var(--blue5);
 }
 
 .dropdown-navbar .navbar-link {
@@ -91,7 +91,7 @@
 
 .dropdown-navbar .navbar-link:hover {
   background-color: var(--blue);
-  color: var(--blue4);
+  color: var(--blue6);
   transition: background-color 0.3s ease;
 }
 

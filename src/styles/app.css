@@ -137,6 +137,11 @@ body {
   background-size: contain;
 }
 
+.scrc-logo-blue {
+  background: url("/logos/scrc-logo-blue.svg") no-repeat;
+  background-size: contain;
+}
+
 @keyframes fade-in {
   0% {
     opacity: 0;

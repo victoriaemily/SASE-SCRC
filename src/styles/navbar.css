@@ -33,7 +33,7 @@
   align-items: center;
   height: 100%;
   text-decoration: none;
-  transition: color 0.3s ease-in;
+  transition: color background-image 0.3s ease-in;
   padding: 0.5rem;
 }
 

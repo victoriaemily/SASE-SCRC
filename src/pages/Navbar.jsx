@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
 
   const toggleNavbar = () => {
     setIsNavOpen(!isNavOpen);
@@ -16,8 +17,19 @@ export default function Navbar() {
   return (
     <header className="nav-container">
       <div className="navbar-box">
-        <a id="header-title" href="#" onClick={handleSelectNavLink}>
-          <div id="navbar-logo" className="logo scrc-logo-black"></div>
+        <a
+          id="header-title"
+          href="#"
+          onClick={handleSelectNavLink}
+          onMouseOver={() => setIsHovered(true)}
+          onMouseLeave={() => setIsHovered(false)}
+        >
+          <div
+            id="navbar-logo"
+            className={`logo ${
+              isHovered ? "scrc-logo-blue" : "scrc-logo-black"
+            }`}
+          ></div>
           <h1>SCRC</h1>
         </a>
         <nav className="horizontal-navbar">

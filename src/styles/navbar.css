@@ -12,7 +12,7 @@
 
 .top-navbar {
   background: transparent;
-  color: black;
+  color: white;
 }
 
 .scrolled-navbar {
@@ -31,7 +31,6 @@
 
 #navbar-logo {
   margin-right: 0.4rem;
-  width: 85%;
   height: 85%;
 }
 
@@ -46,12 +45,8 @@
 
 #header-title > h1 {
   font-size: 1.5em;
-  font-weight: 700;
+  font-weight: 400;
   margin: auto 0;
-}
-
-#header-title:hover {
-  color: var(--blue5);
 }
 
 .horizontal-navbar {
@@ -82,15 +77,29 @@
   width: calc(20px + 1em);
 }
 
-.menu-open-icon {
+.menu-open-icon-black {
   background: url("/icons/burger-black-icon.svg") no-repeat;
   background-size: contain;
   height: 20px;
   width: 20px;
 }
 
-.menu-close-icon {
+.menu-open-icon-white {
+  background: url("/icons/burger-white-icon.svg") no-repeat;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+}
+
+.menu-close-icon-black {
   background: url("/icons/close-black-icon.svg") no-repeat;
+  background-size: contain;
+  height: 20px;
+  width: 20px;
+}
+
+.menu-close-icon-white {
+  background: url("/icons/close-white-icon.svg") no-repeat;
   background-size: contain;
   height: 20px;
   width: 20px;
@@ -98,15 +107,24 @@
 
 .horizontal-navbar .navbar-link {
   padding: 0.5rem 1rem 0.5rem 1rem;
+  font-size: 1.3rem;
   text-decoration: none;
   transition: color 0.3s ease-in;
   text-align: center;
-  width: 15dvw;
+  width: 100%;
 }
 
-.horizontal-navbar .navbar-link:hover {
-  color: var(--blue5);
-  box-shadow: 0px 0px 0px 1px black inset;
+.horizontal-navbar .navbar-link.selected {
+  color: white;
+}
+
+.top-navbar .horizontal-navbar .navbar-link:hover,
+.scrolled-navbar .horizontal-navbar .navbar-link.selected:hover {
+  color: var(--grey);
+}
+
+.scrolled-navbar .horizontal-navbar .navbar-link:hover {
+  color: var(--grey1);
 }
 
 .horizontal-navbar li {
@@ -124,6 +142,11 @@
   background-color: var(--blue);
   color: var(--blue6);
   transition: background-color 0.3s ease;
+}
+
+.navbar-link.selected {
+  background-color: var(--blue6);
+  box-shadow: 0px 0px 0px 1px black inset;
 }
 
 .nav-return-top.active {
@@ -147,11 +170,11 @@
 }
 
 .open-nav {
-  animation: slide-down-nav 0.5s ease-out forwards;
+  animation: slide-down-nav 0.3s ease-out forwards;
 }
 
 .close-nav {
-  animation: slide-up-nav 0.8s ease-in forwards;
+  animation: slide-up-nav 0.4s ease-in forwards;
 }
 
 @keyframes slide-down-nav {

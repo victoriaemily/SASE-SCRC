@@ -1,12 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import "./navbar.css";
+@import "./home.css";
 @import "./modal.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-.big {
-  height: 5000px;
-}
+
 :root {
   --header-size: 7.5dvh;
   --blue: rgb(187, 216, 245);
@@ -16,6 +15,21 @@
   --blue4: rgb(93, 114, 161);
   --blue5: rgb(68, 88, 136);
   --blue6: rgb(40, 57, 99);
+  --grey: rgb(209, 209, 209);
+  --grey1: rgb(59, 59, 59);
+  font-family: "Alata", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Alata", sans-serif;
+}
+
+p {
+  font-family: "Montserrat", sans-serif;
 }
 
 html {
@@ -75,6 +89,14 @@ section {
 
 .hide-overlay {
   display: none;
+}
+
+.white-text {
+  color: white;
+}
+
+.black-text {
+  color: black;
 }
 
 @media (min-width: 481px) {

@@ -1,0 +1,190 @@
+#home-background {
+  margin-block-start: calc(-1 * var(--header-size));
+  background-repeat: no-repeat;
+  background-image: url("/images/sase-front-page.jpeg");
+  background-size: cover;
+  background-position: center;
+  --background-height: calc(700px + var(--header-size));
+  height: var(--background-height);
+  transform: scale(1.2);
+}
+
+#background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.big {
+  height: 200dvh;
+}
+
+#home-body {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100dvw;
+}
+
+#home-header {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: -650px;
+  color: white;
+}
+
+#home-header > .conference-title {
+  width: 100%;
+  border-bottom: 10px solid var(--blue6);
+}
+
+#home-header h1 {
+  width: 80%;
+  margin: auto;
+  font-size: 3.5rem;
+}
+
+#home-header h2 {
+  font-size: 2.5rem;
+}
+
+#home-header h3 {
+  font-size: 1.4rem;
+}
+
+.registration-container {
+  display: flex;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+}
+
+.registration-container #registration-link {
+  margin: auto;
+}
+
+#registration-link {
+  background-color: white;
+  padding: 0.2rem 0.75rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  height: 3rem;
+  width: 10rem;
+  color: black;
+  user-select: none;
+}
+
+#registration-link:hover {
+  cursor: pointer;
+}
+
+#registration-link:active {
+  background-color: var(--grey);
+}
+
+#home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-container {
+  padding: 3rem 1rem;
+  height: 85dvh;
+}
+
+.about-container h1 {
+  font-size: 1.7rem;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.about-container p {
+  font-size: 1.4rem;
+}
+
+#about-scrc {
+  background-color: var(--blue6);
+  color: white;
+}
+
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+  #home-background {
+    transform: scale(1.3);
+  }
+
+  .about-container {
+    padding: 3rem;
+  }
+
+  .about-container h1 {
+    font-size: 5rem;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+  .about-container p {
+    font-size: 2.1rem;
+  }
+
+  .about-container .registration-container {
+    height: 200px;
+  }
+
+  #registration-link {
+    font-size: 3rem;
+    height: 100px;
+    width: 300px;
+  }
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+  #home-header {
+    width: 30%;
+  }
+
+  #home-header h1 {
+    width: 100%;
+  }
+
+  .about-container {
+    height: inherit;
+  }
+
+  .about-container > div {
+    margin: auto;
+    height: 100%;
+    width: 60%;
+  }
+}
+@media (min-width: 1921px) {
+  /* hi-res desktops */
+  .about-container h1 {
+    font-size: 6rem;
+    font-weight: 600;
+    text-decoration: underline;
+  }
+
+  .about-container p {
+    font-size: 3rem;
+  }
+}

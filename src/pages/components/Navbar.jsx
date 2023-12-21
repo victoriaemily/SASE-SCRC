@@ -1,9 +1,9 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import { useRouter } from "next/router";
 
 export default function Navbar() {
   const [isNavOpen, setIsNavOpen] = useState(false);
-  const [isHovered, setIsHovered] = useState(false);
   const [atTop, setAtTop] = useState(true);
 
   const toggleNavbar = () => {
@@ -52,9 +52,15 @@ export default function Navbar() {
 
   const navbarBackgroundClass = atTop ? "top-navbar" : "scrolled-navbar";
 
+  const router = useRouter();
+
   return (
     <>
-      <header className={`nav-container ${navbarBackgroundClass}`}>
+      <header
+        className={`nav-container ${navbarBackgroundClass} ${
+          !atTop || isNavOpen ? "black-text" : "white-text"
+        }`}
+      >
         <div className="navbar-box">
           <button
             id="dropdown-navbar-button"
@@ -62,42 +68,52 @@ export default function Navbar() {
             onClick={toggleNavbar}
           >
             {isNavOpen ? (
-              <div className="menu-close-icon"></div>
+              <div
+                className={`${
+                  !atTop || isNavOpen
+                    ? "menu-close-icon-black"
+                    : "menu-close-icon-white"
+                }`}
+              ></div>
             ) : (
-              <div className="menu-open-icon"></div>
+              <div
+                className={`${
+                  !atTop || isNavOpen
+                    ? "menu-open-icon-black"
+                    : "menu-open-icon-white"
+                }`}
+              ></div>
             )}
           </button>
-          <a
-            id="header-title"
-            href="/"
-            onClick={handleSelectNavLink}
-            onMouseOver={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
+          <div id="header-title">
             <div
               id="navbar-logo"
               className={`logo ${
-                isHovered ? "scrc-logo-blue" : "scrc-logo-black"
+                !atTop || isNavOpen ? "scrc-logo-black" : "scrc-logo-white"
               }`}
             ></div>
-            <h1>SCRC</h1>
-          </a>
+            <h1>SCRC 2024</h1>
+          </div>
           <nav id="horizontal-nav-container" className="horizontal-navbar">
             <ul className="navbar-list">
               <li>
                 <Link
-                  id="about"
-                  className="navbar-link"
-                  href="/about"
+                  id="home"
+                  className={`navbar-link ${
+                    router.pathname.includes("/home") ? "selected" : ""
+                  }`}
+                  href="/home"
                   onClick={handleSelectNavLink}
                 >
-                  About
+                  Home
                 </Link>
               </li>
               <li>
                 <Link
                   id="key-dates"
-                  className="navbar-link"
+                  className={`navbar-link ${
+                    router.pathname.includes("/schedule") ? "selected" : ""
+                  }`}
                   href="/schedule"
                   onClick={handleSelectNavLink}
                 >
@@ -107,7 +123,9 @@ export default function Navbar() {
               <li>
                 <Link
                   id="sponsors"
-                  className="navbar-link"
+                  className={`navbar-link ${
+                    router.pathname.includes("/sponsors") ? "selected" : ""
+                  }`}
                   href="/sponsors"
                   onClick={handleSelectNavLink}
                 >
@@ -117,7 +135,9 @@ export default function Navbar() {
               <li>
                 <Link
                   id="faq"
-                  className="navbar-link"
+                  className={`navbar-link ${
+                    router.pathname.includes("/faq") ? "selected" : ""
+                  }`}
                   href="/faq"
                   onClick={handleSelectNavLink}
                 >
@@ -127,7 +147,9 @@ export default function Navbar() {
               <li>
                 <Link
                   id="scrc-team"
-                  className="navbar-link"
+                  className={`navbar-link ${
+                    router.pathname.includes("/team") ? "selected" : ""
+                  }`}
                   href="/team"
                   onClick={handleSelectNavLink}
                 >
@@ -143,22 +165,22 @@ export default function Navbar() {
         <ul className="navbar-list">
           <li>
             <Link
-              id="about"
+              id="home"
               className="navbar-link"
-              href="/about"
+              href="/home"
               onClick={handleSelectNavLink}
             >
-              About
+              Home
             </Link>
           </li>
           <li>
             <Link
-              id="key-dates"
+              id="schedule"
               className="navbar-link"
               href="/schedule"
               onClick={handleSelectNavLink}
             >
-              Key Dates
+              Schedule
             </Link>
           </li>
           <li>

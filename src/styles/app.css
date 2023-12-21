@@ -1,18 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
 @import "./navbar.css";
-@import "./landing-page.css";
-@import "./guide.css";
-@import "./cloud-animation.css";
-@import "./banner-animation.css";
-@import "./about.css";
-@import "./event-page.css";
 @import "./modal.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+.big {
+  height: 5000px;
+}
 :root {
-  --header-size: 5dvh;
+  --header-size: 7.5dvh;
   --blue: rgb(187, 216, 245);
   --blue1: rgb(163, 206, 250);
   --blue2: rgb(115, 180, 247);
@@ -32,80 +28,8 @@ body {
   overflow-x: hidden;
 }
 
-/* smartphones, iPhone, portrait 480x320 phones */
-body {
-  background-color: var(--blue);
-  position: absolute;
-  font-family: "Alata", sans-serif;
-  font-size: 1em;
-  line-height: 1.5;
-  min-width: 320px;
-  max-width: 100dvw;
-}
-
-.scroll-container {
-  margin: 0 5dvw;
-}
-
-.wrapper {
-  padding-top: var(--header-size);
-  min-height: 100dvh;
-  position: relative;
-}
-
-.wrapper > h2 {
-  display: block;
-  font-size: 1.5em;
-  margin-block-start: 0.4em;
-  margin-block-end: 0.83em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-}
-
-.wrapper > h3 {
-  display: block;
-  font-size: 1.1em;
-  margin-block-start: 1.3em;
-  margin-block-end: 0.75em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-}
-
-.white-background {
-  background: white;
-  color: black;
-}
-
-.black-background {
-  background: black;
-  color: white;
-}
-
-.no-display {
-  display: none;
-}
-
-.flex-display {
-  display: flex;
-}
-
-.no-border {
-  border: none;
-}
-
-.no-overflow {
-  overflow: hidden;
-}
-
-.paragraph-hyperlink {
-  font-weight: 500;
-  text-decoration: underline;
-}
-
-.paragraph-hyperlink:hover {
-  color: var(--blue6);
+section {
+  margin-top: var(--header-size);
 }
 
 .close-button {
@@ -144,49 +68,29 @@ body {
   background-size: contain;
 }
 
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.header-offset {
+  height: var(--header-size);
+  width: 100%;
+}
+
+.hide-overlay {
+  display: none;
 }
 
 @media (min-width: 481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-  body {
-    font-size: 1.1em;
-  }
 }
 @media (min-width: 641px) {
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-  .scroll-container {
-    margin: 0 15dvw;
-  }
-
-  body {
-    font-size: 1.15em;
-  }
 }
 @media (min-width: 961px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
-  body {
-    font-size: 1.35em;
-  }
 }
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
-  body {
-    font-size: 1.5em;
-  }
 }
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */
-  body {
-    font-size: 1.8em;
-    width: 100%;
-  }
 }
 @media (min-width: 1921px) {
   /* hi-res desktops */

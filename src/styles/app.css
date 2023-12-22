@@ -17,7 +17,7 @@
   --blue6: rgb(40, 57, 99);
   --grey: rgb(209, 209, 209);
   --grey1: rgb(59, 59, 59);
-  font-family: "Alata", sans-serif;
+  font-family: "Alata";
 }
 
 h1,
@@ -25,11 +25,11 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Alata", sans-serif;
+  font-family: "Alata";
 }
 
 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
 }
 
 html {
@@ -43,7 +43,7 @@ body {
 }
 
 section {
-  margin-top: var(--header-size);
+  margin-block-start: var(--header-size);
 }
 
 .close-button {
@@ -97,6 +97,14 @@ section {
 
 .black-text {
   color: black;
+}
+
+.button-link-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 
 @media (min-width: 481px) {

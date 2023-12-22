@@ -37,6 +37,7 @@
 #header-title {
   display: flex;
   align-items: center;
+  width: fit-content;
   height: 100%;
   text-decoration: none;
   text-transform: uppercase;

@@ -39,7 +39,7 @@ export default function Navbar() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setAtTop(window.scrollY === 0);
+      setAtTop(window.scrollY <= 10);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -100,12 +100,26 @@ export default function Navbar() {
                 <Link
                   id="home"
                   className={`navbar-link ${
-                    router.pathname.includes("/home") ? "selected" : ""
+                    router.pathname.includes("/home") || router.pathname === "/"
+                      ? "selected"
+                      : ""
                   }`}
                   href="/home"
                   onClick={handleSelectNavLink}
                 >
                   Home
+                </Link>
+              </li>
+              <li>
+                <Link
+                  id="venue"
+                  className={`navbar-link ${
+                    router.pathname.includes("/venue") ? "selected" : ""
+                  }`}
+                  href="/venue"
+                  onClick={handleSelectNavLink}
+                >
+                  Venue
                 </Link>
               </li>
               <li>
@@ -117,7 +131,7 @@ export default function Navbar() {
                   href="/schedule"
                   onClick={handleSelectNavLink}
                 >
-                  Key Dates
+                  Schedule
                 </Link>
               </li>
               <li>
@@ -144,18 +158,6 @@ export default function Navbar() {
                   FAQ
                 </Link>
               </li>
-              <li>
-                <Link
-                  id="scrc-team"
-                  className={`navbar-link ${
-                    router.pathname.includes("/team") ? "selected" : ""
-                  }`}
-                  href="/team"
-                  onClick={handleSelectNavLink}
-                >
-                  SCRC Team
-                </Link>
-              </li>
             </ul>
           </nav>
         </div>
@@ -171,6 +173,16 @@ export default function Navbar() {
               onClick={handleSelectNavLink}
             >
               Home
+            </Link>
+          </li>
+          <li>
+            <Link
+              id="venue"
+              className="navbar-link"
+              href="/venue"
+              onClick={handleSelectNavLink}
+            >
+              Venue
             </Link>
           </li>
           <li>
@@ -201,16 +213,6 @@ export default function Navbar() {
               onClick={handleSelectNavLink}
             >
               FAQ
-            </Link>
-          </li>
-          <li>
-            <Link
-              id="scrc-team"
-              className="navbar-link"
-              href="/team"
-              onClick={handleSelectNavLink}
-            >
-              SCRC Team
             </Link>
           </li>
         </ul>

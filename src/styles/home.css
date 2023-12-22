@@ -156,7 +156,6 @@
     font-size: 1.4rem;
   }
 }
-
 @media (min-width: 481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
   #home-header {

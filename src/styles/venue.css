@@ -1,0 +1,30 @@
+#venue-background {
+  background-repeat: no-repeat;
+  background-image: url("/images/msc.jpg");
+  background-size: cover;
+  background-position: center;
+  --background-height: 40dvh;
+  height: var(--background-height);
+}
+
+@media (min-width: 360px) {
+  /* larger phones */
+}
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1024px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}
+@media (min-width: 1921px) {
+  /* hi-res desktops */
+}

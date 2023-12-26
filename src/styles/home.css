@@ -1,67 +1,19 @@
 #home-background {
-  margin-block-start: calc(-1 * var(--header-size));
   background-repeat: no-repeat;
-  background-image: url("/images/sase-front-page.jpeg");
+  background-image: url("/images/front-page.jpg");
   background-size: cover;
   background-position: center;
-  --background-height: calc(100dvh + var(--header-size));
+  --background-height: 100dvh;
   height: var(--background-height);
-  transform: scale(1.2);
-  overflow: hidden;
-}
-
-#background-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
-  /* backdrop-filter: blur(3px); */
-}
-
-.big {
-  height: 200dvh;
-}
-
-#home-body {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100dvw;
+  /* transform: scale(1.2); */
 }
 
 #home-header {
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: absolute;
   top: -50dvh;
-  transform: translateY(-50%);
-  color: white;
 }
 
-#home-header > .conference-title {
-  width: 100%;
-  border-bottom: 10px solid var(--blue6);
-}
-
-#home-header h1 {
-  width: 80%;
-  margin: auto;
-  font-size: 3.5rem;
-}
-
-#home-header h2 {
+#home-motto-title {
   font-size: 2.5rem;
-}
-
-#home-header h3 {
-  font-size: 1.4rem;
 }
 
 .registration-container {
@@ -91,33 +43,7 @@
 }
 
 #registration-link:active {
-  background-color: var(--grey);
-}
-
-#home-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.about-container {
-  position: relative;
-  padding: 2rem 1rem;
-  width: 100%;
-}
-
-.about-container h1 {
-  font-size: 2rem;
-  font-weight: 600;
-  text-align: center;
-}
-
-.about-container h2 {
-  font-size: 1.5rem;
-}
-
-.about-container p {
-  font-size: 1.2rem;
+  background-color: var(--grey1);
 }
 
 #about-scrc {
@@ -125,12 +51,16 @@
   color: white;
 }
 
-#event-summary {
+.event-summary {
   margin-block: 4rem;
 }
 
-#event-summary div {
+.event-summary div {
   font-size: 1.2rem;
+}
+
+#event-details {
+  background-color: var(--grey);
 }
 
 #about-sase {
@@ -148,29 +78,18 @@
 
 @media (min-width: 360px) {
   /* larger phones */
-  .about-container p {
-    font-size: 1.4rem;
-  }
-
-  #event-summary div {
+  .event-summary div {
     font-size: 1.4rem;
   }
 }
 @media (min-width: 481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-  #home-header {
-    width: 400px;
-  }
-
   .tamu-map {
     height: 60dvw;
   }
 }
 @media (min-width: 641px) {
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-  #home-header {
-    width: 500px;
-  }
 }
 @media (min-width: 961px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
@@ -178,28 +97,14 @@
 @media (min-width: 1024px) {
   /* big landscape tablets, laptops, and desktops */
   #home-background {
-    transform: scale(1.3);
+    /* transform: scale(1.3); */
   }
 
-  .about-container {
-    padding: 3rem;
-  }
-
-  .about-container h1 {
-    font-size: 3rem;
-    font-weight: 600;
-    text-decoration: underline;
-  }
-
-  .about-container p {
+  .event-summary div {
     font-size: 2rem;
   }
 
-  #event-summary div {
-    font-size: 2rem;
-  }
-
-  .about-container .registration-container {
+  .content-container .registration-container {
     height: 200px;
   }
 
@@ -212,44 +117,20 @@
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */
   #home-header {
-    width: 700px;
+    width: 1000px;
   }
 
-  #home-header h1 {
-    width: 100%;
-  }
-
-  #home-header h3 {
-    font-size: 1.7rem;
-  }
-
-  .about-container {
-    height: inherit;
-  }
-
-  .about-container > div {
-    margin: auto;
-    height: 100%;
-    width: 60%;
+  .tamu-map {
+    height: 40dvw;
   }
 }
 @media (min-width: 1921px) {
   /* hi-res desktops */
-  #home-header {
-    width: 50%;
-  }
-
-  .about-container h1 {
-    font-size: 6rem;
-    font-weight: 600;
-    text-decoration: underline;
-  }
-
-  .about-container p {
+  .event-summary div {
     font-size: 3rem;
   }
 
-  #event-summary div {
-    font-size: 3rem;
+  .tamu-map {
+    height: 30dvw;
   }
 }

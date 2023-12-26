@@ -18,17 +18,17 @@ export default function Home() {
     <>
       <RellaxWrapper speed={-10}>
         <div id="home-background">
-          <div id="background-overlay"></div>
+          <div className="background-overlay"></div>
         </div>
       </RellaxWrapper>
       <RellaxWrapper speed={0}>
-        <div id="home-body">
-          <div id="home-header">
+        <div className="page-body">
+          <div id="home-header" className="page-header">
             <h3>March 2nd, 2024</h3>
-            <div className="conference-title">
+            <div className="page-title">
               <h1>South Central Regional Conference</h1>
             </div>
-            <h2>Soar with SASE</h2>
+            <h2 id="home-motto-title">Soar with SASE</h2>
             <h3>Texas A&M University | College Station, Texas</h3>
             <div className="registration-container">
               <a
@@ -40,8 +40,8 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div id="home-content">
-            <div id="about-scrc" className="about-container">
+          <div class="page-content">
+            <div id="about-scrc" className="content-container">
               <div>
                 <p>
                   The <b>South Central Regional Conference</b>, also known as{" "}
@@ -70,10 +70,10 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div id="event-details" className="about-container">
+            <div id="event-details" className="content-container">
               <div>
                 <h1>Event Details</h1>
-                <section id="event-summary">
+                <section className="event-summary">
                   <div>
                     <b>Date:</b> March 2nd, 2024
                   </div>
@@ -104,7 +104,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div id="about-sase" className="about-container">
+            <div id="about-sase" className="content-container">
               <h1>What is SASE?</h1>
               <div>
                 <section>

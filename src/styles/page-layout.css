@@ -28,15 +28,19 @@
   color: white;
 }
 
-.page-header > .page-title {
+.page-title {
   width: 100%;
   border-bottom: 10px solid var(--blue6);
+}
+
+.page-title-container {
+  margin-block: 6rem;
 }
 
 .page-header h1 {
   width: 80%;
   margin: auto;
-  font-size: 3.5rem;
+  font-size: 3.2rem;
 }
 
 .page-header h2 {

@@ -2,14 +2,52 @@ import React, { useState } from "react";
 import RellaxWrapper from "react-rellax-wrapper";
 import WarningModal from "@/pages/components/WarningModal";
 
+// left: 37, up: 38, right: 39, down: 40,
+// spacebar: 32, pageup: 33, pagedown: 34, end: 35, home: 36
+var keys = { 37: 1, 38: 1, 39: 1, 40: 1 };
+
+function preventDefault(e) {
+  e.preventDefault();
+}
+
+function preventDefaultForScrollKeys(e) {
+  if (keys[e.keyCode]) {
+    preventDefault(e);
+    return false;
+  }
+}
+
+var supportsPassive = false;
+try {
+  window.addEventListener(
+    "test",
+    null,
+    Object.defineProperty({}, "passive", {
+      get: function () {
+        supportsPassive = true;
+      },
+    })
+  );
+} catch (e) {}
+
 export default function Home() {
   const [isRegisterModalOpen, setIsOpenRegisterModalOpen] = useState(false);
 
   const handleOpenRegisterModal = (isOpen) => {
+    var wheelOpt = supportsPassive ? { passive: false } : false;
+    var wheelEvent =
+      "onwheel" in document.createElement("div") ? "wheel" : "mousewheel";
+
     if (isOpen) {
-      document.documentElement.style.overflow = "hidden";
+      window.addEventListener("DOMMouseScroll", preventDefault, false);
+      window.addEventListener(wheelEvent, preventDefault, wheelOpt);
+      window.addEventListener("touchmove", preventDefault, wheelOpt);
+      window.addEventListener("keydown", preventDefaultForScrollKeys, false);
     } else {
-      document.documentElement.style.overflow = "auto";
+      window.removeEventListener("DOMMouseScroll", preventDefault, false);
+      window.removeEventListener(wheelEvent, preventDefault, wheelOpt);
+      window.removeEventListener("touchmove", preventDefault, wheelOpt);
+      window.removeEventListener("keydown", preventDefaultForScrollKeys, false);
     }
     setIsOpenRegisterModalOpen(isOpen);
   };
@@ -25,11 +63,14 @@ export default function Home() {
         <div className="page-body">
           <div id="home-header" className="page-header">
             <h3>March 2nd, 2024</h3>
-            <div className="page-title">
-              <h1>South Central Regional Conference</h1>
+            <div className="page-title-container">
+              <div className="page-title">
+                <h1>South Central Regional Conference</h1>
+              </div>
+              <h2 id="home-motto-title">Soar with SASE</h2>
             </div>
-            <h2 id="home-motto-title">Soar with SASE</h2>
-            <h3>Texas A&M University | College Station, Texas</h3>
+            <h3>Texas A&M University</h3>
+            <h3>College Station, Texas</h3>
             <div className="registration-container">
               <a
                 id="registration-link"
@@ -40,7 +81,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div class="page-content">
+          <div className="page-content">
             <div id="about-scrc" className="content-container">
               <div>
                 <p>

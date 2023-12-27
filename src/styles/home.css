@@ -13,7 +13,7 @@
 }
 
 #home-motto-title {
-  font-size: 2.5rem;
+  font-size: 2.1rem;
 }
 
 .registration-container {
@@ -109,9 +109,9 @@
   }
 
   #registration-link {
-    font-size: 3rem;
-    height: 100px;
-    width: 300px;
+    font-size: 2.5rem;
+    height: 60px;
+    width: 250px;
   }
 }
 @media (min-width: 1281px) {

@@ -1,10 +1,52 @@
 #venue-background {
   background-repeat: no-repeat;
-  background-image: url("/images/msc.jpg");
+  background-image: url("/images/msc-front.jpg");
   background-size: cover;
   background-position: center;
   --background-height: 40dvh;
   height: var(--background-height);
+}
+
+#venue-summary-container {
+  display: flex;
+  margin-inline: 6rem;
+}
+
+#venue-summary-container h2 {
+  font-size: 1.5rem;
+  margin-block-end: 2rem;
+}
+
+h2#venue-address {
+  margin-block-end: 0;
+}
+
+#venue-quick-view {
+  flex: 1;
+  margin-inline-end: 1rem;
+  position: relative;
+}
+
+#venue-information {
+  flex: 2;
+  margin-inline-start: 1rem;
+}
+
+#venue-title {
+  font-weight: 600;
+}
+
+#venue-image {
+  background-repeat: no-repeat;
+  background-image: url("/images/msc.jpg");
+  background-size: contain;
+  aspect-ratio: 1.5/1;
+  margin-block-end: 2rem;
+}
+
+#venue-page-map {
+  height: unset;
+  aspect-ratio: 1/1;
 }
 
 @media (min-width: 360px) {

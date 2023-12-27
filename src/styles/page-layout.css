@@ -98,6 +98,9 @@
 }
 @media (min-width: 961px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .page-header {
+    width: 750px;
+  }
 }
 @media (min-width: 1024px) {
   /* big landscape tablets, laptops, and desktops */

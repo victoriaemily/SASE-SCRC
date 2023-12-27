@@ -1,0 +1,103 @@
+#schedule-background {
+  background-repeat: no-repeat;
+  background-image: url("/images/zachry-engr.jpg");
+  background-size: cover;
+  background-position: center;
+  --background-height: 40dvh;
+  height: var(--background-height);
+}
+
+#schedule-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.schedule-divider {
+  width: 100%;
+  transition: transform 1s ease;
+  transform-style: preserve-3d;
+}
+
+.event-divider button,
+.transition-divider > div {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.start-time-label {
+  flex: 1;
+}
+
+.event-location-labels {
+  flex: 2;
+}
+
+.status-label {
+  flex: 1;
+}
+
+.front-divider,
+.back-divider {
+  backface-visibility: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.back-divider {
+  background: white;
+  transform: rotateX(180deg);
+}
+
+.flip-divider {
+  transform: rotateX(180deg);
+}
+
+@keyframes slide-container-in-from-top {
+  from {
+    z-index: 1;
+    transform: translateY(-125dvh);
+  }
+  to {
+    z-index: 1;
+    transform: translateY(0dvh);
+  }
+}
+
+@keyframes slide-container-out-to-top {
+  0% {
+    z-index: 1;
+    transform: translateY(0dvh);
+  }
+  99% {
+    z-index: 1;
+  }
+  100% {
+    z-index: -1;
+    transform: translateY(-125dvh);
+  }
+}
+
+@media (min-width: 360px) {
+  /* larger phones */
+}
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+}
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}
+@media (min-width: 1921px) {
+  /* hi-res desktops */
+}

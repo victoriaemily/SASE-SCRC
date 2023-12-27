@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import "./navbar.css";
 @import "./venue.css";
+@import "./event-page.css";
 @import "./home.css";
+@import "./schedule.css";
 @import "./page-layout.css";
 @import "./modal.css";
 @tailwind base;
@@ -93,6 +95,10 @@ section {
 
 .hide-overlay {
   display: none;
+}
+
+.flex-overlay {
+  display: flex;
 }
 
 .white-text {

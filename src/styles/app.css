@@ -1,11 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Alata&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import "./navbar.css";
-@import "./venue.css";
+@import "./modal.css";
+@import "./page-layout.css";
 @import "./event-page.css";
 @import "./home.css";
+@import "./venue.css";
 @import "./schedule.css";
-@import "./page-layout.css";
-@import "./modal.css";
+@import "./sponsors.css";
+@import "./faq.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -20,7 +22,7 @@
   --blue5: rgb(68, 88, 136);
   --blue6: rgb(40, 57, 99);
   --grey: rgb(248, 252, 255);
-  --grey1: rgb(209, 209, 209);
+  --grey1: rgb(228, 228, 228);
   --grey2: rgb(209, 209, 209);
   --grey3: rgb(59, 59, 59);
   font-family: "Alata";
@@ -117,14 +119,66 @@ section {
   width: 100%;
 }
 
+.link-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-block: 2rem;
+}
+
+.close-button {
+  display: block;
+}
+
+.social-icon {
+  width: 60px;
+  height: 60px;
+}
+
+.instagram-icon {
+  background-repeat: no-repeat;
+  background-image: url("/icons/social-media/circle/instagram-200.svg");
+  background-size: contain;
+  background-position: center;
+}
+
+.gmail-icon {
+  background-repeat: no-repeat;
+  background-image: url("/icons/social-media/circle/gmail-200.svg");
+  background-size: contain;
+  background-position: center;
+}
+
+.linkedin-icon {
+  background-repeat: no-repeat;
+  background-image: url("/icons/social-media/circle/linkedin-200.svg");
+  background-size: contain;
+  background-position: center;
+}
+
+.linktree-icon {
+  background-repeat: no-repeat;
+  background-image: url("/icons/social-media/circle/linktree-200.svg");
+  background-size: contain;
+  background-position: center;
+}
+
 @media (min-width: 481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 }
 @media (min-width: 641px) {
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  .social-icon {
+    width: 85px;
+    height: 85px;
+  }
 }
 @media (min-width: 961px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .social-icon {
+    width: 100px;
+    height: 100px;
+  }
 }
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */

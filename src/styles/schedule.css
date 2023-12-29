@@ -12,12 +12,21 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
+  padding: 0;
+  padding-inline: 0;
 }
 
 .schedule-divider {
   width: 100%;
   transition: transform 1s ease;
   transform-style: preserve-3d;
+  padding-block: 2rem;
+}
+
+.time-divider {
+  background-color: var(--blue6);
+  color: white;
+  margin-block: 0;
 }
 
 .event-divider button,
@@ -25,6 +34,21 @@
   display: flex;
   align-items: center;
   text-align: center;
+}
+
+.event-divider:hover {
+  background-color: var(--blue3);
+  color: white;
+}
+
+.event-divider:active {
+  background-color: var(--blue4);
+  color: white;
+}
+
+.transition-divider {
+  background-color: var(--blue4);
+  color: white;
 }
 
 .start-time-label {
@@ -97,6 +121,11 @@
 }
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */
+  #schedule-container > div {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+  }
 }
 @media (min-width: 1921px) {
   /* hi-res desktops */

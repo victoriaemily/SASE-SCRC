@@ -1,10 +1,30 @@
 import React from "react";
+import RellaxWrapper from "react-rellax-wrapper";
 
 export default function Sponsors() {
   return (
-    <section id="sponsors" className="wrapper">
-      <h2>Sponsors</h2>
-      <p>TBA</p>
-    </section>
+    <>
+      <RellaxWrapper speed={-6}>
+        <div id="sponsors-background">
+          <div className="background-overlay"></div>
+        </div>
+      </RellaxWrapper>
+      <RellaxWrapper speed={0}>
+        <div className="page-body">
+          <div className="page-header">
+            <h2>South Central Regional Conference</h2>
+            <div className="page-title">
+              <h1>Sponsors</h1>
+            </div>
+            <h3>Texas A&M University | Memorial Student Center</h3>
+          </div>
+          <div className="page-content">
+            <div className="content-container">
+              <h1>TBA</h1>
+            </div>
+          </div>
+        </div>
+      </RellaxWrapper>
+    </>
   );
 }

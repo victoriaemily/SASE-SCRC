@@ -81,9 +81,9 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="page-content">
+          <div id="home-content" className="page-content">
             <div id="about-scrc" className="content-container">
-              <div>
+              <div className="container-innerbox">
                 <p>
                   The <b>South Central Regional Conference</b>, also known as{" "}
                   <b>SCRC</b>, is one of the five annual regional conferences
@@ -112,66 +112,113 @@ export default function Home() {
               </div>
             </div>
             <div id="event-details" className="content-container">
-              <div>
+              <div className="container-innerbox">
                 <h1>Event Details</h1>
-                <section className="event-summary">
-                  <div>
-                    <b>Date:</b> March 2nd, 2024
-                  </div>
-                  <br />
-                  <div>
-                    <b>Time:</b> 8:30am - 7:00pm
-                  </div>
-                  <br />
-                  <div>
-                    <b>Location:</b> Memorial Student Center, Texas A&M
-                    University
-                  </div>
-                  <br />
-                  <div>
-                    <b>Address:</b> 275 Joe Routt Blvd, College Station, TX
-                    77843
-                  </div>
-                </section>
-                <div className="tamu-map">
-                  <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3433.7697243813577!2d-96.3441192223423!3d30.612257774642714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8646839854d18149%3A0x90311327f8c2221d!2sMemorial%20Student%20Center%20(MSC)!5e0!3m2!1sen!2sus!4v1701457058873!5m2!1sen!2sus"
-                    width="100%"
-                    height="100%"
-                    style={{ border: 0 }}
-                    loading="lazy"
-                    referrerPolicy="no-referrer-when-downgrade"
-                  ></iframe>
+                <div className="event-summary-container">
+                  <section>
+                    <div>
+                      <b>Date:</b> March 2nd, 2024
+                    </div>
+                    <br />
+                    <div>
+                      <b>Time:</b> 8:30am - 7:00pm
+                    </div>
+                    <br />
+                    <div>
+                      <b>Location:</b> Memorial Student Center, Texas A&M
+                      University
+                    </div>
+                    <br />
+                    <div>
+                      <b>Address:</b> 275 Joe Routt Blvd, College Station, TX
+                      77843
+                    </div>
+                  </section>
+                  <div className="logo scrc-logo-black"></div>
                 </div>
               </div>
             </div>
             <div id="about-sase" className="content-container">
-              <h1>What is SASE?</h1>
-              <div>
-                <section>
-                  <h2>SASE National</h2>
-                  <p>
-                    The Society of Asian Scientists and Engineers, also known as
-                    SASE, is a non-profit organization with over 100 chapters
-                    across the United States. As a home and support system to
-                    thousands of collegiate and national volunteers, we at SASE
-                    embrace the mission to prepare Asian heritage scientists and
-                    engineers for success in the global professional world.
-                  </p>
-                </section>
-                <section>
-                  <h2>SASE TAMU</h2>
-                  <p>
-                    In our chapter at Texas A&M University, we enhance our
-                    experiences and growth through the combination of core
-                    pillars found in SASE and the Aggie spirit. We are dedicated
-                    to promoting community health while also nuturing and
-                    enhancing the leadership and professional skills of our
-                    members. We provide professionally and personally engaging
-                    events ranging from GBMs and workshops to mixers and trivia
-                    nights for 100+ registered members.
-                  </p>
-                </section>
+              <div className="container-innerbox">
+                <h1>What is SASE?</h1>
+                <div>
+                  <section>
+                    <h2>SASE National</h2>
+                    <p>
+                      The Society of Asian Scientists and Engineers, also known
+                      as SASE, is a non-profit organization with over 100
+                      chapters across the United States. As a home and support
+                      system to thousands of collegiate and national volunteers,
+                      we at SASE embrace the mission to prepare Asian heritage
+                      scientists and engineers for success in the global
+                      professional world.
+                    </p>
+                  </section>
+                  <section>
+                    <h2>SASE TAMU</h2>
+                    <p>
+                      In our chapter at Texas A&M University, we enhance our
+                      experiences and growth through the combination of core
+                      pillars found in SASE and the Aggie spirit. We are
+                      dedicated to promoting community health while also
+                      nuturing and enhancing the leadership and professional
+                      skills of our members. We provide professionally and
+                      personally engaging events ranging from GBMs and workshops
+                      to mixers and trivia nights for 100+ registered members.
+                    </p>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <div id="socials-contact" className="content-container">
+              <div className="container-innerbox">
+                <h1>Contact Us</h1>
+                <div>
+                  <section>
+                    <h2>Find and reach out to us on our various platforms!</h2>
+                    <ul className="link-list">
+                      <li>
+                        <a
+                          className="link instagram-link"
+                          target="_blank"
+                          href="https://instagram.com/sasetamu"
+                        >
+                          <div className="social-icon instagram-icon"></div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="link gmail-link"
+                          target="_blank"
+                          href="mailto:"
+                        >
+                          <div className="social-icon gmail-icon"></div>
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          className="link linktree-link"
+                          target="_blank"
+                          href="https://linktr.ee/tamusase"
+                        >
+                          <div className="social-icon linktree-icon"></div>
+                        </a>
+                      </li>
+                    </ul>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <div id="registration-footer" className="content-container">
+              <h1>Don't Forget to Register!</h1>
+              <div className="registration-container">
+                <a
+                  id="registration-link"
+                  target="_blank"
+                  onClick={() => handleOpenRegisterModal(true)}
+                >
+                  <div className="button-link-container">Register</div>
+                </a>
               </div>
             </div>
           </div>

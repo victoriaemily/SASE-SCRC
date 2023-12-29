@@ -83,6 +83,10 @@
   .content-container p {
     font-size: 1.4rem;
   }
+
+  .content-container {
+    padding-inline: 1.5rem;
+  }
 }
 @media (min-width: 481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
@@ -93,11 +97,19 @@
   .page-header h1 {
     font-size: 5rem;
   }
+
+  .content-container {
+    padding-inline: 2rem;
+  }
 }
 @media (min-width: 641px) {
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
   .page-header {
     width: 500px;
+  }
+
+  .content-container {
+    padding-inline: 2.5rem;
   }
 }
 @media (min-width: 961px) {
@@ -115,6 +127,10 @@
   .content-container h1 {
     font-size: 3rem;
     font-weight: 600;
+  }
+
+  .content-container h2 {
+    font-size: 2.5rem;
   }
 
   .content-container p {
@@ -146,6 +162,10 @@
   .content-container h1 {
     font-size: 6rem;
     font-weight: 600;
+  }
+
+  .content-container h2 {
+    font-size: 3.5rem;
   }
 
   .content-container p {

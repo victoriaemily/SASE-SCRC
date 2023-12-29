@@ -1,11 +1,10 @@
 import React from "react";
 import { morningEvents, afternoonEvents } from "@/assets/events";
-import EventPages from "@/pages/components/EventPages";
 import RellaxWrapper from "react-rellax-wrapper";
+import EventPages from "../components/EventPages.jsx";
 
 export default function Guide() {
   const handleFlipDivider = (eventId) => {
-    console.log(eventId);
     document.querySelectorAll(".schedule-divider").forEach((divider, idx) => {
       const flipAnimationDelay = 0.08 * idx;
       divider.style.transitionDelay = `${flipAnimationDelay}s`;
@@ -19,6 +18,7 @@ export default function Guide() {
           setTimeout(() => {
             document.getElementById(eventId).classList.remove("hide-overlay");
             document.getElementById(eventId).classList.add("flex-overlay");
+            document.documentElement.style.overflow = "hidden";
           }, 750);
         }, 500);
       } else {
@@ -29,6 +29,7 @@ export default function Guide() {
           blueDivider.classList.remove("white-background");
         });
         divider.classList.remove("flip-divider");
+        document.documentElement.style.overflow = "auto";
       }
     });
   };
@@ -111,20 +112,18 @@ export default function Guide() {
             <h3>Texas A&M University | March 2nd, 2024</h3>
           </div>
           <div className="page-content">
-            <div className="content-container">
-              <div id="schedule-container">
-                <div className="schedule-divider time-divider">
-                  <h1 className="pad-divider front-divider">Morning Block</h1>
-                  <div className="pad-divider back-divider"></div>
-                </div>
-                {morningEvents.map((event, idx) => renderEvent(event, idx))}
-                <div className="schedule-divider time-divider">
-                  <h1 className="pad-divider front-divider">Afternoon Block</h1>
-                  <div className="pad-divider back-divider"></div>
-                </div>
-                {afternoonEvents.map((event, idx) => renderEvent(event, idx))}
-                <div className="back-divider"></div>
+            <div id="schedule-container" className="content-container">
+              <div className="schedule-divider time-divider">
+                <h1 className="pad-divider front-divider">Morning Block</h1>
+                <div className="pad-divider back-divider"></div>
               </div>
+              {morningEvents.map((event, idx) => renderEvent(event, idx))}
+              <div className="schedule-divider time-divider">
+                <h1 className="pad-divider front-divider">Afternoon Block</h1>
+                <div className="pad-divider back-divider"></div>
+              </div>
+              {afternoonEvents.map((event, idx) => renderEvent(event, idx))}
+              <div className="back-divider"></div>
             </div>
           </div>
         </div>

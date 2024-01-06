@@ -92,7 +92,7 @@ export default function Navbar() {
                 !atTop || isNavOpen ? "scrc-logo-black" : "scrc-logo-white"
               }`}
             ></div>
-            <h1>SCRC 2024</h1>
+            <h1 id="navbar-header-text">SCRC 2024</h1>
           </div>
           <nav id="horizontal-nav-container" className="horizontal-navbar">
             <ul className="navbar-list">

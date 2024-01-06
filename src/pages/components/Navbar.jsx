@@ -8,7 +8,6 @@ export default function Navbar() {
 
   const toggleNavbar = () => {
     if (isNavOpen) {
-      // need to close
       document.getElementById("navbar-backdrop").classList.add("hide-overlay");
       document
         .getElementById("dropdown-nav-container")
@@ -17,7 +16,6 @@ export default function Navbar() {
         .getElementById("dropdown-nav-container")
         .classList.add("close-nav");
     } else {
-      // need to open
       document
         .getElementById("navbar-backdrop")
         .classList.remove("hide-overlay");
@@ -44,7 +42,6 @@ export default function Navbar() {
 
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup the event listener on component unmount
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };

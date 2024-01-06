@@ -21,6 +21,7 @@
   --blue4: rgb(93, 114, 161);
   --blue5: rgb(68, 88, 136);
   --blue6: rgb(40, 57, 99);
+  --blue7: rgb(22, 35, 68);
   --grey: rgb(248, 252, 255);
   --grey1: rgb(228, 228, 228);
   --grey2: rgb(209, 209, 209);
@@ -163,6 +164,29 @@ section {
   background-position: center;
 }
 
+p a {
+  color: var(--blue5);
+  text-decoration: underline;
+}
+
+p a:hover {
+  color: var(--grey3);
+}
+
+p a:active {
+  color: var(--grey2);
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.image-container div {
+  width: 100%;
+}
+
 @media (min-width: 481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 }
@@ -178,6 +202,10 @@ section {
   .social-icon {
     width: 100px;
     height: 100px;
+  }
+
+  .image-container {
+    flex-direction: row;
   }
 }
 @media (min-width: 1025px) {

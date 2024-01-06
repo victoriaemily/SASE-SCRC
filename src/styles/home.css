@@ -3,11 +3,11 @@
   background-image: url("/images/front-page.jpg");
   background-size: cover;
   background-position: center;
-  height: 100dvh;
+  height: 100vh;
 }
 
 #home-header {
-  top: -50dvh;
+  top: -50vh;
 }
 
 #home-motto-title {

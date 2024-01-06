@@ -98,25 +98,25 @@
 @keyframes slide-container-in-from-top {
   from {
     z-index: 1;
-    transform: translateY(-125dvh);
+    transform: translateY(-125vh);
   }
   to {
     z-index: 1;
-    transform: translateY(0dvh);
+    transform: translateY(0);
   }
 }
 
 @keyframes slide-container-out-to-top {
   0% {
     z-index: 1;
-    transform: translateY(0dvh);
+    transform: translateY(0);
   }
   99% {
     z-index: 1;
   }
   100% {
     z-index: -1;
-    transform: translateY(-125dvh);
+    transform: translateY(-125vh);
   }
 }
 

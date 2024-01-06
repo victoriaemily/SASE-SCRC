@@ -41,10 +41,10 @@
   color: white;
 }
 
-.event-divider:active {
+/* .event-divider:active {
   background-color: var(--blue4);
   color: white;
-}
+} */
 
 .transition-divider {
   background-color: var(--blue4);
@@ -52,31 +52,48 @@
 }
 
 .start-time-label {
-  flex: 1;
-}
-
-.event-location-labels {
   flex: 2;
 }
 
-.status-label {
+.full-time-label {
+  display: none;
+  flex: 2;
+}
+
+.event-location-labels {
   flex: 1;
 }
 
-.front-divider,
-.back-divider {
-  backface-visibility: hidden;
+.other-labels {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.other-labels .workshop-label {
+  flex: 1;
+}
+
+.other-labels .status-label {
+  display: none;
+  flex: 1;
+}
+
+#schedule-container .event-label {
+  font-size: 1.6rem;
+}
+
+#schedule-container .time-label,
+#schedule-container .gate-label,
+#schedule-container .workshop-label,
+#schedule-container .status-label {
+  font-size: 1.2rem;
+}
+
+.pad-divider {
   width: 100%;
   height: 100%;
-}
-
-.back-divider {
-  background: white;
-  transform: rotateX(180deg);
-}
-
-.flip-divider {
-  transform: rotateX(180deg);
 }
 
 @keyframes slide-container-in-from-top {
@@ -112,9 +129,42 @@
 }
 @media (min-width: 641px) {
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  #schedule-container .event-label {
+    font-size: 1.9rem;
+  }
+
+  #schedule-container .time-label,
+  #schedule-container .gate-label,
+  #schedule-container .workshop-label,
+  #schedule-container .status-label {
+    font-size: 1.3rem;
+  }
 }
 @media (min-width: 961px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .other-labels .status-label {
+    display: unset;
+  }
+
+  .start-time-label {
+    display: none;
+  }
+
+  .full-time-label {
+    display: unset;
+  }
+
+  #schedule-container .event-label,
+  #schedule-container .departure-label {
+    font-size: 2rem;
+  }
+
+  #schedule-container .time-label,
+  #schedule-container .gate-label,
+  #schedule-container .workshop-label,
+  #schedule-container .status-label {
+    font-size: 1.4rem;
+  }
 }
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
@@ -126,7 +176,30 @@
     height: 100%;
     width: 100%;
   }
+
+  #schedule-container .event-label,
+  #schedule-container .departure-label {
+    font-size: 2.4rem;
+  }
+
+  #schedule-container .time-label,
+  #schedule-container .gate-label,
+  #schedule-container .workshop-label,
+  #schedule-container .status-label {
+    font-size: 1.6rem;
+  }
 }
 @media (min-width: 1921px) {
   /* hi-res desktops */
+  #schedule-container .event-label,
+  #schedule-container .departure-label {
+    font-size: 2.7rem;
+  }
+
+  #schedule-container .time-label,
+  #schedule-container .gate-label,
+  #schedule-container .workshop-label,
+  #schedule-container .status-label {
+    font-size: 1.8rem;
+  }
 }

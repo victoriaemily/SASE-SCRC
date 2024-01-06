@@ -1,39 +1,8 @@
 import React from "react";
 import { morningEvents, afternoonEvents } from "@/assets/events";
 import RellaxWrapper from "react-rellax-wrapper";
-import EventPages from "../components/EventPages.jsx";
 
 export default function Guide() {
-  const handleFlipDivider = (eventId) => {
-    document.querySelectorAll(".schedule-divider").forEach((divider, idx) => {
-      const flipAnimationDelay = 0.08 * idx;
-      divider.style.transitionDelay = `${flipAnimationDelay}s`;
-      if (!divider.classList.contains("flip-divider")) {
-        document.querySelectorAll(".label").forEach((blueDivider, _) => {
-          blueDivider.classList.add("white-background");
-        });
-        divider.querySelector(".front-divider").classList.add("no-border");
-        divider.classList.add("flip-divider");
-        setTimeout(() => {
-          setTimeout(() => {
-            document.getElementById(eventId).classList.remove("hide-overlay");
-            document.getElementById(eventId).classList.add("flex-overlay");
-            document.documentElement.style.overflow = "hidden";
-          }, 750);
-        }, 500);
-      } else {
-        document.getElementById(eventId).classList.add("hide-overlay");
-        document.getElementById(eventId).classList.remove("flex-overlay");
-        divider.querySelector(".front-divider").classList.remove("no-border");
-        document.querySelectorAll(".label").forEach((blueDivider, _) => {
-          blueDivider.classList.remove("white-background");
-        });
-        divider.classList.remove("flip-divider");
-        document.documentElement.style.overflow = "auto";
-      }
-    });
-  };
-
   const renderEvent = (event, idx) => {
     let startTime = event.start_time;
     let endTime = event.end_time;
@@ -57,39 +26,46 @@ export default function Guide() {
     if (event.isTransition) {
       return (
         <div key={idx} className="schedule-divider transition-divider">
-          <div className="pad-divider front-divider">
-            <h3 className="start-time-label">
+          <div className="pad-divider">
+            <h3 className="start-time-label time-label">{startTime}</h3>
+            <h3 className="full-time-label time-label">
               {startTime === endTime ? startTime : `${startTime} - ${endTime}`}
             </h3>
             <div className="event-location-labels">
               <h2 className="departure-label">{event.name}</h2>
               <h2 className="gate-label"></h2>
             </div>
-            <h3 className="status-label"></h3>
+            <h3 className="other-labels"></h3>
           </div>
-          <div className="pad-divider back-divider"></div>
         </div>
       );
     } else {
       return (
         <div key={idx} className="schedule-divider event-divider">
-          <button
-            className="pad-divider front-divider"
-            type="button"
-            onClick={() => {
-              handleFlipDivider(event.id);
-            }}
-          >
-            <h3 className="start-time-label">
+          <button className="pad-divider" type="button" disabled>
+            <h3 className="start-time-label time-label">{startTime}</h3>
+            <h3 className="full-time-label time-label">
               {startTime === endTime ? startTime : `${startTime} - ${endTime}`}
             </h3>
             <div className="event-location-labels">
               <h2 className="event-label">{event.name}</h2>
-              <h2 className="gate-label">{event.location}</h2>
+              {!event.isWorkshop ? (
+                <h3 className="gate-label">{event.location}</h3>
+              ) : null}
             </div>
-            <h3 className="status-label">{event.status}</h3>
+            <div className="other-labels">
+              {event.isWorkshop ? (
+                <ul className="workshop-label">
+                  <li>Option 1 (TBA)</li>
+                  <li>Option 2 (TBA)</li>
+                  <li>Option 3 (TBA)</li>
+                </ul>
+              ) : (
+                <div className="workshop-label"></div>
+              )}
+              <h3 className="status-label">{event.status}</h3>
+            </div>
           </button>
-          <div className="pad-divider back-divider"></div>
         </div>
       );
     }
@@ -114,56 +90,17 @@ export default function Guide() {
           <div className="page-content">
             <div id="schedule-container" className="content-container">
               <div className="schedule-divider time-divider">
-                <h1 className="pad-divider front-divider">Morning Block</h1>
-                <div className="pad-divider back-divider"></div>
+                <h1 className="pad-divider">Morning Block</h1>
               </div>
               {morningEvents.map((event, idx) => renderEvent(event, idx))}
               <div className="schedule-divider time-divider">
-                <h1 className="pad-divider front-divider">Afternoon Block</h1>
-                <div className="pad-divider back-divider"></div>
+                <h1 className="pad-divider">Afternoon Block</h1>
               </div>
               {afternoonEvents.map((event, idx) => renderEvent(event, idx))}
-              <div className="back-divider"></div>
             </div>
           </div>
         </div>
       </RellaxWrapper>
-      <EventPages
-        closeParam="check-in"
-        handleClose={handleFlipDivider}
-      ></EventPages>
-      <EventPages
-        closeParam="opening-ceremony"
-        handleClose={handleFlipDivider}
-      ></EventPages>
-      <EventPages
-        closeParam="workshop-1"
-        handleClose={handleFlipDivider}
-      ></EventPages>
-      <EventPages
-        closeParam="lunch-break"
-        handleClose={handleFlipDivider}
-      ></EventPages>
-      <EventPages
-        closeParam="workshop-2"
-        handleClose={handleFlipDivider}
-      ></EventPages>
-      <EventPages
-        closeParam="workshop-3"
-        handleClose={handleFlipDivider}
-      ></EventPages>
-      <EventPages
-        closeParam="workshop-4"
-        handleClose={handleFlipDivider}
-      ></EventPages>
-      <EventPages
-        closeParam="closing-ceremony"
-        handleClose={handleFlipDivider}
-      ></EventPages>
-      <EventPages
-        closeParam="career-fair"
-        handleClose={handleFlipDivider}
-      ></EventPages>
     </>
   );
 }

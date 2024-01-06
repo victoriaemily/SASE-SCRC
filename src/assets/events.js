@@ -14,6 +14,7 @@ const morningEvents = [
     end_time: new Date("2024-03-02T09:30:00"),
     status: "On Time",
     isTransition: false,
+    isWorkshop: false,
   },
   {
     name: "Opening Ceremony",
@@ -23,6 +24,7 @@ const morningEvents = [
     end_time: new Date("2024-03-02T10:20:00"),
     status: "On Time",
     isTransition: false,
+    isWorkshop: false,
   },
   {
     name: "Transition",
@@ -32,6 +34,7 @@ const morningEvents = [
     end_time: new Date("2024-03-02T10:30:00"),
     status: "",
     isTransition: true,
+    isWorkshop: false,
   },
   {
     name: "Workshop I",
@@ -41,6 +44,7 @@ const morningEvents = [
     end_time: new Date("2024-03-02T11:20:00"),
     status: "On Time",
     isTransition: false,
+    isWorkshop: true,
   },
   {
     name: "Transition",
@@ -50,6 +54,7 @@ const morningEvents = [
     end_time: new Date("2024-03-02T11:30:00"),
     status: "",
     isTransition: true,
+    isWorkshop: false,
   },
   {
     name: "Lunch Break",
@@ -59,6 +64,7 @@ const morningEvents = [
     end_time: new Date("2024-03-02T12:20:00"),
     status: "On Time",
     isTransition: false,
+    isWorkshop: false,
   },
 ];
 
@@ -71,6 +77,7 @@ const afternoonEvents = [
     end_time: new Date("2024-03-02T13:20:00"),
     status: "On Time",
     isTransition: false,
+    isWorkshop: true,
   },
   {
     name: "Transition",
@@ -80,6 +87,7 @@ const afternoonEvents = [
     end_time: new Date("2024-03-02T13:30:00"),
     status: "",
     isTransition: true,
+    isWorkshop: false,
   },
   {
     name: "Workshop III",
@@ -89,6 +97,7 @@ const afternoonEvents = [
     end_time: new Date("2024-03-02T14:20:00"),
     status: "On Time",
     isTransition: false,
+    isWorkshop: true,
   },
   {
     name: "Transition",
@@ -98,6 +107,7 @@ const afternoonEvents = [
     end_time: new Date("2024-03-02T14:20:00"),
     status: "",
     isTransition: true,
+    isWorkshop: false,
   },
   {
     name: "Workshop IV",
@@ -107,6 +117,7 @@ const afternoonEvents = [
     end_time: new Date("2024-03-02T15:20:00"),
     status: "On Time",
     isTransition: false,
+    isWorkshop: true,
   },
   {
     name: "Transition",
@@ -116,6 +127,7 @@ const afternoonEvents = [
     end_time: new Date("2024-03-02T15:30:00"),
     status: "",
     isTransition: true,
+    isWorkshop: false,
   },
   {
     name: "Closing Ceremony",
@@ -125,6 +137,7 @@ const afternoonEvents = [
     end_time: new Date("2024-03-02T16:30:00"),
     status: "On Time",
     isTransition: false,
+    isWorkshop: false,
   },
   {
     name: "Career Fair",
@@ -134,6 +147,7 @@ const afternoonEvents = [
     end_time: new Date("2024-03-02T19:00:00"),
     status: "On Time",
     isTransition: false,
+    isWorkshop: false,
   },
 ];
 

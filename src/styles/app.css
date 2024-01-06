@@ -26,6 +26,7 @@
   --grey1: rgb(228, 228, 228);
   --grey2: rgb(209, 209, 209);
   --grey3: rgb(59, 59, 59);
+  --background-height: 50dvh;
   font-family: "Alata";
 }
 
@@ -192,6 +193,10 @@ p a:active {
 }
 @media (min-width: 641px) {
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  :root {
+    --background-height: 40dvh;
+  }
+
   .social-icon {
     width: 85px;
     height: 85px;

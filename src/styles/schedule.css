@@ -3,7 +3,6 @@
   background-image: url("/images/zachry-engr.jpg");
   background-size: cover;
   background-position: center;
-  --background-height: 40dvh;
   height: var(--background-height);
 }
 

@@ -3,9 +3,7 @@
   background-image: url("/images/front-page.jpg");
   background-size: cover;
   background-position: center;
-  --background-height: 100dvh;
-  height: var(--background-height);
-  /* transform: scale(1.2); */
+  height: 100dvh;
 }
 
 #home-header {

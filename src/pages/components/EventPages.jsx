@@ -5,7 +5,7 @@ export default function EventPages({ closeParam, handleClose }) {
   switch (closeParam) {
     case "check-in":
       return (
-        <div id="check-in" className="event-container no-display">
+        <div id="check-in" className="event-container hide-overlay">
           <h2>Check In</h2>
           <div className="event-description-container">
             <p>
@@ -21,7 +21,7 @@ export default function EventPages({ closeParam, handleClose }) {
       );
     case "opening-ceremony":
       return (
-        <div id="opening-ceremony" className="event-container no-display">
+        <div id="opening-ceremony" className="event-container hide-overlay">
           <h2>Opening Ceremony</h2>
           <div className="event-description-container">
             <p>
@@ -40,7 +40,7 @@ export default function EventPages({ closeParam, handleClose }) {
       );
     case "workshop-1":
       return (
-        <div id="workshop-1" className="event-container no-display">
+        <div id="workshop-1" className="event-container hide-overlay">
           <h2>Workshop I</h2>
           <div className="event-description-container">
             <p>
@@ -56,7 +56,7 @@ export default function EventPages({ closeParam, handleClose }) {
       );
     case "lunch-break":
       return (
-        <div id="lunch-break" className="event-container no-display">
+        <div id="lunch-break" className="event-container hide-overlay">
           <h2>Network Session</h2>
           <div className="event-description-container">
             <p>
@@ -72,7 +72,7 @@ export default function EventPages({ closeParam, handleClose }) {
       );
     case "workshop-2":
       return (
-        <div id="workshop-2" className="event-container no-display">
+        <div id="workshop-2" className="event-container hide-overlay">
           <h2>Workshop II</h2>
           <div className="event-description-container">
             <p>
@@ -88,7 +88,7 @@ export default function EventPages({ closeParam, handleClose }) {
       );
     case "workshop-3":
       return (
-        <div id="workshop-3" className="event-container no-display">
+        <div id="workshop-3" className="event-container hide-overlay">
           <h2>Workshop III</h2>
           <div className="event-description-container">
             <p>
@@ -104,7 +104,7 @@ export default function EventPages({ closeParam, handleClose }) {
       );
     case "workshop-4":
       return (
-        <div id="workshop-4" className="event-container no-display">
+        <div id="workshop-4" className="event-container hide-overlay">
           <h2>Workshop IV</h2>
           <div className="event-description-container">
             <p>
@@ -120,7 +120,7 @@ export default function EventPages({ closeParam, handleClose }) {
       );
     case "closing-ceremony":
       return (
-        <div id="closing-ceremony" className="event-container no-display">
+        <div id="closing-ceremony" className="event-container hide-overlay">
           <h2>Closing Ceremony</h2>
           <div className="event-description-container">
             <p>
@@ -139,7 +139,7 @@ export default function EventPages({ closeParam, handleClose }) {
       );
     case "career-fair":
       return (
-        <div id="career-fair" className="event-container no-display">
+        <div id="career-fair" className="event-container hide-overlay">
           <h2>Career Fair</h2>
           <div className="event-description-container">
             <p>
@@ -156,7 +156,7 @@ export default function EventPages({ closeParam, handleClose }) {
       );
     default:
       return (
-        <div id="tba" className="event-container no-display">
+        <div id="tba" className="event-container hide-overlay">
           <h2>TBA</h2>
           <div className="event-description-container">
             <p>

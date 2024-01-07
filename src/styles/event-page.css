@@ -3,11 +3,13 @@
   color: black;
   flex-direction: column;
   align-items: center;
-  position: absolute;
+  position: fixed;
   top: 0;
+  left: 0;
   height: 100%;
   width: 100%;
   animation: fade-in 1s forwards;
+  z-index: 101;
 }
 
 .event-container > h2 {

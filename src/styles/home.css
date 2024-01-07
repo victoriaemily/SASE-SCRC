@@ -1,0 +1,176 @@
+#home-background {
+  background-repeat: no-repeat;
+  background-image: url("/images/front-page.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+#home-header {
+  top: -50vh;
+}
+
+#home-motto-title {
+  font-size: 2.1rem;
+}
+
+.registration-container {
+  display: flex;
+  margin-block-start: 1rem;
+  margin-block-end: 1rem;
+}
+
+.registration-container #registration-link {
+  margin: auto;
+}
+
+#registration-link {
+  background-color: white;
+  padding: 0.2rem 0.75rem;
+  border-radius: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  height: 3rem;
+  width: 10rem;
+  color: black;
+  user-select: none;
+}
+
+#registration-link:hover {
+  background-color: var(--grey);
+  cursor: pointer;
+}
+
+#registration-link:active {
+  background-color: var(--grey1);
+}
+
+#home-content .container-innerbox {
+  padding-block: 3rem;
+}
+
+#about-scrc {
+  background-color: var(--blue6);
+  color: white;
+}
+
+.event-summary-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.event-summary-container section {
+  flex: 2;
+  margin-block: 4rem;
+}
+
+.event-summary-container section div {
+  font-size: 1.2rem;
+}
+
+.event-summary-container .logo {
+  width: 75%;
+  flex: 1;
+}
+
+#event-details {
+  background-color: var(--grey);
+}
+
+#about-sase {
+  background-color: var(--blue6);
+  color: white;
+}
+
+#about-sase section {
+  margin-block-start: 2rem;
+}
+
+.tamu-map {
+  height: 100dvw;
+}
+
+#socials-contact {
+  text-align: center;
+}
+
+#registration-footer {
+  background-color: var(--blue6);
+  color: white;
+}
+
+@media (min-width: 360px) {
+  /* larger phones */
+  .event-summary-container section div {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  .tamu-map {
+    height: 60dvw;
+  }
+
+  .event-summary-container .logo {
+    width: 50%;
+  }
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  .event-summary-container .logo {
+    width: 45%;
+  }
+}
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .event-summary-container {
+    flex-direction: row;
+  }
+
+  .event-summary-container section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+@media (min-width: 1024px) {
+  /* big landscape tablets, laptops, and desktops */
+  #home-content .container-innerbox {
+    padding-block: 6rem;
+  }
+
+  .event-summary-container section div {
+    font-size: 2rem;
+  }
+
+  .content-container .registration-container {
+    height: 200px;
+  }
+
+  #registration-link {
+    font-size: 2.5rem;
+    height: 60px;
+    width: 250px;
+  }
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+  #home-header {
+    width: 1000px;
+  }
+
+  .tamu-map {
+    height: 40dvw;
+  }
+}
+@media (min-width: 1921px) {
+  /* hi-res desktops */
+  .event-summary-container section div {
+    font-size: 3rem;
+  }
+
+  .tamu-map {
+    height: 30dvw;
+  }
+}

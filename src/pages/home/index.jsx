@@ -71,15 +71,6 @@ export default function Home() {
             </div>
             <h3>Texas A&M University</h3>
             <h3>College Station, Texas</h3>
-            <div className="registration-container">
-              <a
-                id="registration-link"
-                target="_blank"
-                onClick={() => handleOpenRegisterModal(true)}
-              >
-                <div className="button-link-container">Register</div>
-              </a>
-            </div>
           </div>
           <div id="home-content" className="page-content">
             <div id="about-scrc" className="content-container">

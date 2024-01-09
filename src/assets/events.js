@@ -9,7 +9,7 @@ const morningEvents = [
   {
     name: "Check In",
     id: "check-in",
-    location: "TBA",
+    location: "",
     start_time: new Date("2024-03-02T08:30:00"),
     end_time: new Date("2024-03-02T09:30:00"),
     status: "On Time",
@@ -19,7 +19,7 @@ const morningEvents = [
   {
     name: "Opening Ceremony",
     id: "opening-ceremony",
-    location: "TBA",
+    location: "",
     start_time: new Date("2024-03-02T09:30:00"),
     end_time: new Date("2024-03-02T10:20:00"),
     status: "On Time",
@@ -39,7 +39,7 @@ const morningEvents = [
   {
     name: "Workshop I",
     id: "workshop-1",
-    location: "TBA",
+    location: "",
     start_time: new Date("2024-03-02T10:30:00"),
     end_time: new Date("2024-03-02T11:20:00"),
     status: "On Time",
@@ -59,7 +59,7 @@ const morningEvents = [
   {
     name: "Lunch Break",
     id: "lunch-break",
-    location: "TBA",
+    location: "",
     start_time: new Date("2024-03-02T11:30:00"),
     end_time: new Date("2024-03-02T12:20:00"),
     status: "On Time",
@@ -72,7 +72,7 @@ const afternoonEvents = [
   {
     name: "Workshop II",
     id: "workshop-2",
-    location: "TBA",
+    location: "",
     start_time: new Date("2024-03-02T12:30:00"),
     end_time: new Date("2024-03-02T13:20:00"),
     status: "On Time",
@@ -92,7 +92,7 @@ const afternoonEvents = [
   {
     name: "Workshop III",
     id: "workshop-3",
-    location: "TBA",
+    location: "",
     start_time: new Date("2024-03-02T13:30:00"),
     end_time: new Date("2024-03-02T14:20:00"),
     status: "On Time",
@@ -112,7 +112,7 @@ const afternoonEvents = [
   {
     name: "Workshop IV",
     id: "workshop-4",
-    location: "TBA",
+    location: "",
     start_time: new Date("2024-03-02T14:30:00"),
     end_time: new Date("2024-03-02T15:20:00"),
     status: "On Time",
@@ -132,7 +132,7 @@ const afternoonEvents = [
   {
     name: "Closing Ceremony",
     id: "closing-ceremony",
-    location: "TBA",
+    location: "",
     start_time: new Date("2024-03-02T15:30:00"),
     end_time: new Date("2024-03-02T16:30:00"),
     status: "On Time",
@@ -142,7 +142,7 @@ const afternoonEvents = [
   {
     name: "Career Fair",
     id: "career-fair",
-    location: "TBA",
+    location: "",
     start_time: new Date("2024-03-02T16:30:00"),
     end_time: new Date("2024-03-02T19:00:00"),
     status: "On Time",

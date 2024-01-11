@@ -182,6 +182,7 @@ p a:active {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .image-container div {
@@ -208,10 +209,6 @@ p a:active {
     width: 100px;
     height: 100px;
   }
-
-  .image-container {
-    flex-direction: row;
-  }
 }
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
@@ -221,4 +218,7 @@ p a:active {
 }
 @media (min-width: 1921px) {
   /* hi-res desktops */
+  .image-container {
+    flex-direction: row;
+  }
 }

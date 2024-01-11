@@ -181,7 +181,7 @@ export default function Home() {
                         <a
                           className="link gmail-link"
                           target="_blank"
-                          href="mailto:"
+                          href="mailto:sasetamu@gmail.com"
                         >
                           <div className="social-icon gmail-icon"></div>
                         </a>

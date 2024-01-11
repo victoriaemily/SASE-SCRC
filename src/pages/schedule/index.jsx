@@ -56,9 +56,9 @@ export default function Guide() {
             <div className="other-labels">
               {event.isWorkshop ? (
                 <ul className="workshop-label">
-                  <li>Option 1</li>
-                  <li>Option 2</li>
-                  <li>Option 3</li>
+                  <li>{event.option1}</li>
+                  <li>{event.option2}</li>
+                  <li>{event.option3}</li>
                 </ul>
               ) : (
                 <div className="workshop-label"></div>

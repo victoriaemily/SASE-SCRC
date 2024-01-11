@@ -1,0 +1,204 @@
+#schedule-background {
+  background-repeat: no-repeat;
+  background-image: url("/images/zachry-engr.jpg");
+  background-size: cover;
+  background-position: center;
+  height: var(--background-height);
+}
+
+#schedule-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  padding-inline: 0;
+}
+
+.schedule-divider {
+  width: 100%;
+  transition: transform 1s ease;
+  transform-style: preserve-3d;
+  padding-block: 2rem;
+}
+
+.time-divider {
+  background-color: var(--blue6);
+  color: white;
+  margin-block: 0;
+}
+
+.event-divider button,
+.transition-divider > div {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.event-divider:hover {
+  background-color: var(--blue3);
+  color: white;
+}
+
+/* .event-divider:active {
+  background-color: var(--blue4);
+  color: white;
+} */
+
+.transition-divider {
+  background-color: var(--blue4);
+  color: white;
+}
+
+.start-time-label {
+  flex: 2;
+}
+
+.full-time-label {
+  display: none;
+  flex: 2;
+}
+
+.event-location-labels {
+  flex: 1;
+}
+
+.other-labels {
+  flex: 2;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.other-labels .workshop-label {
+  flex: 1;
+}
+
+.other-labels .status-label {
+  display: none;
+  flex: 1;
+}
+
+#schedule-container .event-label {
+  font-size: 1.6rem;
+}
+
+#schedule-container .time-label,
+#schedule-container .gate-label,
+#schedule-container .workshop-label,
+#schedule-container .status-label {
+  font-size: 1.2rem;
+}
+
+.pad-divider {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes slide-container-in-from-top {
+  from {
+    z-index: 1;
+    transform: translateY(-125vh);
+  }
+  to {
+    z-index: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slide-container-out-to-top {
+  0% {
+    z-index: 1;
+    transform: translateY(0);
+  }
+  99% {
+    z-index: 1;
+  }
+  100% {
+    z-index: -1;
+    transform: translateY(-125vh);
+  }
+}
+
+@media (min-width: 360px) {
+  /* larger phones */
+}
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  #schedule-container .event-label {
+    font-size: 1.9rem;
+  }
+
+  #schedule-container .time-label,
+  #schedule-container .gate-label,
+  #schedule-container .workshop-label,
+  #schedule-container .status-label {
+    font-size: 1.3rem;
+  }
+}
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .other-labels .status-label {
+    display: unset;
+  }
+
+  .start-time-label {
+    display: none;
+  }
+
+  .full-time-label {
+    display: unset;
+  }
+
+  #schedule-container .event-label,
+  #schedule-container .departure-label {
+    font-size: 2rem;
+  }
+
+  #schedule-container .time-label,
+  #schedule-container .gate-label,
+  #schedule-container .workshop-label,
+  #schedule-container .status-label {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+  #schedule-container > div {
+    margin: auto;
+    height: 100%;
+    width: 100%;
+  }
+
+  #schedule-container .event-label,
+  #schedule-container .departure-label {
+    font-size: 2.4rem;
+  }
+
+  #schedule-container .time-label,
+  #schedule-container .gate-label,
+  #schedule-container .workshop-label,
+  #schedule-container .status-label {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 1921px) {
+  /* hi-res desktops */
+  #schedule-container .event-label,
+  #schedule-container .departure-label {
+    font-size: 2.7rem;
+  }
+
+  #schedule-container .time-label,
+  #schedule-container .gate-label,
+  #schedule-container .workshop-label,
+  #schedule-container .status-label {
+    font-size: 1.8rem;
+  }
+}

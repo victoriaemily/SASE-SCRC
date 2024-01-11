@@ -1,0 +1,178 @@
+.background-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.page-body {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100dvw;
+}
+
+.page-header {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: -20vh;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.page-title {
+  width: 100%;
+  border-bottom: 10px solid var(--blue6);
+}
+
+.page-title-container {
+  margin-block: 6rem;
+}
+
+.page-header h1 {
+  width: 80%;
+  margin: auto;
+  font-size: 3.2rem;
+}
+
+.page-header h2 {
+  font-size: 2.2rem;
+}
+
+.page-header h3 {
+  font-size: 1.4rem;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.content-container {
+  position: relative;
+  padding: 2rem 1rem;
+  width: 100%;
+}
+
+.content-container h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.content-container h2 {
+  font-size: 2rem;
+}
+
+.content-container h3 {
+  font-size: 1.8rem;
+}
+
+.content-container p {
+  font-size: 1.2rem;
+}
+
+@media (min-width: 360px) {
+  /* larger phones */
+  .content-container p {
+    font-size: 1.4rem;
+  }
+
+  .content-container {
+    padding-inline: 1.5rem;
+  }
+}
+@media (min-width: 481px) {
+  /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+  .page-header {
+    width: 400px;
+  }
+
+  .page-header h1 {
+    font-size: 5rem;
+  }
+
+  .content-container {
+    padding-inline: 2rem;
+  }
+}
+@media (min-width: 641px) {
+  /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  .page-header {
+    width: 500px;
+  }
+
+  .content-container {
+    padding-inline: 2.5rem;
+  }
+}
+@media (min-width: 961px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .page-header {
+    width: 750px;
+  }
+}
+@media (min-width: 1024px) {
+  /* big landscape tablets, laptops, and desktops */
+  .content-container {
+    padding: 3rem;
+  }
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+  .page-header h1 {
+    width: 100%;
+  }
+
+  .page-header h3 {
+    font-size: 1.7rem;
+  }
+
+  .content-container {
+    height: inherit;
+  }
+
+  .content-container > div {
+    margin: auto;
+    height: 100%;
+    width: 80%;
+  }
+
+  .content-container h1 {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+
+  .content-container h2 {
+    font-size: 2.5rem;
+  }
+
+  .content-container p {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1921px) {
+  /* hi-res desktops */
+  .content-container h1 {
+    font-size: 4rem;
+    font-weight: 600;
+  }
+
+  .content-container h2 {
+    font-size: 3rem;
+  }
+
+  .content-container p {
+    font-size: 2.5rem;
+  }
+}

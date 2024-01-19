@@ -14,7 +14,7 @@ export default function FAQ() {
 					<div className="page-header">
 						<h2>South Central Regional Conference</h2>
 						<div className="page-title">
-							<h1>Frequently Asked Questions</h1>
+							<h1>FAQ</h1>
 						</div>
 						<h3>Texas A&M University | Memorial Student Center</h3>
 					</div>

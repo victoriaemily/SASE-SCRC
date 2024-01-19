@@ -18,17 +18,16 @@ h2#venue-address {
 
 #venue-quick-view {
   flex: 1;
-  position: relative;
   margin-block-end: 2rem;
 }
 
 #venue-quick-view h2 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   margin-block-end: 2rem;
 }
 
 #venue-information {
-  flex: 2;
+  flex: 3;
 }
 
 #venue-title {
@@ -49,19 +48,19 @@ h2#venue-address {
 }
 
 #venue-information h2 {
-  font-size: 1.6rem;
+  font-size: 2rem;
   color: var(--blue5);
   margin-block-end: 1rem;
 }
 
 #venue-information h3 {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   margin-block-start: 1.5rem;
   margin-block-end: 0.85rem;
 }
 
 #venue-information p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 500;
   margin-block-end: 0.75rem;
 }
@@ -70,6 +69,8 @@ table {
   border-collapse: collapse;
   width: 100%;
   font-family: "Montserrat";
+  margin-block-end: 1rem;
+  font-size: 1.2rem;
 }
 
 tr {
@@ -88,24 +89,29 @@ tr:nth-child(even) {
 }
 
 .info-list {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   list-style-type: disc;
   list-style-position: inside;
   font-family: "Montserrat";
 }
 
-#venue-resources h1 {
-  margin-block-end: 1rem;
-}
-
-#venue-resources h2 {
-  margin-block-end: 0.5rem;
+#floor-maps h2,
+#parking-maps h2 {
+  margin-block: 0.5rem;
   font-size: 2rem;
-  color: var(--blue7);
+  color: black;
   text-align: center;
 }
 
+#floor-maps .image-container > div,
+#parking-maps .image-container > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .resource-section {
+  /* margin-block-start: calc(-1 * var(--header-size)); */
   margin-block-start: 0;
   padding-block-start: var(--header-size);
 }
@@ -114,7 +120,7 @@ tr:nth-child(even) {
   background-repeat: no-repeat;
   background-image: url("/maps/msc-floor1.svg");
   background-size: contain;
-  background-position: center;
+  background-position: left;
   height: 85vw;
 }
 
@@ -122,7 +128,7 @@ tr:nth-child(even) {
   background-repeat: no-repeat;
   background-image: url("/maps/msc-floor2.svg");
   background-size: contain;
-  background-position: center;
+  background-position: left;
   height: 75vw;
 }
 
@@ -186,31 +192,31 @@ tr:nth-child(even) {
     margin-inline-start: 1rem;
   }
 
-  #venue-resources {
+  #floor-maps,
+  #parking-maps {
     margin: auto;
     width: 95%;
   }
 
-  #venue-resources .image-container > div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  #floor-maps .image-container > div,
+  #parking-maps .image-container > div {
     padding: 1rem;
-    height: 55vh;
+    height: 80vh;
   }
 
   #msc-floor1 {
-    width: 100%;
-    height: 60vh;
+    width: 90%;
+    height: 70%;
   }
 
   #msc-floor2 {
-    width: 100%;
-    height: 60vh;
+    width: 90%;
+    height: 70%;
   }
 
   #msc-parking {
-    height: 95vw;
+    width: 70%;
+    height: 70%;
   }
 
   #hotel-info-container {
@@ -224,27 +230,61 @@ tr:nth-child(even) {
 }
 @media (min-width: 1024px) {
   /* big landscape tablets, laptops, and desktops */
+  #msc-floor1 {
+    width: 88%;
+    height: 88%;
+  }
+
+  #msc-floor2 {
+    width: 88%;
+    height: 88%;
+  }
 }
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */
 }
 @media (min-width: 1921px) {
   /* hi-res desktops */
+  #venue-quick-view h2 {
+    font-size: 2.2rem;
+  }
+
   #venue-information h2 {
-    font-size: 2rem;
+    font-size: 2.4rem;
   }
 
   #venue-information h3 {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
   }
 
   #venue-information p {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 500;
   }
 
   table {
     font-size: 1.6rem;
+  }
+
+  #floor-maps .image-container > div,
+  #parking-maps .image-container > div {
+    padding: 1rem;
+    height: 60vh;
+  }
+
+  #msc-floor1 {
+    width: 100%;
+    height: 100%;
+  }
+
+  #msc-floor2 {
+    width: 100%;
+    height: 100%;
+  }
+
+  #msc-parking {
+    width: 70%;
+    height: 70%;
   }
 
   .info-list {

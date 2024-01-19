@@ -20,7 +20,7 @@ export default function Sponsors() {
           </div>
           <div className="page-content">
             <div className="content-container">
-              <h1>TBA</h1>
+              <h1>More Information Coming Soon!</h1>
             </div>
           </div>
         </div>

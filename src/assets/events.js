@@ -9,7 +9,7 @@ const morningEvents = [
   {
     name: "Check In",
     id: "check-in",
-    location: "TBA",
+    location: "",
     start_time: new Date("2024-03-02T08:30:00"),
     end_time: new Date("2024-03-02T09:30:00"),
     status: "On Time",
@@ -19,7 +19,7 @@ const morningEvents = [
   {
     name: "Opening Ceremony",
     id: "opening-ceremony",
-    location: "TBA",
+    location: "",
     start_time: new Date("2024-03-02T09:30:00"),
     end_time: new Date("2024-03-02T10:20:00"),
     status: "On Time",
@@ -38,8 +38,11 @@ const morningEvents = [
   },
   {
     name: "Workshop I",
+    option1: "Corporate Workshop #1",
+    option2: "Graduate Student Panel",
+    option3: "Speed Networking Event",
     id: "workshop-1",
-    location: "TBA",
+    location: "",
     start_time: new Date("2024-03-02T10:30:00"),
     end_time: new Date("2024-03-02T11:20:00"),
     status: "On Time",
@@ -59,7 +62,7 @@ const morningEvents = [
   {
     name: "Lunch Break",
     id: "lunch-break",
-    location: "TBA",
+    location: "",
     start_time: new Date("2024-03-02T11:30:00"),
     end_time: new Date("2024-03-02T12:20:00"),
     status: "On Time",
@@ -71,8 +74,11 @@ const morningEvents = [
 const afternoonEvents = [
   {
     name: "Workshop II",
+    option1: "Corporate Workshop #2",
+    option2: "Corporate Workshop #5",
+    option3: "Origami",
     id: "workshop-2",
-    location: "TBA",
+    location: "",
     start_time: new Date("2024-03-02T12:30:00"),
     end_time: new Date("2024-03-02T13:20:00"),
     status: "On Time",
@@ -91,8 +97,11 @@ const afternoonEvents = [
   },
   {
     name: "Workshop III",
+    option1: "Corporate Workshop #3",
+    option2: "Women in STEM Mixer",
+    option3: "Mini Engineering Design",
     id: "workshop-3",
-    location: "TBA",
+    location: "",
     start_time: new Date("2024-03-02T13:30:00"),
     end_time: new Date("2024-03-02T14:20:00"),
     status: "On Time",
@@ -111,8 +120,11 @@ const afternoonEvents = [
   },
   {
     name: "Workshop IV",
+    option1: "Corporate Workshop #4",
+    option2: "Life After College",
+    option3: "Dance",
     id: "workshop-4",
-    location: "TBA",
+    location: "",
     start_time: new Date("2024-03-02T14:30:00"),
     end_time: new Date("2024-03-02T15:20:00"),
     status: "On Time",
@@ -132,7 +144,7 @@ const afternoonEvents = [
   {
     name: "Closing Ceremony",
     id: "closing-ceremony",
-    location: "TBA",
+    location: "",
     start_time: new Date("2024-03-02T15:30:00"),
     end_time: new Date("2024-03-02T16:30:00"),
     status: "On Time",
@@ -142,7 +154,7 @@ const afternoonEvents = [
   {
     name: "Career Fair",
     id: "career-fair",
-    location: "TBA",
+    location: "",
     start_time: new Date("2024-03-02T16:30:00"),
     end_time: new Date("2024-03-02T19:00:00"),
     status: "On Time",

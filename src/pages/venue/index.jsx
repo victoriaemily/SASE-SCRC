@@ -67,6 +67,19 @@ export default function Venue() {
                       Below are provided <a href="#floor-maps">floor maps</a> of
                       the venue.
                     </p>
+                    <section id="floor-maps" className="resource-section">
+                      <h2>Memorial Student Center (MSC)</h2>
+                      <div className="image-container">
+                        <div>
+                          <h3>1st Floor</h3>
+                          <div id="msc-floor1"></div>
+                        </div>
+                        <div>
+                          <h3>2nd Floor</h3>
+                          <div id="msc-floor2"></div>
+                        </div>
+                      </div>
+                    </section>
                     <h3>Parking</h3>
                     <p>
                       All nearby lots/garages will only be available via{" "}
@@ -110,6 +123,12 @@ export default function Venue() {
                         </tr>
                       </tbody>
                     </table>
+                    <section id="parking-maps" className="resource-section">
+                      <h2>Parking Maps</h2>
+                      <div className="image-container">
+                        <div id="msc-parking"></div>
+                      </div>
+                    </section>
                     <h3>Hotels</h3>
                     <p>
                       Below are weighable <a href="#hotels">hotel options</a>.
@@ -120,90 +139,70 @@ export default function Venue() {
                       <li>Adjacent to campus (1-3 Miles)</li>
                       <li>Along Highway 6 (3+ Miles)</li>
                     </ul>
-                  </div>
-                </section>
-              </div>
-              <div id="venue-resources">
-                <section id="floor-maps" className="resource-section">
-                  <h1>Floor Maps</h1>
-                  <h2>Memorial Student Center (MSC)</h2>
-                  <div className="image-container">
-                    <div>
-                      <h3>1st Floor</h3>
-                      <div id="msc-floor1"></div>
-                    </div>
-                    <div>
-                      <h3>2nd Floor</h3>
-                      <div id="msc-floor2"></div>
-                    </div>
-                  </div>
-                </section>
-                <section id="parking-maps" className="resource-section">
-                  <h1>Parking Maps</h1>
-                  <div className="image-container">
-                    <div id="msc-parking"></div>
-                  </div>
-                </section>
-                <section id="hotels" className="resource-section">
-                  <h1>Hotels</h1>
-                  <div id="hotel-info-container">
-                    <div className="hotel-info-card">
-                      <h2>
-                        <a
-                          href="https://www.texasamhotelcc.com/"
-                          target="_blank"
-                        >
-                          Texas A&M Hotel and Conference Center
-                        </a>
-                      </h2>
-                      <p>
-                        <a
-                          href="https://www.google.com/travel/search?q=tamu%20hotels&g2lb=2502548%2C2503771%2C2503781%2C2504375%2C4258168%2C4284970%2C4291517%2C4597339%2C4814050%2C4874190%2C4893075%2C4924070%2C4965990%2C10208620%2C72277293%2C72298667%2C72302247%2C72313836%2C72317059%2C72406588%2C72412680%2C72414906%2C72421566%2C72423675%2C72424729%2C72430562%2C72440517%2C72442338%2C72455021%2C72458707%2C72462261%2C72470896&hl=en-US&gl=us&cs=1&ssta=1&ts=CAESCgoCCAMKAggDEAAaXwo_Ej0yJTB4ODY0NjgzZjczM2MwMDAwMToweDk3NDdiOGE0YjljMDNiYzg6FFRleGFzIEEmTSBVbml2ZXJzaXR5EhwSFAoHCOgPEAEYCBIHCOgPEAEYCRgBMgQIABAAKgcKBToDVVNE&qs=CAEyJ0Noa0k5dFdTNXItdjU1WkVHZzB2Wnk4eE1XZG1NemcxWWpkc0VBRTgGQgkJ9qrE_HudLURCCQnVSSQxgpKBCEIJCWIajqYdNVA9SABaAggB&ap=KigKEgnKUnyX0pU-QBFEQCExcBZYwBISCQjH2piOoT5AEURAIcVXE1jAMABoAQ&ictx=1&sa=X&ved=0CAAQ5JsGahgKEwiY8ZK63ceDAxUAAAAAHQAAAAAQiwk&utm_campaign=sharing&utm_medium=link_btn&utm_source=htls"
-                          target="_blank"
-                        >
-                          177 Joe Routt Boulevard (0.2 miles)
-                        </a>
-                      </p>
-                      <p>2 min walk | 0 min drive</p>
-                      <p>+1 (979) 260-2235</p>
-                    </div>
-                    <div className="hotel-info-card">
-                      <h2>
-                        <a href="https://www.cavalrycourt.com/" target="_blank">
-                          Cavalry Court
-                        </a>
-                      </h2>
-                      <p>
-                        <a
-                          href="https://www.google.com/travel/search?q=tamu%20hotels&g2lb=2502548%2C2503771%2C2503781%2C2504375%2C4258168%2C4284970%2C4291517%2C4597339%2C4814050%2C4874190%2C4893075%2C4924070%2C4965990%2C10208620%2C72277293%2C72298667%2C72302247%2C72313836%2C72317059%2C72406588%2C72412680%2C72414906%2C72421566%2C72423675%2C72424729%2C72430562%2C72440517%2C72442338%2C72455021%2C72458707%2C72462261%2C72470896&hl=en-US&gl=us&cs=1&ssta=1&ts=CAESCgoCCAMKAggDEAAaXwo_Ej0yJTB4ODY0NjgzZjczM2MwMDAwMToweDk3NDdiOGE0YjljMDNiYzg6FFRleGFzIEEmTSBVbml2ZXJzaXR5EhwSFAoHCOgPEAEYCBIHCOgPEAEYCRgBMgQIABAAKgcKBToDVVNE&qs=CAEyJ0Noa0lrcDZtdUtDeS1Nb1pHZzB2Wnk4eE1XTXhibVJxWDNoakVBRTgGQgkJ9qrE_HudLURCCQnVSSQxgpKBCEIJCWIajqYdNVA9SABaAggB&ap=KigKEgl9iyNJep4-QBFV-JGoFRZYwBISCQHSfShpoT5AEVX4kY1PFVjAMABoAQ&ictx=1&sa=X&ved=0CAAQ5JsGahgKEwi4tdjD9seDAxUAAAAAHQAAAAAQjQQ&utm_campaign=sharing&utm_medium=link_btn&utm_source=htls"
-                          target="_blank"
-                        >
-                          200 Century Court (1.2 miles)
-                        </a>
-                      </p>
-                      <p>27 min walk | 7 min drive</p>
-                      <p>+1 (979) 485-7337</p>
-                    </div>
-                    <div className="hotel-info-card">
-                      <h2>
-                        <a
-                          href="https://www.hilton.com/en/hotels/clleses-embassy-suites-college-station/?SEO_id=GMB-AMER-ES-CLLESES&y_source=1_ODIyMDg4OS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
-                          target="_blank"
-                        >
-                          Embassy Suites by Hilton
-                        </a>
-                      </h2>
-                      <p>
-                        <a
-                          href="https://www.google.com/travel/search?q=tamu%20hotels&g2lb=2502548%2C2503771%2C2503781%2C2504375%2C4258168%2C4284970%2C4291517%2C4597339%2C4814050%2C4874190%2C4893075%2C4924070%2C4965990%2C10208620%2C72277293%2C72298667%2C72302247%2C72313836%2C72317059%2C72406588%2C72412680%2C72414906%2C72421566%2C72423675%2C72424729%2C72430562%2C72440517%2C72442338%2C72455021%2C72458707%2C72462261%2C72470896&hl=en-US&gl=us&cs=1&ssta=1&ts=CAESCgoCCAMKAggDEAAaXwo_Ej0yJTB4ODY0NjgzZjczM2MwMDAwMToweDk3NDdiOGE0YjljMDNiYzg6FFRleGFzIEEmTSBVbml2ZXJzaXR5EhwSFAoHCOgPEAEYCBIHCOgPEAEYCRgBMgQIABAAKgcKBToDVVNE&qs=CAEyJ0Noa0kxWk9SaWFQUTVNQUlHZzB2Wnk4eE1XWXdNM0ZyWTJKNEVBRTgGQgkJ9qrE_HudLURCCQnVSSQxgpKBCEIJCWIajqYdNVA9SABaAggB&ap=KigKEgmNqRv3MZ8-QBFof8uV1BVYwBISCQf45NAgoj5AEWh_y3oOFVjAMABoAQ&ictx=1&sa=X&ved=0CAAQ5JsGahgKEwi4tdjD9seDAxUAAAAAHQAAAAAQjgE&utm_campaign=sharing&utm_medium=link_btn&utm_source=htls"
-                          target="_blank"
-                        >
-                          201 University Drive East (1.5 miles)
-                        </a>
-                      </p>
-                      <p>35 min walk | 8 min drive</p>
-                      <p>+1 (979) 260-6000</p>
-                    </div>
+                    <section id="hotels" className="resource-section">
+                      <div id="hotel-info-container">
+                        <div className="hotel-info-card">
+                          <h2>
+                            <a
+                              href="https://www.texasamhotelcc.com/"
+                              target="_blank"
+                            >
+                              Texas A&M Hotel and Conference Center
+                            </a>
+                          </h2>
+                          <p>
+                            <a
+                              href="https://www.google.com/travel/search?q=tamu%20hotels&g2lb=2502548%2C2503771%2C2503781%2C2504375%2C4258168%2C4284970%2C4291517%2C4597339%2C4814050%2C4874190%2C4893075%2C4924070%2C4965990%2C10208620%2C72277293%2C72298667%2C72302247%2C72313836%2C72317059%2C72406588%2C72412680%2C72414906%2C72421566%2C72423675%2C72424729%2C72430562%2C72440517%2C72442338%2C72455021%2C72458707%2C72462261%2C72470896&hl=en-US&gl=us&cs=1&ssta=1&ts=CAESCgoCCAMKAggDEAAaXwo_Ej0yJTB4ODY0NjgzZjczM2MwMDAwMToweDk3NDdiOGE0YjljMDNiYzg6FFRleGFzIEEmTSBVbml2ZXJzaXR5EhwSFAoHCOgPEAEYCBIHCOgPEAEYCRgBMgQIABAAKgcKBToDVVNE&qs=CAEyJ0Noa0k5dFdTNXItdjU1WkVHZzB2Wnk4eE1XZG1NemcxWWpkc0VBRTgGQgkJ9qrE_HudLURCCQnVSSQxgpKBCEIJCWIajqYdNVA9SABaAggB&ap=KigKEgnKUnyX0pU-QBFEQCExcBZYwBISCQjH2piOoT5AEURAIcVXE1jAMABoAQ&ictx=1&sa=X&ved=0CAAQ5JsGahgKEwiY8ZK63ceDAxUAAAAAHQAAAAAQiwk&utm_campaign=sharing&utm_medium=link_btn&utm_source=htls"
+                              target="_blank"
+                            >
+                              177 Joe Routt Boulevard (0.2 miles)
+                            </a>
+                          </p>
+                          <p>2 min walk | 0 min drive</p>
+                          <p>+1 (979) 260-2235</p>
+                        </div>
+                        <div className="hotel-info-card">
+                          <h2>
+                            <a
+                              href="https://www.cavalrycourt.com/"
+                              target="_blank"
+                            >
+                              Cavalry Court
+                            </a>
+                          </h2>
+                          <p>
+                            <a
+                              href="https://www.google.com/travel/search?q=tamu%20hotels&g2lb=2502548%2C2503771%2C2503781%2C2504375%2C4258168%2C4284970%2C4291517%2C4597339%2C4814050%2C4874190%2C4893075%2C4924070%2C4965990%2C10208620%2C72277293%2C72298667%2C72302247%2C72313836%2C72317059%2C72406588%2C72412680%2C72414906%2C72421566%2C72423675%2C72424729%2C72430562%2C72440517%2C72442338%2C72455021%2C72458707%2C72462261%2C72470896&hl=en-US&gl=us&cs=1&ssta=1&ts=CAESCgoCCAMKAggDEAAaXwo_Ej0yJTB4ODY0NjgzZjczM2MwMDAwMToweDk3NDdiOGE0YjljMDNiYzg6FFRleGFzIEEmTSBVbml2ZXJzaXR5EhwSFAoHCOgPEAEYCBIHCOgPEAEYCRgBMgQIABAAKgcKBToDVVNE&qs=CAEyJ0Noa0lrcDZtdUtDeS1Nb1pHZzB2Wnk4eE1XTXhibVJxWDNoakVBRTgGQgkJ9qrE_HudLURCCQnVSSQxgpKBCEIJCWIajqYdNVA9SABaAggB&ap=KigKEgl9iyNJep4-QBFV-JGoFRZYwBISCQHSfShpoT5AEVX4kY1PFVjAMABoAQ&ictx=1&sa=X&ved=0CAAQ5JsGahgKEwi4tdjD9seDAxUAAAAAHQAAAAAQjQQ&utm_campaign=sharing&utm_medium=link_btn&utm_source=htls"
+                              target="_blank"
+                            >
+                              200 Century Court (1.2 miles)
+                            </a>
+                          </p>
+                          <p>27 min walk | 7 min drive</p>
+                          <p>+1 (979) 485-7337</p>
+                        </div>
+                        <div className="hotel-info-card">
+                          <h2>
+                            <a
+                              href="https://www.hilton.com/en/hotels/clleses-embassy-suites-college-station/?SEO_id=GMB-AMER-ES-CLLESES&y_source=1_ODIyMDg4OS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
+                              target="_blank"
+                            >
+                              Embassy Suites by Hilton
+                            </a>
+                          </h2>
+                          <p>
+                            <a
+                              href="https://www.google.com/travel/search?q=tamu%20hotels&g2lb=2502548%2C2503771%2C2503781%2C2504375%2C4258168%2C4284970%2C4291517%2C4597339%2C4814050%2C4874190%2C4893075%2C4924070%2C4965990%2C10208620%2C72277293%2C72298667%2C72302247%2C72313836%2C72317059%2C72406588%2C72412680%2C72414906%2C72421566%2C72423675%2C72424729%2C72430562%2C72440517%2C72442338%2C72455021%2C72458707%2C72462261%2C72470896&hl=en-US&gl=us&cs=1&ssta=1&ts=CAESCgoCCAMKAggDEAAaXwo_Ej0yJTB4ODY0NjgzZjczM2MwMDAwMToweDk3NDdiOGE0YjljMDNiYzg6FFRleGFzIEEmTSBVbml2ZXJzaXR5EhwSFAoHCOgPEAEYCBIHCOgPEAEYCRgBMgQIABAAKgcKBToDVVNE&qs=CAEyJ0Noa0kxWk9SaWFQUTVNQUlHZzB2Wnk4eE1XWXdNM0ZyWTJKNEVBRTgGQgkJ9qrE_HudLURCCQnVSSQxgpKBCEIJCWIajqYdNVA9SABaAggB&ap=KigKEgmNqRv3MZ8-QBFof8uV1BVYwBISCQf45NAgoj5AEWh_y3oOFVjAMABoAQ&ictx=1&sa=X&ved=0CAAQ5JsGahgKEwi4tdjD9seDAxUAAAAAHQAAAAAQjgE&utm_campaign=sharing&utm_medium=link_btn&utm_source=htls"
+                              target="_blank"
+                            >
+                              201 University Drive East (1.5 miles)
+                            </a>
+                          </p>
+                          <p>35 min walk | 8 min drive</p>
+                          <p>+1 (979) 260-6000</p>
+                        </div>
+                      </div>
+                    </section>
                   </div>
                 </section>
               </div>

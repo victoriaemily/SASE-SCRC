@@ -72,7 +72,13 @@
 }
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */
+  #faq-content h1 {
+    font-size: 3rem;
+  }
 }
 @media (min-width: 1921px) {
   /* hi-res desktops */
+  #faq-content h1 {
+    font-size: 4rem;
+  }
 }

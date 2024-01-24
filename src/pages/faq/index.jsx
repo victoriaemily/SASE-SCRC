@@ -74,6 +74,7 @@ export default function FAQ() {
 											<th>$45.00</th>
 											<th className="benefits">
 												Non-printed name on badge, t-shirt, sticker, and lunch.
+												(Subjected to supply availability)
 											</th>
 										</tr>
 									</tbody>

@@ -86,13 +86,13 @@ export default function FAQ() {
 									Registration will only be available as an individual signup.
 								</p>
 							</div>
-							<div>
+							{/* <div>
 								<h2>Can I refund my ticket?</h2>
 								<p>
 									The South Central Regional Conference will be held on March
 									02, 2024.
 								</p>
-							</div>
+							</div> */}
 						</div>
 						<div className="content-container">
 							<h1>Preparations and Expectations</h1>

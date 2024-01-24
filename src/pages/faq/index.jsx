@@ -94,13 +94,13 @@ export default function FAQ() {
 							</div>
 						</div>
 						<div className="content-container">
-							<h1>Perparations and Expectations</h1>
+							<h1>Preparations and Expectations</h1>
 							<div>
 								<h2>What can I expect coming to SCRC?</h2>
 								<p>
 									You can expect to meet numerous new people of unique
 									backgrounds where we will be doing our all to provide a fun
-									and wortwhile experience.
+									and worthwhile experience.
 								</p>
 							</div>
 							<div>

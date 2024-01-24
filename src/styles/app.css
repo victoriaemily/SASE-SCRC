@@ -189,6 +189,33 @@ p a:active {
   width: 100%;
 }
 
+table {
+  border-collapse: collapse;
+  width: 100%;
+  font-family: "Montserrat";
+  margin-block-end: 1rem;
+  font-size: 1.2rem;
+}
+
+tr {
+  border: 1px solid #dddddd;
+}
+
+tr.header-row th {
+  font-weight: 600;
+}
+
+td,
+th {
+  text-align: left;
+  padding: 8px;
+  font-weight: 500;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
 @media (min-width: 481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 }

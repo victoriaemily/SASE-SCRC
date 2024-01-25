@@ -113,7 +113,7 @@ export default function Home() {
 										</div>
 										<br />
 										<div>
-											<b>Time:</b> 8:30am - 7:00pm
+											<b>Time:</b> 8:30am - 7:30pm
 										</div>
 										<br />
 										<div>

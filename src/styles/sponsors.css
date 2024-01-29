@@ -6,6 +6,31 @@
   height: var(--background-height);
 }
 
+#sponsor-container .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.shell-logo {
+  background: url("/logos/shell-logo.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 75px;
+  aspect-ratio: 4/1;
+  margin-block: 1rem;
+}
+
+.accma-logo {
+  background: url("/logos/accma-logo.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 200px;
+  aspect-ratio: 1/1;
+  margin-block: 1rem;
+}
+
 @media (min-width: 360px) {
   /* larger phones */
 }
@@ -14,6 +39,17 @@
 }
 @media (min-width: 641px) {
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+  .shell-logo {
+    height: 100px;
+  }
+
+  .accma-logo {
+    height: 250px;
+  }
+  
+  #more-sponsors-header {
+    margin-block-start: 4rem;
+  }
 }
 @media (min-width: 961px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */

@@ -23,6 +23,7 @@ export default function Sponsors() {
 							<div className="logo-container">
 								<div className="sponsor-logo shell-logo"></div>
 								<div className="sponsor-logo accma-logo"></div>
+								<div className="sponsor-logo cdm-smith-logo"></div>
 							</div>
 							<h1 id="more-sponsors-header">More Sponsors Coming Soon!</h1>
 						</div>

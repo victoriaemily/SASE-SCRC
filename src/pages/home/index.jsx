@@ -54,14 +54,19 @@ export default function Home() {
 
   return (
 		<>
-			<RellaxWrapper speed={-10}>
+			<RellaxWrapper className="common-background" speed={-10}>
+				<div id="home-background">
+					<div className="background-overlay"></div>
+				</div>
+			</RellaxWrapper>
+			<RellaxWrapper className="horizontal-phone-background" speed={-6}>
 				<div id="home-background">
 					<div className="background-overlay"></div>
 				</div>
 			</RellaxWrapper>
 			<RellaxWrapper speed={0}>
 				<div className="page-body">
-					<div id="home-header" className="page-header">
+					<div id="home-header" className="common-header page-header">
 						<h3>March 2nd, 2024</h3>
 						<div className="page-title-container">
 							<div className="page-title">
@@ -71,6 +76,14 @@ export default function Home() {
 						</div>
 						<h3>Texas A&M University</h3>
 						<h3>College Station, Texas</h3>
+					</div>
+					<div id="home-header" className="horizontal-phone-header page-header">
+						<div className="page-title-container">
+							<div className="page-title">
+								<h1>South Central Regional Conference</h1>
+							</div>
+							<h2 id="home-motto-title">Soar with SASE</h2>
+						</div>
 					</div>
 					<div id="home-content" className="page-content">
 						<div id="about-scrc" className="content-container">

@@ -1,3 +1,19 @@
+.common-background {
+  display: block;
+}
+
+.horizontal-phone-background {
+  display: none;
+}
+
+.common-header {
+  display: flex;
+}
+
+.horizontal-phone-header {
+  display: none;
+}
+
 .background-overlay {
   position: fixed;
   top: 0;
@@ -174,5 +190,28 @@
 
   .content-container p {
     font-size: 2.5rem;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 640px) {
+  /* Your styles for this condition */
+  .common-background {
+    display: none;
+  }
+  
+  .horizontal-phone-background {
+    display: block;
+  }
+
+  .common-header {
+    display: none;
+  }
+
+  .horizontal-phone-header {
+    display: flex;
+  }
+
+  .page-header h1 {
+    font-size: 4rem;
   }
 }

@@ -11,12 +11,18 @@ export default function Venue() {
 			</RellaxWrapper>
 			<RellaxWrapper speed={0}>
 				<div className="page-body">
-					<div className="page-header">
+					<div className="common-header page-header">
 						<h2>South Central Regional Conference</h2>
 						<div className="page-title">
 							<h1>Venue</h1>
 						</div>
 						<h3>Texas A&M University | Memorial Student Center</h3>
+					</div>
+					<div className="horizontal-phone-header page-header">
+						<div className="page-title">
+							<h1>Venue</h1>
+						</div>
+						<h3>South Central Regional Conference</h3>
 					</div>
 					<div className="page-content">
 						<div id="event-details" className="content-container">

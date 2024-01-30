@@ -17,7 +17,7 @@
   background: url("/logos/shell-logo.svg") no-repeat;
   background-size: contain;
   background-position: center;
-  height: 75px;
+  height: 60px;
   aspect-ratio: 4/1;
   margin-block: 1rem;
 }
@@ -26,27 +26,39 @@
   background: url("/logos/accma-logo.svg") no-repeat;
   background-size: contain;
   background-position: center;
-  height: 200px;
-  aspect-ratio: 1/1;
+  height: 75px;
+  aspect-ratio: 3/1;
+  margin-block: 1rem;
+}
+
+.cdm-smith-logo {
+  background: url("/logos/cdm-smith-logo.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 75px;
+  aspect-ratio: 2.2/1;
   margin-block: 1rem;
 }
 
 @media (min-width: 360px) {
   /* larger phones */
+  .shell-logo {
+    height: 75px;
+  }
+
+  .accma-logo {
+    height: 80px;
+  }
+
+  .cdm-smith-logo {
+    height: 80px;
+  }
 }
 @media (min-width: 481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
 }
 @media (min-width: 641px) {
   /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
-  .shell-logo {
-    height: 100px;
-  }
-
-  .accma-logo {
-    height: 250px;
-  }
-  
   #more-sponsors-header {
     margin-block-start: 4rem;
   }
@@ -56,6 +68,17 @@
 }
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */
+  .shell-logo {
+    height: 90px;
+  }
+  
+  .accma-logo {
+    height: 100px;
+  }
+  
+  .cdm-smith-logo {
+    height: 100px;
+  }
 }
 @media (min-width: 1281px) {
   /* hi-res laptops and desktops */

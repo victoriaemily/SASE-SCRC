@@ -72,35 +72,41 @@ export default function Guide() {
   };
 
   return (
-    <>
-      <RellaxWrapper speed={-6}>
-        <div id="schedule-background">
-          <div className="background-overlay"></div>
-        </div>
-      </RellaxWrapper>
-      <RellaxWrapper speed={0}>
-        <div className="page-body">
-          <div className="page-header">
-            <h2>South Central Regional Conference</h2>
-            <div className="page-title">
-              <h1>Schedule</h1>
-            </div>
-            <h3>Texas A&M University | March 2nd, 2024</h3>
-          </div>
-          <div className="page-content">
-            <div id="schedule-container" className="content-container">
-              <div className="schedule-divider time-divider">
-                <h1 className="pad-divider">Morning Block</h1>
-              </div>
-              {morningEvents.map((event, idx) => renderEvent(event, idx))}
-              <div className="schedule-divider time-divider">
-                <h1 className="pad-divider">Afternoon Block</h1>
-              </div>
-              {afternoonEvents.map((event, idx) => renderEvent(event, idx))}
-            </div>
-          </div>
-        </div>
-      </RellaxWrapper>
-    </>
-  );
+		<>
+			<RellaxWrapper speed={-6}>
+				<div id="schedule-background">
+					<div className="background-overlay"></div>
+				</div>
+			</RellaxWrapper>
+			<RellaxWrapper speed={0}>
+				<div className="page-body">
+					<div className="common-header page-header">
+						<h2>South Central Regional Conference</h2>
+						<div className="page-title">
+							<h1>Schedule</h1>
+						</div>
+						<h3>Texas A&M University | March 2nd, 2024</h3>
+					</div>
+					<div className="horizontal-phone-header page-header">
+						<div className="page-title">
+							<h1>Schedule</h1>
+						</div>
+						<h3>South Central Regional Conference</h3>
+					</div>
+					<div className="page-content">
+						<div id="schedule-container" className="content-container">
+							<div className="schedule-divider time-divider">
+								<h1 className="pad-divider">Morning Block</h1>
+							</div>
+							{morningEvents.map((event, idx) => renderEvent(event, idx))}
+							<div className="schedule-divider time-divider">
+								<h1 className="pad-divider">Afternoon Block</h1>
+							</div>
+							{afternoonEvents.map((event, idx) => renderEvent(event, idx))}
+						</div>
+					</div>
+				</div>
+			</RellaxWrapper>
+		</>
+	);
 }

@@ -11,12 +11,18 @@ export default function FAQ() {
 			</RellaxWrapper>
 			<RellaxWrapper speed={0}>
 				<div className="page-body">
-					<div className="page-header">
+					<div className="common-header page-header">
 						<h2>South Central Regional Conference</h2>
 						<div className="page-title">
 							<h1>FAQ</h1>
 						</div>
 						<h3>Texas A&M University | Memorial Student Center</h3>
+					</div>
+					<div className="horizontal-phone-header page-header">
+						<div className="page-title">
+							<h1>FAQ</h1>
+						</div>
+						<h3>South Central Regional Conference</h3>
 					</div>
 					<div id="faq-content" className="page-content">
 						<div id="faq-scrc-intro" className="content-container">

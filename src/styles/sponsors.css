@@ -13,6 +13,10 @@
   flex-wrap: wrap;
 }
 
+.sponsor-logo {
+  margin-inline: 1rem;
+}
+
 .shell-logo {
   background: url("/logos/shell-logo.svg") no-repeat;
   background-size: contain;
@@ -40,6 +44,33 @@
   margin-block: 1rem;
 }
 
+.ge-vernova-logo {
+  background: url("/logos/ge-vernova-logo.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 70px;
+  aspect-ratio: 4.5/1;
+  margin-block: 1rem;
+}
+
+.nasa-logo {
+  background: url("/logos/nasa-logo.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 95px;
+  aspect-ratio: 1.2/1;
+  margin-block: 1rem;
+}
+
+.ti-logo {
+  background: url("/logos/ti-logo.svg") no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 70px;
+  aspect-ratio: 4.25/1;
+  margin-block: 1rem;
+}
+
 @media (min-width: 360px) {
   /* larger phones */
   .shell-logo {
@@ -52,6 +83,18 @@
 
   .cdm-smith-logo {
     height: 80px;
+  }
+
+  .ge-vernova-logo {
+    height: 75px;
+  }
+  
+  .nasa-logo {
+    height: 100px;
+  }
+  
+  .ti-logo {
+    height: 75px;
   }
 }
 @media (min-width: 481px) {
@@ -77,6 +120,18 @@
   }
   
   .cdm-smith-logo {
+    height: 100px;
+  }
+
+  .ge-vernova-logo {
+    height: 100px;
+  }
+  
+  .nasa-logo {
+    height: 120px;
+  }
+  
+  .ti-logo {
     height: 100px;
   }
 }

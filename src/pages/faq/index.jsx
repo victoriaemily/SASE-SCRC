@@ -64,28 +64,28 @@ export default function FAQ() {
 										</tr>
 										<tr>
 											<th>Early Bird</th>
-											<th>Jan 24 - Feb 09</th>
-											<th>$25.00</th>
-											<th className="benefits">
+											<td>Jan 24 - Feb 09</td>
+											<td>$25.00</td>
+											<td className="benefits">
 												Printed name on badge, t-shirt, sticker, and lunch.
-											</th>
+											</td>
 										</tr>
 										<tr>
 											<th>General Ticket</th>
-											<th>Feb 10 - Feb 24</th>
-											<th>$35.00</th>
-											<th className="benefits">
+											<td>Feb 10 - Feb 24</td>
+											<td>$35.00</td>
+											<td className="benefits">
 												Non-printed name on badge, t-shirt, sticker, and lunch.
-											</th>
+											</td>
 										</tr>
 										<tr>
 											<th>Late Registration</th>
-											<th>Feb 25 - March 2</th>
-											<th>$45.00</th>
-											<th className="benefits">
+											<td>Feb 25 - March 2</td>
+											<td>$45.00</td>
+											<td className="benefits">
 												Non-printed name on badge, t-shirt, sticker, and lunch.
 												(Subjected to supply availability)
-											</th>
+											</td>
 										</tr>
 									</tbody>
 								</table>

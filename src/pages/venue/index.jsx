@@ -120,28 +120,28 @@ export default function Venue() {
 												</tr>
 												<tr>
 													<th>0-1 hour</th>
-													<th>$3.00</th>
-													<th>$1.50</th>
+													<td>$3.00</td>
+													<td>$1.50</td>
 												</tr>
 												<tr>
 													<th>1-2 hours</th>
-													<th>$5.00</th>
-													<th>$2.50</th>
+													<td>$5.00</td>
+													<td>$2.50</td>
 												</tr>
 												<tr>
 													<th>2-3 hours</th>
-													<th>$7.00</th>
-													<th>$3.50</th>
+													<td>$7.00</td>
+													<td>$3.50</td>
 												</tr>
 												<tr>
 													<th>3-4 hours</th>
-													<th>$9.00</th>
-													<th>$4.50</th>
+													<td>$9.00</td>
+													<td>$4.50</td>
 												</tr>
 												<tr>
 													<th>Each additional 1 hour</th>
-													<th>$1.00</th>
-													<th>$0.50</th>
+													<td>$1.00</td>
+													<td>$0.50</td>
 												</tr>
 											</tbody>
 										</table>

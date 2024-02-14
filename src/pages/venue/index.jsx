@@ -114,32 +114,32 @@ export default function Venue() {
 										<table className="parking-table">
 											<tbody>
 												<tr className="header-row">
-													<th>Duration</th>
-													<th>6:00am - 5:59pm</th>
-													<th>6:00pm - 5:59am</th>
+													<th scope="col">Duration</th>
+													<th scope="row">6:00am - 5:59pm</th>
+													<th scope="row">6:00pm - 5:59am</th>
 												</tr>
 												<tr>
-													<th>0-1 hour</th>
+													<th scope="row">0-1 hour</th>
 													<td>$3.00</td>
 													<td>$1.50</td>
 												</tr>
 												<tr>
-													<th>1-2 hours</th>
+													<th scope="row">1-2 hours</th>
 													<td>$5.00</td>
 													<td>$2.50</td>
 												</tr>
 												<tr>
-													<th>2-3 hours</th>
+													<th scope="row">2-3 hours</th>
 													<td>$7.00</td>
 													<td>$3.50</td>
 												</tr>
 												<tr>
-													<th>3-4 hours</th>
+													<th scope="row">3-4 hours</th>
 													<td>$9.00</td>
 													<td>$4.50</td>
 												</tr>
 												<tr>
-													<th>Each additional 1 hour</th>
+													<th scope="row">Each additional 1 hour</th>
 													<td>$1.00</td>
 													<td>$0.50</td>
 												</tr>

@@ -5,7 +5,11 @@ export default function Venue() {
   return (
 		<>
 			<RellaxWrapper speed={-6}>
-				<div id="venue-background">
+				<div
+					role="img"
+					aria-label="South side angle of Memorial Student Center (MSC)"
+					id="venue-background"
+				>
 					<div className="background-overlay"></div>
 				</div>
 			</RellaxWrapper>
@@ -37,7 +41,11 @@ export default function Venue() {
 										<h2 className="venue-header">
 											275 Joe Routt Blvd, College Station, TX 77843
 										</h2>
-										<div id="venue-image"></div>
+										<div
+											role="img"
+											aria-label="Rudder Plaza angle of Memorial Student Center (MSC)"
+											id="venue-image"
+										></div>
 										<div id="venue-page-map" className="tamu-map">
 											<iframe
 												src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3433.7697243813577!2d-96.3441192223423!3d30.612257774642714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8646839854d18149%3A0x90311327f8c2221d!2sMemorial%20Student%20Center%20(MSC)!5e0!3m2!1sen!2sus!4v1701457058873!5m2!1sen!2sus"
@@ -78,11 +86,19 @@ export default function Venue() {
 											<div className="image-container">
 												<div>
 													<h3>1st Floor</h3>
-													<div id="msc-floor1"></div>
+													<div
+														role="img"
+														aria-label="The first level floor map of Memorial Student Center (MSC)"
+														id="msc-floor1"
+													></div>
 												</div>
 												<div>
 													<h3>2nd Floor</h3>
-													<div id="msc-floor2"></div>
+													<div
+														role="img"
+														aria-label="The second level floor map of Memorial Student Center (MSC)"
+														id="msc-floor2"
+													></div>
 												</div>
 											</div>
 										</section>
@@ -132,7 +148,11 @@ export default function Venue() {
 										<section id="parking-maps" className="resource-section">
 											<h2>Parking Maps</h2>
 											<div className="image-container">
-												<div id="msc-parking"></div>
+												<div
+													role="img"
+													aria-label="Map of availabel parking lots for access to the Memorial Student Center (MSC)"
+													id="msc-parking"
+												></div>
 											</div>
 										</section>
 										<h3>Hotels</h3>

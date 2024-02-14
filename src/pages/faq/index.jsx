@@ -5,7 +5,11 @@ export default function FAQ() {
   return (
 		<>
 			<RellaxWrapper speed={-6}>
-				<div id="faq-background">
+				<div
+					role="img"
+					aria-label="Texas A&M University Military walk"
+					id="faq-background"
+				>
 					<div className="background-overlay"></div>
 				</div>
 			</RellaxWrapper>

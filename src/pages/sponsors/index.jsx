@@ -5,7 +5,11 @@ export default function Sponsors() {
   return (
 		<>
 			<RellaxWrapper speed={-6}>
-				<div id="sponsors-background">
+				<div
+					role="img"
+					aria-label="Skyline view of Texas A&M University"
+					id="sponsors-background"
+				>
 					<div className="background-overlay"></div>
 				</div>
 			</RellaxWrapper>
@@ -27,12 +31,36 @@ export default function Sponsors() {
 					<div className="page-content">
 						<div id="sponsor-container" className="content-container">
 							<div className="logo-container">
-								<div className="sponsor-logo shell-logo"></div>
-								<div className="sponsor-logo accma-logo"></div>
-								<div className="sponsor-logo cdm-smith-logo"></div>
-								<div className="sponsor-logo nasa-logo"></div>
-								<div className="sponsor-logo ti-logo"></div>
-								<div className="sponsor-logo ge-vernova-logo"></div>
+								<div
+									role="img"
+									aria-label="Shell logo"
+									className="sponsor-logo shell-logo"
+								></div>
+								<div
+									role="img"
+									aria-label="Army Civilian Career Management Activity (ACCMA) logo"
+									className="sponsor-logo accma-logo"
+								></div>
+								<div
+									role="img"
+									aria-label="CDM Smith logo"
+									className="sponsor-logo cdm-smith-logo"
+								></div>
+								<div
+									role="img"
+									aria-label="NASA logo"
+									className="sponsor-logo nasa-logo"
+								></div>
+								<div
+									role="img"
+									aria-label="Texas Instruments logo"
+									className="sponsor-logo ti-logo"
+								></div>
+								<div
+									role="img"
+									aria-label="GE Vernova logo"
+									className="sponsor-logo ge-vernova-logo"
+								></div>
 							</div>
 							<h1 id="more-sponsors-header">More Sponsors Coming Soon!</h1>
 						</div>

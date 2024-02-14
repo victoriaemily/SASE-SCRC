@@ -55,12 +55,20 @@ export default function Home() {
   return (
 		<>
 			<RellaxWrapper className="common-background" speed={-10}>
-				<div id="home-background">
+				<div
+					role="img"
+					aria-label="Texas A&M University Society of Asian Scientists and Engineers members posing for a group photo in front of a SASE sign at SASE Nationals."
+					id="home-background"
+				>
 					<div className="background-overlay"></div>
 				</div>
 			</RellaxWrapper>
 			<RellaxWrapper className="horizontal-phone-background" speed={-6}>
-				<div id="home-background">
+				<div
+					role="img"
+					aria-label="Texas A&M University Society of Asian Scientists and Engineers members posing for a group photo in front of a SASE sign at SASE Nationals."
+					id="home-background"
+				>
 					<div className="background-overlay"></div>
 				</div>
 			</RellaxWrapper>
@@ -139,7 +147,11 @@ export default function Home() {
 											77843
 										</div>
 									</section>
-									<div className="logo scrc-logo-black"></div>
+									<div
+										role="img"
+										aria-label="South Central Regional Conference 2024 Logo"
+										className="logo scrc-logo-black"
+									></div>
 								</div>
 							</div>
 						</div>
@@ -188,7 +200,11 @@ export default function Home() {
 													target="_blank"
 													href="https://instagram.com/sasetamu"
 												>
-													<div className="social-icon instagram-icon"></div>
+													<div
+														role="img"
+														aria-label="Instagram icon"
+														className="social-icon instagram-icon"
+													></div>
 												</a>
 											</li>
 											<li>
@@ -197,7 +213,11 @@ export default function Home() {
 													target="_blank"
 													href="mailto:sasetamu@gmail.com"
 												>
-													<div className="social-icon gmail-icon"></div>
+													<div
+														role="img"
+														aria-label="Gmail icon"
+														className="social-icon gmail-icon"
+													></div>
 												</a>
 											</li>
 											<li>
@@ -206,7 +226,11 @@ export default function Home() {
 													target="_blank"
 													href="https://linktr.ee/tamusase"
 												>
-													<div className="social-icon linktree-icon"></div>
+													<div
+														role="img"
+														aria-label="Linktree icon"
+														className="social-icon linktree-icon"
+													></div>
 												</a>
 											</li>
 										</ul>

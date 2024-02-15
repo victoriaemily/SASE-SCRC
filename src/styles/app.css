@@ -8,6 +8,7 @@
 @import "./schedule.css";
 @import "./sponsors.css";
 @import "./faq.css";
+@import "./guide.css";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

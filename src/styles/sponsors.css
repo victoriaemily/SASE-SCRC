@@ -57,7 +57,7 @@
   background: url("/logos/nasa-logo.svg") no-repeat;
   background-size: contain;
   background-position: center;
-  height: 95px;
+  height: 125px;
   aspect-ratio: 1.2/1;
   margin-block: 1rem;
 }
@@ -90,7 +90,7 @@
   }
   
   .nasa-logo {
-    height: 100px;
+    height: 130px;
   }
   
   .ti-logo {
@@ -128,7 +128,7 @@
   }
   
   .nasa-logo {
-    height: 120px;
+    height: 150px;
   }
   
   .ti-logo {

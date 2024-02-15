@@ -5,7 +5,11 @@ export default function Venue() {
   return (
 		<>
 			<RellaxWrapper speed={-6}>
-				<div id="venue-background">
+				<div
+					role="img"
+					aria-label="South side angle of Memorial Student Center (MSC)"
+					id="venue-background"
+				>
 					<div className="background-overlay"></div>
 				</div>
 			</RellaxWrapper>
@@ -37,7 +41,11 @@ export default function Venue() {
 										<h2 className="venue-header">
 											275 Joe Routt Blvd, College Station, TX 77843
 										</h2>
-										<div id="venue-image"></div>
+										<div
+											role="img"
+											aria-label="Rudder Plaza angle of Memorial Student Center (MSC)"
+											id="venue-image"
+										></div>
 										<div id="venue-page-map" className="tamu-map">
 											<iframe
 												src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3433.7697243813577!2d-96.3441192223423!3d30.612257774642714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8646839854d18149%3A0x90311327f8c2221d!2sMemorial%20Student%20Center%20(MSC)!5e0!3m2!1sen!2sus!4v1701457058873!5m2!1sen!2sus"
@@ -78,11 +86,19 @@ export default function Venue() {
 											<div className="image-container">
 												<div>
 													<h3>1st Floor</h3>
-													<div id="msc-floor1"></div>
+													<div
+														role="img"
+														aria-label="The first level floor map of Memorial Student Center (MSC)"
+														id="msc-floor1"
+													></div>
 												</div>
 												<div>
 													<h3>2nd Floor</h3>
-													<div id="msc-floor2"></div>
+													<div
+														role="img"
+														aria-label="The second level floor map of Memorial Student Center (MSC)"
+														id="msc-floor2"
+													></div>
 												</div>
 											</div>
 										</section>
@@ -98,41 +114,45 @@ export default function Venue() {
 										<table className="parking-table">
 											<tbody>
 												<tr className="header-row">
-													<th>Duration</th>
-													<th>6:00am - 5:59pm</th>
-													<th>6:00pm - 5:59am</th>
+													<th scope="col">Duration</th>
+													<th scope="row">6:00am - 5:59pm</th>
+													<th scope="row">6:00pm - 5:59am</th>
 												</tr>
 												<tr>
-													<th>0-1 hour</th>
-													<th>$3.00</th>
-													<th>$1.50</th>
+													<th scope="row">0-1 hour</th>
+													<td>$3.00</td>
+													<td>$1.50</td>
 												</tr>
 												<tr>
-													<th>1-2 hours</th>
-													<th>$5.00</th>
-													<th>$2.50</th>
+													<th scope="row">1-2 hours</th>
+													<td>$5.00</td>
+													<td>$2.50</td>
 												</tr>
 												<tr>
-													<th>2-3 hours</th>
-													<th>$7.00</th>
-													<th>$3.50</th>
+													<th scope="row">2-3 hours</th>
+													<td>$7.00</td>
+													<td>$3.50</td>
 												</tr>
 												<tr>
-													<th>3-4 hours</th>
-													<th>$9.00</th>
-													<th>$4.50</th>
+													<th scope="row">3-4 hours</th>
+													<td>$9.00</td>
+													<td>$4.50</td>
 												</tr>
 												<tr>
-													<th>Each additional 1 hour</th>
-													<th>$1.00</th>
-													<th>$0.50</th>
+													<th scope="row">Each additional 1 hour</th>
+													<td>$1.00</td>
+													<td>$0.50</td>
 												</tr>
 											</tbody>
 										</table>
 										<section id="parking-maps" className="resource-section">
 											<h2>Parking Maps</h2>
 											<div className="image-container">
-												<div id="msc-parking"></div>
+												<div
+													role="img"
+													aria-label="Map of availabel parking lots for access to the Memorial Student Center (MSC)"
+													id="msc-parking"
+												></div>
 											</div>
 										</section>
 										<h3>Hotels</h3>

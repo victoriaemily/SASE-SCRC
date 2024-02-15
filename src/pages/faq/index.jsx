@@ -44,10 +44,14 @@ export default function FAQ() {
 									Memorial Student Center (MSC)
 								</a>{" "}
 								on <b>March 02, 2024</b>. To find more details see our{" "}
-								<a className="paragraph-hyperlink" href="#about">
-									about page
-								</a>
-								.
+								<a className="paragraph-hyperlink" href="/home#about-scrc">
+									about scrc
+								</a>{" "}
+								or{" "}
+								<a className="paragraph-hyperlink" href="/home#about-sase">
+									about sase
+								</a>{" "}
+								sections.
 							</p>
 						</div>
 						<div className="content-container">
@@ -64,7 +68,7 @@ export default function FAQ() {
 										</tr>
 										<tr>
 											<th>Early Bird</th>
-											<td>Jan 24 - Feb 09</td>
+											<td>Jan 24 - Feb 14</td>
 											<td>$25.00</td>
 											<td className="benefits">
 												Printed name on badge, t-shirt, sticker, and lunch.
@@ -72,7 +76,7 @@ export default function FAQ() {
 										</tr>
 										<tr>
 											<th>General Ticket</th>
-											<td>Feb 10 - Feb 24</td>
+											<td>Feb 14 - Feb 24</td>
 											<td>$35.00</td>
 											<td className="benefits">
 												Non-printed name on badge, t-shirt, sticker, and lunch.
@@ -96,13 +100,6 @@ export default function FAQ() {
 									Registration will only be available as an individual signup.
 								</p>
 							</div>
-							{/* <div>
-								<h2>Can I refund my ticket?</h2>
-								<p>
-									The South Central Regional Conference will be held on March
-									02, 2024.
-								</p>
-							</div> */}
 						</div>
 						<div className="content-container">
 							<h1>Preparations and Expectations</h1>

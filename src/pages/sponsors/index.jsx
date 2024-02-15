@@ -62,7 +62,7 @@ export default function Sponsors() {
 									className="sponsor-logo ge-vernova-logo"
 								></div>
 							</div>
-							<h1 id="more-sponsors-header">More Sponsors Coming Soon!</h1>
+							{/* <h1 id="more-sponsors-header">More Sponsors Coming Soon!</h1> */}
 						</div>
 					</div>
 				</div>

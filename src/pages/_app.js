@@ -1,6 +1,6 @@
 import Head from "next/head";
 import "@/styles/app.css";
-import Layout from "./components/Layout";
+import { Layout } from "@/components";
 
 export default function App({ Component, pageProps }) {
   return (

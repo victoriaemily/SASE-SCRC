@@ -49,16 +49,14 @@ export default function Schedule() {
 						</h3>
 						<div className="event-location-labels">
 							<h2 className="event-label">{event.name}</h2>
-							{!event.isWorkshop ? (
-								<h3 className="gate-label">{event.location}</h3>
-							) : null}
+							<h3 className="gate-label">{event.location}</h3>
 						</div>
 						<div className="other-labels">
 							{event.isWorkshop ? (
 								<ul className="workshop-label">
-									<li>{event.option1}</li>
-									<li>{event.option2}</li>
-									<li>{event.option3}</li>
+									<li>{event.option1.name}</li>
+									<li>{event.option2.name}</li>
+									<li>{event.option3.name}</li>
 								</ul>
 							) : (
 								<div className="workshop-label"></div>

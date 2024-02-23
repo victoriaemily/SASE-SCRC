@@ -1,15 +1,14 @@
 import Head from "next/head";
 import "@/styles/app.css";
-import Navbar from "./components/Navbar";
+import Layout from "./components/Layout";
 
 export default function App({ Component, pageProps }) {
   return (
-    <>
-      <Head>
-        <title>SCRC 2024</title>
-      </Head>
-      <Navbar />
-      <Component {...pageProps} />
-    </>
-  );
+		<Layout>
+			<Head>
+				<title>SCRC 2024</title>
+			</Head>
+			<Component {...pageProps} />
+		</Layout>
+	);
 }

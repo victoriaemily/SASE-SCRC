@@ -71,7 +71,7 @@ const morningEvents = [
 	{
 		name: "Lunch + Boba",
 		id: "lunch-break",
-		location: "Gates Ballroom",
+		location: "2406",
 		start_time: new Date("2024-03-02T11:40:00"),
 		end_time: new Date("2024-03-02T12:30:00"),
 		status: "On Time",
@@ -180,7 +180,7 @@ const afternoonEvents = [
 	{
 		name: "Closing Ceremony",
 		id: "closing-ceremony",
-		location: "Gates Ballroom",
+		location: "2400",
 		start_time: new Date("2024-03-02T15:40:00"),
 		end_time: new Date("2024-03-02T16:20:00"),
 		status: "On Time",
@@ -200,7 +200,7 @@ const afternoonEvents = [
 	{
 		name: "Career Fair",
 		id: "career-fair",
-		location: "MSC 2406",
+		location: "Stark Galleries",
 		start_time: new Date("2024-03-02T16:30:00"),
 		end_time: new Date("2024-03-02T19:30:00"),
 		status: "On Time",

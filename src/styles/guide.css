@@ -43,7 +43,7 @@
   background-color: rgb(var(--blue-guide));
   z-index: 102;
   min-height: 100dvh;
-  width: 95%;
+  width: 100%;
 }
 
 .guide-page button:hover {

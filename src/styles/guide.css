@@ -24,6 +24,7 @@
 #guide-menu button {
   flex: 1 1 auto;
   width: 100dvw;
+  text-align: center;
   font-size: 2.5rem;
   padding-block: 1rem;
 }
@@ -45,9 +46,19 @@
   width: 95%;
 }
 
+.guide-page button:hover {
+  background-color: rgb(var(--grey1));
+}
+
+.guide-page button:active {
+  background-color: rgb(var(--grey2));
+}
+
 .guide-page button {
   font-size: 2.5rem;
   padding: 2rem;
+  width: 100dvw;
+  text-align: center;
 }
 
 .guide-page h1 {

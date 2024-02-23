@@ -42,7 +42,7 @@
   background-color: rgb(var(--blue-guide));
   z-index: 102;
   min-height: 100dvh;
-  width: 100dvw;
+  width: 95%;
   display: flex;
   flex-direction: column;
 }
@@ -53,8 +53,62 @@
 }
 
 .guide-page h1 {
-  font-size: 3rem;
+  font-family: "League Spartan", "Montserrat";
+  font-weight: 800;
+  font-size: 4rem;
   margin-inline: auto;
+}
+
+.event-header {
+  font-size: 3rem;
+  font-family: "Handy Casual";
+  text-align: center;
+  border-radius: 0.5rem;
+  background-color: rgb(var(--blue5));
+  margin-inline: 5%;
+  color: white;
+  padding-block: 0.5rem;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: row;
+}
+
+.event-card h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Handy Casual";
+}
+
+.event-card h4 {
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: "Handy Casual";
+}
+
+.event-card > div {
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-block: 0.25rem;
+  margin-block: 1rem;
+  margin-inline: 0.5rem;
+}
+
+.event-card .event-time {
+  flex: 2;
+  background-color: rgb(var(--blue5));
+  color: white;
+}
+
+.event-card .event-label {
+  flex: 3;
+  background-color: rgb(var(--blue));
+  color: rgb(var(--blue5));
 }
 
 @media (min-width: 360px) {

@@ -45,7 +45,7 @@
 
 .page-title {
   width: 100%;
-  border-bottom: 10px solid var(--blue6);
+  border-bottom: 10px solid rgb(var(--blue6));
 }
 
 .page-title-container {

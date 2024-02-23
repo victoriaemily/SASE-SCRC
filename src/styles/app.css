@@ -15,18 +15,19 @@
 
 :root {
   --header-size: 7.5vh;
-  --blue: rgb(187, 216, 245);
-  --blue1: rgb(163, 206, 250);
-  --blue2: rgb(115, 180, 247);
-  --blue3: rgb(125, 145, 189);
-  --blue4: rgb(93, 114, 161);
-  --blue5: rgb(68, 88, 136);
-  --blue6: rgb(40, 57, 99);
-  --blue7: rgb(22, 35, 68);
-  --grey: rgb(248, 252, 255);
-  --grey1: rgb(228, 228, 228);
-  --grey2: rgb(209, 209, 209);
-  --grey3: rgb(59, 59, 59);
+  --blue: 187, 216, 245;
+  --blue1: 163, 206, 250;
+  --blue2: 115, 180, 247;
+  --blue3: 125, 145, 189;
+  --blue4: 93, 114, 161;
+  --blue5: 68, 88, 136;
+  --blue6: 40, 57, 99;
+  --blue7: 22, 35, 68;
+  --blue-guide: 249, 252, 255; 
+  --grey: 248, 252, 255;
+  --grey1: 228, 228, 228;
+  --grey2: 209, 209, 209;
+  --grey3: 59, 59, 59;
   --background-height: 50vh;
   font-family: "Alata";
 }
@@ -58,7 +59,7 @@ section {
 }
 
 .close-button {
-  background: var(--blue5);
+  background: rgb(var(--blue5));
   flex: 1;
   color: white;
   display: flex;
@@ -70,7 +71,7 @@ section {
 }
 
 .close-button:hover {
-  background: var(--blue6);
+  background: rgb(var(--blue6));
 }
 
 .logo {
@@ -167,16 +168,16 @@ section {
 }
 
 p a {
-  color: var(--blue5);
+  color: rgb(var(--blue5));
   text-decoration: underline;
 }
 
 p a:hover {
-  color: var(--grey3);
+  color: rgb(var(--grey3));
 }
 
 p a:active {
-  color: var(--grey2);
+  color: rgb(var(--grey2));
 }
 
 .image-container {

@@ -1,13 +1,60 @@
 #guide-body {
-  z-index: 102;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: black;
-  color: white;
-  height: 100vh;
-  width: 100vw;
-  font-size: 10rem;
+  min-height: 100dvh;
+  background-color: rgb(var(--blue-guide));
+}
+
+#guide-header {
+  flex: 0 1 auto;
+}
+
+#guide-header h1 {
+  font-size: 5rem;
+}
+
+#guide-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 1 1 auto;
+}
+
+#guide-menu button {
+  flex: 1 1 auto;
+  width: 100dvw;
+  font-size: 2.5rem;
+  padding-block: 1rem;
+}
+
+#guide-menu button:hover {
+  background-color: rgb(var(--grey1));
+}
+
+#guide-menu button:active {
+  background-color: rgb(var(--grey2));
+}
+
+.guide-page {
+  position: absolute;
+  top: 0;
+  background-color: rgb(var(--blue-guide));
+  z-index: 102;
+  min-height: 100dvh;
+  width: 100dvw;
+  display: flex;
+  flex-direction: column;
+}
+
+.guide-page button {
+  font-size: 2.5rem;
+  padding: 2rem;
+}
+
+.guide-page h1 {
+  font-size: 3rem;
+  margin-inline: auto;
 }
 
 @media (min-width: 360px) {

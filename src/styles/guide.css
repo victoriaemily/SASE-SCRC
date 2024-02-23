@@ -43,8 +43,6 @@
   z-index: 102;
   min-height: 100dvh;
   width: 95%;
-  display: flex;
-  flex-direction: column;
 }
 
 .guide-page button {
@@ -56,6 +54,7 @@
   font-family: "League Spartan", "Montserrat";
   font-weight: 800;
   font-size: 4rem;
+  text-align: center;
   color: rgb(var(--blue5));
   margin-inline: auto;
 }

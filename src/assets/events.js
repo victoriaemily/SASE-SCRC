@@ -69,7 +69,7 @@ const morningEvents = [
 		isWorkshop: false,
 	},
 	{
-		name: "Lunch Break + Boba",
+		name: "Lunch + Boba",
 		id: "lunch-break",
 		location: "Gates Ballroom",
 		start_time: new Date("2024-03-02T11:40:00"),

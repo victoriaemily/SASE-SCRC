@@ -23,7 +23,7 @@ export default function Schedule({ isOpen, setIsOpen }) {
 					setIsOpen(false);
 				}}
 			>
-				Schedule
+				Return to Guide
 			</button>
 		</div>
 	);

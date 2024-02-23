@@ -128,7 +128,7 @@ const afternoonEvents = [
 			location: "2401",
 		},
 		id: "workshop-3",
-		location: "",
+		location: "Gates Ballroom, 2401, 2405",
 		start_time: new Date("2024-03-02T13:40:00"),
 		end_time: new Date("2024-03-02T14:30:00"),
 		status: "On Time",

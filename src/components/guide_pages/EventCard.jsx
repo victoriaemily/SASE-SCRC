@@ -1,6 +1,8 @@
-import React from "react";
+import { React, useState } from "react";
 
-export default function EventCard({ event, eventSelect, isEmpty }) {
+export default function EventCard({ event, eventSelect }) {
+	const [showEvent, setShowEvent] = useState(false);
+
 	const start_minutes = event.start_time.getMinutes();
 	const start_hours = event.start_time.getHours();
 	const start_AMPM = start_hours >= 12 ? "PM" : "AM";
@@ -17,6 +19,17 @@ export default function EventCard({ event, eventSelect, isEmpty }) {
 		end_minutes
 	).padStart(2, "0")} ${end_AMPM}`;
 
+	const currentTime = new Date();
+	const isCurrentEvent =
+		currentTime >= event.start_time && currentTime <= event.end_time;
+
+	const description = event.description.split("\n");
+	let workshopInfo = [];
+	if (event.isWorkshop) {
+		workshopInfo.push(event.option1);
+		workshopInfo.push(event.option2);
+		workshopInfo.push(event.option3);
+	}
 	return (
 		<div className="event-card">
 			<div className="event-time flex-column">
@@ -24,10 +37,25 @@ export default function EventCard({ event, eventSelect, isEmpty }) {
 				<h3 className="event-time-end">{`${endTime}`}</h3>
 			</div>
 			<div className="event-label flex-column">
-				<button onClick={eventSelect}>
-					<h3>{event.name}</h3>
+				<button onClick={(e) => eventSelect(e, showEvent, setShowEvent)}>
+					<h3>{isCurrentEvent ? `>>> ${event.name} <<<` : event.name}</h3>
 					<h4>{event.location}</h4>
 				</button>
+				<div className="event-description hide-overlay">
+					{description.map((paragraph, idx) => (
+						<p key={idx}>{paragraph}</p>
+					))}
+					{workshopInfo.map((workshop, idx) => {
+						return (
+							<div key={idx} className="workshop-description">
+								<h5>
+									{workshop.name} [{workshop.location}]
+								</h5>
+								<p>{workshop.description}</p>
+							</div>
+						);
+					})}
+				</div>
 			</div>
 		</div>
 	);

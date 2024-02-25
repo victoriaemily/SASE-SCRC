@@ -98,14 +98,26 @@
 
 .event-card h3 {
   text-align: center;
-  font-size: 1.6rem;
-  font-family: "Handy Casual";
+  font-size: 2rem;
+  font-family: "Handy Casual", "Alata";
 }
 
 .event-card h4 {
   text-align: center;
-  font-size: 1.2rem;
-  font-family: "Handy Casual";
+  font-size: 1.5rem;
+  font-family: "Handy Casual", "Alata";
+}
+
+.event-card h5 {
+  text-align: left;
+  font-size: 1.3rem;
+  font-family: "Alata", "Montserrat";
+}
+
+.event-card p {
+  font-size: 1.25em;
+  font-family: "Montserrat", "Alata";
+  margin-block-end: 1rem;
 }
 
 .event-card > div {
@@ -113,7 +125,7 @@
   border-radius: 0.5rem;
   margin-block: 1rem;
   margin-inline: 0.5rem;
-  height: 65px;
+  height: 80px;
 }
 
 .flex-column {
@@ -150,7 +162,7 @@
   top: 0;
   border-radius: 0.5rem;
   width: 100%;
-  height: 65px;
+  height: 80px;
   background-color: transparent;
 }
 
@@ -164,6 +176,17 @@
   color: rgb(var(--blue5));
 }
 
+.event-card .event-label .event-description {
+  margin-block-start: 80px;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.event-card .event-label .event-description .workshop-description {
+  width: 100%;
+}
+
 .hide-text {
   opacity: 0;
   transition: opacity 0.5s ease;
@@ -175,16 +198,20 @@
 }
 
 .expand-event-content {
-  animation: expandEventContent 0.5s ease forwards;
+  animation: expandEventContent 0.8s ease forwards;
 }
 
 .collapse-event-content {
-  animation: collapseEventContent 0.5s ease;
+  animation: collapseEventContent 0.8s ease;
 }
 
 @keyframes expandEventContent {
   0% {
-    height: 65px;
+    height: 80px;
+  }
+  50% {
+    width: 100%;
+    height: 80px;
   }
   100% {
     width: 100%;
@@ -197,9 +224,13 @@
     width: 100%;
     height: 400px;
   }
+  50% {
+    width: 100%;
+    height: 80px;
+  }
   100% {
     width: 65%;
-    height: 65px;
+    height: 80px;
   }
 }
 

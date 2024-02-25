@@ -16,9 +16,11 @@ export default function Schedule({ isOpen, setIsOpen }) {
 					.classList.add("hide-overlay");
 				setTimeout(() => {
 					timeElement.classList.remove("hide-overlay");
+					timeElement.classList.add("flex-column");
 				}, 600);
 			}, 200);
 		} else {
+			timeElement.classList.remove("flex-column");
 			timeElement.classList.add("hide-overlay");
 			contentElement.classList.add("expand-event-content");
 			contentElement.classList.remove("collapse-event-content");

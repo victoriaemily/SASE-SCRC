@@ -44,7 +44,6 @@ export default function Schedule({ isOpen, setIsOpen }) {
 				<div className="event-header">
 					<h2>Afternoon Block</h2>
 				</div>
-				;
 				{afternoonEvents.map((event, idx) => {
 					if (!event.isTransition) {
 						return (

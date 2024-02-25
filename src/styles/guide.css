@@ -22,19 +22,21 @@
   flex: 1 1 auto;
 }
 
-#guide-menu button {
+#guide-menu button, #guide-menu a {
   flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100dvw;
-  text-align: center;
   font-size: 2.5rem;
   padding-block: 1rem;
 }
 
-#guide-menu button:hover {
+#guide-menu button:hover, #guide-menu a:hover {
   background-color: rgb(var(--grey1));
 }
 
-#guide-menu button:active {
+#guide-menu button:active, #guide-menu a:active {
   background-color: rgb(var(--grey2));
 }
 

@@ -98,7 +98,7 @@
 
 .event-card h3 {
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   font-family: "Handy Casual", "Alata";
 }
 
@@ -234,8 +234,15 @@
   }
 }
 
-@media (min-width: 360px) {
+@media (min-width: 361px) {
   /* larger phones */
+  .event-card h3 {
+    font-size: 1.7rem;
+  }
+
+  .event-card h4 {
+    font-size: 1.5rem;
+  }
 }
 @media (min-width: 481px) {
   /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
@@ -245,6 +252,41 @@
 }
 @media (min-width: 961px) {
   /* tablet, landscape iPad, lo-res laptops ands desktops */
+  .event-card h3 {
+    font-size: 2rem;
+  }
+
+  .event-card h4 {
+    font-size: 1.7rem;
+  }
+  @keyframes expandEventContent {
+    0% {
+      height: 80px;
+    }
+    50% {
+      width: 100%;
+      height: 80px;
+    }
+    100% {
+      width: 100%;
+      height: 350px;
+    }
+  }
+  
+  @keyframes collapseEventContent {
+    0% {
+      width: 100%;
+      height: 350px;
+    }
+    50% {
+      width: 100%;
+      height: 80px;
+    }
+    100% {
+      width: 65%;
+      height: 80px;
+    }
+  }
 }
 @media (min-width: 1025px) {
   /* big landscape tablets, laptops, and desktops */

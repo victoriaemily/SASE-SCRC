@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function EventCard({ event }) {
+export default function EventCard({ event, eventSelect, isEmpty }) {
 	const start_minutes = event.start_time.getMinutes();
 	const start_hours = event.start_time.getHours();
 	const start_AMPM = start_hours >= 12 ? "PM" : "AM";
@@ -19,12 +19,15 @@ export default function EventCard({ event }) {
 
 	return (
 		<div className="event-card">
-			<div className="event-time">
-				<h3>{`${startTime}-${endTime}`}</h3>
+			<div className="event-time flex-column">
+				<h3 className="event-time-start">{`${startTime}`}</h3>
+				<h3 className="event-time-end">{`${endTime}`}</h3>
 			</div>
-			<div className="event-label">
-				<h3>{event.name}</h3>
-				<h4>{event.location}</h4>
+			<div className="event-label flex-column">
+				<button onClick={eventSelect}>
+					<h3>{event.name}</h3>
+					<h4>{event.location}</h4>
+				</button>
 			</div>
 		</div>
 	);

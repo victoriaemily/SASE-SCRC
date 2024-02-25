@@ -1,11 +1,9 @@
 import { React, useEffect, useState } from "react";
-import { LostAndFound, Magazine, Maps, Schedule, Socials } from "@/components";
+import { Maps, Schedule, Socials } from "@/components";
 
 export default function Guide() {
 	const [isScheduleOpen, setIsScheduleOpen] = useState(false);
 	const [isMapsOpen, setIsMapsOpen] = useState(false);
-	const [isMagazineOpen, setIsMagazineOpen] = useState(false);
-	const [isLostAndFoundOpen, setIsLostAndFoundOpen] = useState(false);
 	const [isSocialsOpen, setIsSocialsOpen] = useState(false);
 
 	useEffect(() => {
@@ -25,8 +23,6 @@ export default function Guide() {
 				<button
 					onClick={() => {
 						setIsMapsOpen(false);
-						setIsMagazineOpen(false);
-						setIsLostAndFoundOpen(false);
 						setIsSocialsOpen(false);
 
 						setIsScheduleOpen(true);
@@ -37,8 +33,6 @@ export default function Guide() {
 				<button
 					onClick={() => {
 						setIsScheduleOpen(false);
-						setIsMagazineOpen(false);
-						setIsLostAndFoundOpen(false);
 						setIsSocialsOpen(false);
 
 						setIsMapsOpen(true);
@@ -46,36 +40,16 @@ export default function Guide() {
 				>
 					Maps
 				</button>
-				<button
-					onClick={() => {
-						setIsScheduleOpen(false);
-						setIsMapsOpen(false);
-						setIsLostAndFoundOpen(false);
-						setIsSocialsOpen(false);
-
-						setIsMagazineOpen(true);
-					}}
-				>
+				<a href="about:blank" target="_blank">
 					Magazine
-				</button>
-				<button
-					onClick={() => {
-						setIsScheduleOpen(false);
-						setIsMapsOpen(false);
-						setIsMagazineOpen(false);
-						setIsSocialsOpen(false);
-
-						setIsLostAndFoundOpen(true);
-					}}
-				>
+				</a>
+				<a href="https://forms.gle/Qdpc8dzyr8uDbPCa8" target="_blank">
 					Lost & Found
-				</button>
+				</a>
 				<button
 					onClick={() => {
 						setIsScheduleOpen(false);
 						setIsMapsOpen(false);
-						setIsMagazineOpen(false);
-						setIsLostAndFoundOpen(false);
 
 						setIsSocialsOpen(true);
 					}}
@@ -85,11 +59,6 @@ export default function Guide() {
 			</div>
 			<Schedule isOpen={isScheduleOpen} setIsOpen={setIsScheduleOpen} />
 			<Maps isOpen={isMapsOpen} setIsOpen={setIsMapsOpen} />
-			<Magazine isOpen={isMagazineOpen} setIsOpen={setIsMagazineOpen} />
-			<LostAndFound
-				isOpen={isLostAndFoundOpen}
-				setIsOpen={setIsLostAndFoundOpen}
-			/>
 			<Socials isOpen={isSocialsOpen} setIsOpen={setIsSocialsOpen} />
 		</div>
 	);

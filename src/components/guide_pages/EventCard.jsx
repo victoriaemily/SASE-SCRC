@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 
 export default function EventCard({ event, eventSelect }) {
-	const [showEvent, setShowEvent] = useState(false);
+	const [eventShown, setEventShown] = useState(false);
 
 	const start_minutes = event.start_time.getMinutes();
 	const start_hours = event.start_time.getHours();
@@ -37,7 +37,7 @@ export default function EventCard({ event, eventSelect }) {
 				<h3 className="event-time-end">{`${endTime}`}</h3>
 			</div>
 			<div className="event-label flex-column">
-				<button onClick={(e) => eventSelect(e, showEvent, setShowEvent)}>
+				<button onClick={(e) => eventSelect(e, eventShown, setEventShown)}>
 					<h3>{isCurrentEvent ? `>>> ${event.name} <<<` : event.name}</h3>
 					<h4>{event.location}</h4>
 				</button>

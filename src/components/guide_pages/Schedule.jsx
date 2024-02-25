@@ -3,13 +3,15 @@ import EventCard from "./EventCard";
 import { afternoonEvents, morningEvents } from "@/assets/events";
 
 export default function Schedule({ isOpen, setIsOpen }) {
-	const eventSelect = (e, showEvent, setShowEvent) => {
+	const eventSelect = (e, eventShown, setEventShown) => {
 		const contentElement = e.currentTarget.parentNode;
 		const timeElement = contentElement.parentNode.querySelector(".event-time");
-		if (showEvent) {
+		if (eventShown) {
+			// hide event description
+			e.currentTarget.classList.remove("background-blue5");
 			contentElement.classList.add("collapse-event-content");
 			contentElement.classList.remove("expand-event-content");
-			setShowEvent(false);
+			setEventShown(false);
 			setTimeout(() => {
 				contentElement
 					.querySelector(".event-description")
@@ -20,11 +22,13 @@ export default function Schedule({ isOpen, setIsOpen }) {
 				}, 600);
 			}, 200);
 		} else {
+			// show event description
+			e.currentTarget.classList.add("background-blue5");
 			timeElement.classList.remove("flex-column");
 			timeElement.classList.add("hide-overlay");
 			contentElement.classList.add("expand-event-content");
 			contentElement.classList.remove("collapse-event-content");
-			setShowEvent(true);
+			setEventShown(true);
 			setTimeout(() => {
 				contentElement
 					.querySelector(".event-description")

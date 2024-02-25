@@ -23,7 +23,7 @@
 }
 
 .time-divider {
-  background-color: var(--blue6);
+  background-color: rgb(var(--blue6));
   color: white;
   margin-block: 0;
 }
@@ -36,17 +36,17 @@
 }
 
 .event-divider:hover {
-  background-color: var(--blue3);
+  background-color: rgb(var(--blue3));
   color: white;
 }
 
 /* .event-divider:active {
-  background-color: var(--blue4);
+  background-color: rgb(var(--blue4));
   color: white;
 } */
 
 .transition-divider {
-  background-color: var(--blue4);
+  background-color: rgb(var(--blue4));
   color: white;
 }
 

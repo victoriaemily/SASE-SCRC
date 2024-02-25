@@ -68,7 +68,7 @@
   flex-direction: column;
   padding: 0rem 0.5rem 0.5rem 0.5rem;
   width: 100%;
-  border-bottom: 1px outset var(--blue1);
+  border-bottom: 1px outset rgb(var(--blue1));
   background: white;
   z-index: 99;
   visibility: hidden;
@@ -125,11 +125,11 @@
 
 .top-navbar .horizontal-navbar .navbar-link:hover,
 .scrolled-navbar .horizontal-navbar .navbar-link.selected:hover {
-  color: var(--grey1);
+  color: rgb(var(--grey1));
 }
 
 .scrolled-navbar .horizontal-navbar .navbar-link:hover {
-  color: var(--grey3);
+  color: rgb(var(--grey3));
 }
 
 .horizontal-navbar li {
@@ -144,13 +144,13 @@
 }
 
 .dropdown-navbar .navbar-link:hover {
-  background-color: var(--blue);
-  color: var(--blue6);
+  background-color: rgb(var(--blue));
+  color: rgb(var(--blue6));
   transition: background-color 0.3s ease;
 }
 
 .navbar-link.selected {
-  background-color: var(--blue6);
+  background-color: rgb(var(--blue6));
 }
 
 .nav-return-top.active {

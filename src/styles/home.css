@@ -37,12 +37,12 @@
 }
 
 #registration-link:hover {
-  background-color: var(--grey);
+  background-color: rgb(var(--grey));
   cursor: pointer;
 }
 
 #registration-link:active {
-  background-color: var(--grey1);
+  background-color: rgb(var(--grey1));
 }
 
 #home-content .container-innerbox {
@@ -50,7 +50,7 @@
 }
 
 #about-scrc {
-  background-color: var(--blue6);
+  background-color: rgb(var(--blue6));
   color: white;
 }
 
@@ -75,11 +75,11 @@
 }
 
 #event-details {
-  background-color: var(--grey);
+  background-color: rgb(var(--grey));
 }
 
 #about-sase {
-  background-color: var(--blue6);
+  background-color: rgb(var(--blue6));
   color: white;
 }
 
@@ -96,7 +96,7 @@
 }
 
 #registration-footer {
-  background-color: var(--blue6);
+  background-color: rgb(var(--blue6));
   color: white;
 }
 

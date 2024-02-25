@@ -28,24 +28,24 @@
 }
 
 #faq-content .content-container:nth-child(even) {
-  background-color: var(--grey)
+  background-color: rgb(var(--grey));
 }
 
 #faq-content .content-container:nth-child(odd) {
-  background-color: var(--blue6);
+  background-color: rgb(var(--blue6));
   color: white;
 }
 
 #faq-content .content-container:nth-child(odd) p a {
-  color: var(--blue);
+  color: rgb(var(--blue));
 }
 
 #faq-content .content-container:nth-child(odd) p a:hover {
-  color: var(--blue2);
+  color: rgb(var(--blue2));
 }
 
 #faq-content .content-container:nth-child(odd) p a:active {
-  color: var(--grey2);
+  color: rgb(var(--grey2));
 }
 
 #faq-scrc-intro p {

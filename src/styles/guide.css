@@ -1,13 +1,237 @@
 #guide-body {
-  z-index: 102;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: black;
+  min-height: 100dvh;
+  width: 100%;
+  background-color: rgb(var(--blue-guide));
+}
+
+#guide-header {
+  flex: 0 1 auto;
+}
+
+#guide-header h1 {
+  font-size: 5rem;
+}
+
+#guide-menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  flex: 1 1 auto;
+}
+
+#guide-menu button {
+  flex: 1 1 auto;
+  width: 100dvw;
+  text-align: center;
+  font-size: 2.5rem;
+  padding-block: 1rem;
+}
+
+#guide-menu button:hover {
+  background-color: rgb(var(--grey1));
+}
+
+#guide-menu button:active {
+  background-color: rgb(var(--grey2));
+}
+
+.guide-page {
+  position: absolute;
+  top: 0;
+  background-color: rgb(var(--blue-guide));
+  z-index: 102;
+  min-height: 100dvh;
+  width: 100%;
+  padding: 2.5dvw;
+}
+
+.guide-page > div {
+  width: 95dvw;
+  background-color: rgb(var(--blue-guide));
+}
+
+.guide-page button:hover {
+  background-color: rgb(var(--grey1));
+}
+
+.guide-page button:active {
+  background-color: rgb(var(--grey2));
+}
+
+.guide-page button {
+  font-size: 2.5rem;
+  width: 100%;
+  text-align: center;
+}
+
+.guide-page h1 {
+  font-family: "League Spartan", "Montserrat";
+  font-weight: 800;
+  font-size: 4rem;
+  text-align: center;
+  color: rgb(var(--blue5));
+  margin-inline: auto;
+}
+
+.event-header {
+  border-radius: 0.5rem;
+  background-color: rgb(var(--blue5));
+  width: 80%;
+  margin: auto;
+}
+
+.event-header h2 {
+  font-size: 3.5rem;
+  font-family: "Handy Casual", "Alata";
+  text-align: center;
   color: white;
-  height: 100vh;
-  width: 100vw;
-  font-size: 10rem;
+}
+
+.event-card {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.event-card h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  font-family: "Handy Casual", "Alata";
+}
+
+.event-card h4 {
+  text-align: center;
+  font-size: 1.4rem;
+  font-family: "Handy Casual", "Alata";
+}
+
+.event-card h5 {
+  text-align: left;
+  font-size: 1.3rem;
+  font-family: "Alata", "Montserrat";
+}
+
+.event-card p {
+  font-size: 1.25em;
+  font-family: "Montserrat", "Alata";
+  margin-block-end: 1rem;
+}
+
+.event-card > div {
+  position: relative;
+  border-radius: 0.5rem;
+  margin-block: 1rem;
+  margin-inline: 0.5rem;
+  height: 80px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.event-card .event-time {
+  width: 30%;
+  background-color: rgb(var(--blue5));
+  color: white;
+  padding-inline: 1.5rem;
+}
+
+.event-card .event-time .event-time-start {
+  align-self: baseline;
+}
+
+.event-card .event-time .event-time-end {
+  align-self: end;
+}
+
+.event-card .event-label {
+  right: 0;
+  width: 70%;
+  background-color: rgb(var(--blue));
+  color: rgb(var(--blue5));
+}
+
+.event-card .event-label > button {
+  position: absolute;
+  top: 0;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 80px;
+  background-color: transparent;
+}
+
+.event-card .event-label > button:hover {
+  background-color: rgb(var(--blue4));
+  color: white;
+}
+
+.event-card .event-label > button:active {
+  background-color: rgb(var(--blue1));
+  color: rgb(var(--blue5));
+}
+
+.event-card .event-label .event-description {
+  margin-block-start: 80px;
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.event-card .event-label .event-description .workshop-description {
+  width: 100%;
+}
+
+.hide-text {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.show-text {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.expand-event-content {
+  animation: expandEventContent 0.8s ease forwards;
+}
+
+.collapse-event-content {
+  animation: collapseEventContent 0.8s ease;
+}
+
+@keyframes expandEventContent {
+  0% {
+    height: 80px;
+  }
+  50% {
+    width: 100%;
+    height: 80px;
+  }
+  100% {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@keyframes collapseEventContent {
+  0% {
+    width: 100%;
+    height: 400px;
+  }
+  50% {
+    width: 100%;
+    height: 80px;
+  }
+  100% {
+    width: 65%;
+    height: 80px;
+  }
 }
 
 @media (min-width: 360px) {

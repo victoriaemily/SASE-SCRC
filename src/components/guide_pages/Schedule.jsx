@@ -1,8 +1,10 @@
-import React from "react";
+import { React, useState } from "react";
 import EventCard from "./EventCard";
 import { afternoonEvents, morningEvents } from "@/assets/events";
 
 export default function Schedule({ isOpen, setIsOpen }) {
+	const [fullReset, setFullReset] = useState(false);
+
 	const eventSelect = (e, eventShown, setEventShown) => {
 		const contentElement = e.currentTarget.parentNode;
 		const timeElement = contentElement.parentNode.querySelector(".event-time");
@@ -36,6 +38,26 @@ export default function Schedule({ isOpen, setIsOpen }) {
 			}, 500);
 		}
 	};
+
+	const handleClose = () => {
+		setIsOpen(false);
+		setFullReset(true);
+		const eventCards = document.querySelectorAll(".event-card");
+		eventCards.forEach((eventCard) => {
+			eventCard.querySelector(".event-time").classList.remove("hide-overlay");
+			eventCard.querySelector(".event-time").classList.add("flex-column");
+			eventCard
+				.querySelector(".event-label")
+				.classList.remove("expand-event-content");
+			eventCard
+				.querySelector(".event-label")
+				.classList.remove("collapse-event-content");
+			eventCard
+				.querySelector(".event-description")
+				.classList.add("hide-overlay");
+		});
+	};
+
 	return (
 		<div className={`guide-page ${isOpen ? "" : "hide-overlay"}`}>
 			<div>
@@ -46,7 +68,13 @@ export default function Schedule({ isOpen, setIsOpen }) {
 				{morningEvents.map((event, idx) => {
 					if (!event.isTransition) {
 						return (
-							<EventCard key={idx} event={event} eventSelect={eventSelect} />
+							<EventCard
+								key={idx}
+								event={event}
+								eventSelect={eventSelect}
+								fullReset={fullReset}
+								setFullReset={setFullReset}
+							/>
 						);
 					}
 				})}
@@ -56,14 +84,20 @@ export default function Schedule({ isOpen, setIsOpen }) {
 				{afternoonEvents.map((event, idx) => {
 					if (!event.isTransition) {
 						return (
-							<EventCard key={idx} event={event} eventSelect={eventSelect} />
+							<EventCard
+								key={idx}
+								event={event}
+								eventSelect={eventSelect}
+								fullReset={fullReset}
+								setFullReset={setFullReset}
+							/>
 						);
 					}
 				})}
 			</div>
 			<button
 				onClick={() => {
-					setIsOpen(false);
+					handleClose();
 				}}
 			>
 				Return to Guide

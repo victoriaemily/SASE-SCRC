@@ -54,9 +54,7 @@
 }
 
 .guide-page {
-  min-height: 100dvh;
   width: 100%;
-  /* padding: 2.5dvw; */
   background-color: rgb(var(--blue-guide));
   color: rgb(var(--blue6));
 }

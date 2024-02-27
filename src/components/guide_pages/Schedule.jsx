@@ -70,7 +70,24 @@ export default function Schedule({ isOpen, setIsOpen }) {
 			className={`guide-page ${isOpen ? "" : "hide-overlay"}`}
 		>
 			<div>
-				<h1>SCRC Schedule</h1>
+				<button
+					className="return-button"
+					onClick={() => {
+						setIsOpen(false);
+					}}
+				>
+					{/* <label>
+						Return
+						<br />
+						Home
+					</label> */}
+					<h1>SCRC Schedule</h1>
+					{/* <label>
+						Return
+						<br />
+						Home
+					</label> */}
+				</button>
 				<header className="event-header">
 					<h2>Morning Block</h2>
 				</header>
@@ -104,14 +121,6 @@ export default function Schedule({ isOpen, setIsOpen }) {
 					}
 				})}
 			</div>
-			<button
-				className="return-button"
-				onClick={() => {
-					handleClose();
-				}}
-			>
-				Return to Guide
-			</button>
 		</div>
 	);
 }

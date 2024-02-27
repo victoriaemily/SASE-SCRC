@@ -15,7 +15,7 @@ export default function Guide() {
 	}, []);
 
 	return (
-		<div id="guide-body">
+		<div className="guide-body">
 			<div id="guide-header">
 				<h1>SCRC Guide</h1>
 			</div>

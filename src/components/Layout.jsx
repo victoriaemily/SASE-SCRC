@@ -1,7 +1,6 @@
 import { Navbar } from "@/components";
 
 export default function Layout({ children }) {
-	console.log(children);
 	return (
 		<>
 			{children[1].type.name !== "Guide" &&

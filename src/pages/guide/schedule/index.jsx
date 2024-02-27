@@ -1,14 +1,15 @@
-import React from "react";
-import EventCard from "./EventCard";
+import { React } from "react";
+import { EventCard } from "@/components";
 import { afternoonEvents, morningEvents } from "@/assets/events";
 
-export default function Schedule({ isOpen, setIsOpen }) {
+export default function GuideSchedule() {
 	const eventSelect = (e, eventShown, setEventShown) => {
-		const contentElement = e.currentTarget.parentNode;
+		const buttonElement = e.currentTarget;
+		const contentElement = buttonElement.parentNode;
 		const timeElement = contentElement.parentNode.querySelector(".event-time");
+		buttonElement.classList.add("disable-user-click");
 		if (eventShown) {
 			// hide event description
-			e.currentTarget.classList.remove("background-blue5");
 			contentElement.classList.add("collapse-event-content");
 			contentElement.classList.remove("expand-event-content");
 			setEventShown(false);
@@ -19,11 +20,12 @@ export default function Schedule({ isOpen, setIsOpen }) {
 				setTimeout(() => {
 					timeElement.classList.remove("hide-overlay");
 					timeElement.classList.add("flex-column");
+					buttonElement.classList.remove("background-blue5");
 				}, 600);
 			}, 200);
 		} else {
 			// show event description
-			e.currentTarget.classList.add("background-blue5");
+			buttonElement.classList.add("background-blue5");
 			timeElement.classList.remove("flex-column");
 			timeElement.classList.add("hide-overlay");
 			contentElement.classList.add("expand-event-content");
@@ -35,14 +37,30 @@ export default function Schedule({ isOpen, setIsOpen }) {
 					.classList.remove("hide-overlay");
 			}, 500);
 		}
+		setTimeout(() => {
+			buttonElement.classList.remove("disable-user-click");
+		}, 750);
 	};
+
 	return (
-		<div className={`guide-page ${isOpen ? "" : "hide-overlay"}`}>
+		<div id="guide-schedule" className="guide-page">
 			<div>
-				<h1>SCRC Schedule</h1>
-				<div className="event-header">
+				<a href="/guide" className="return-button">
+					{/* <label>
+						Return
+						<br />
+						Home
+					</label> */}
+					<h1>SCRC Schedule</h1>
+					{/* <label>
+						Return
+						<br />
+						Home
+					</label> */}
+				</a>
+				<header className="event-header">
 					<h2>Morning Block</h2>
-				</div>
+				</header>
 				{morningEvents.map((event, idx) => {
 					if (!event.isTransition) {
 						return (
@@ -50,9 +68,9 @@ export default function Schedule({ isOpen, setIsOpen }) {
 						);
 					}
 				})}
-				<div className="event-header">
+				<header className="event-header">
 					<h2>Afternoon Block</h2>
-				</div>
+				</header>
 				{afternoonEvents.map((event, idx) => {
 					if (!event.isTransition) {
 						return (
@@ -61,13 +79,6 @@ export default function Schedule({ isOpen, setIsOpen }) {
 					}
 				})}
 			</div>
-			<button
-				onClick={() => {
-					setIsOpen(false);
-				}}
-			>
-				Return to Guide
-			</button>
 		</div>
 	);
 }

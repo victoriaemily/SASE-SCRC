@@ -129,6 +129,10 @@ section {
   color: black;
 }
 
+.disable-user-click {
+  pointer-events: none;
+}
+
 .button-link-container {
   display: flex;
   align-items: center;
@@ -153,30 +157,44 @@ section {
   height: 60px;
 }
 
-.instagram-icon {
+.discord-icon {
   background-repeat: no-repeat;
-  background-image: url("/icons/social-media/circle/instagram-200.svg");
+  background-image: url("/icons/social-media/discord.svg");
   background-size: contain;
   background-position: center;
 }
 
 .gmail-icon {
   background-repeat: no-repeat;
-  background-image: url("/icons/social-media/circle/gmail-200.svg");
+  background-image: url("/icons/social-media/gmail.svg");
+  background-size: contain;
+  background-position: center;
+}
+
+.instagram-icon {
+  background-repeat: no-repeat;
+  background-image: url("/icons/social-media/instagram.svg");
   background-size: contain;
   background-position: center;
 }
 
 .linkedin-icon {
   background-repeat: no-repeat;
-  background-image: url("/icons/social-media/circle/linkedin-200.svg");
+  background-image: url("/icons/social-media/linkedin.svg");
   background-size: contain;
   background-position: center;
 }
 
 .linktree-icon {
   background-repeat: no-repeat;
-  background-image: url("/icons/social-media/circle/linktree-200.svg");
+  background-image: url("/icons/social-media/linktree.svg");
+  background-size: contain;
+  background-position: center;
+}
+
+.scrc-blue-icon {
+  background-repeat: no-repeat;
+  background-image: url("/icons/scrc-blue.svg");
   background-size: contain;
   background-position: center;
 }

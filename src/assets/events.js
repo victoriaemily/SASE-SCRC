@@ -45,13 +45,14 @@ const morningEvents = [
 		option1: {
 			name: "TI Workshop",
 			location: "Gates Ballroom",
-			description: "Join Texas Instruments for their workshop!",
+			description:
+				"Join Texas Instruments to learn the ins and outs of a perfect resume for standing out in job applications!",
 		},
 		option2: {
 			name: "ACCMA Workshop",
 			location: "Room 2401",
 			description:
-				"Join Army Civilian Career Management Activity for their workshop!",
+				"Want to get an Internship or Job with ACCMA? Come and learn more about who they are and what they do!",
 		},
 		option3: {
 			name: "Graduate Student Panel",
@@ -98,7 +99,8 @@ const afternoonEvents = [
 		option1: {
 			name: "Shell Workshop",
 			location: "Room 2401",
-			description: "Join Shell for their workshop!",
+			description:
+				"What comes after joining the industry? Learn from Shell how you can position yourself to climb the corporate ladder!",
 		},
 		option2: {
 			name: "Networking 101",
@@ -110,7 +112,7 @@ const afternoonEvents = [
 			name: "Dance",
 			location: "Gates Ballroom",
 			description:
-				"Come have a break from the professional setting and learn a dance with us! ^_^",
+				"Come join TAMU's KDA (Korean Dance Association) where you will be taught to dance Twice's hit song “What is Love?”",
 		},
 		id: "workshop-2",
 		location: "Gates Ballroom, 2401, 2405",
@@ -134,21 +136,22 @@ const afternoonEvents = [
 	{
 		name: "Workshop III",
 		option1: {
-			name: "GE Workshop",
+			name: "GE Vernova Workshop",
 			location: "Gates Ballroom",
-			description: "Join GE Vernova for their workshop!",
+			description:
+				"Ever struggle with interviews? Join GE Vernova as they go over their tips and tricks to having a successful interview!",
 		},
 		option2: {
 			name: "Women in STEM Mixer",
 			location: "Room 2405",
 			description:
-				"Learn more about the importance of women in STEM while meeting others with similar goals!",
+				"Have a conversation with women from our corporate sponsors to understand their experiences and impact in various industries!",
 		},
 		option3: {
 			name: "Speed Networking",
 			location: "Room 2401",
 			description:
-				"Come meet new people with unique stories in our professional rendition of speed dating!",
+				"Come meet new people with unique stories in a fast paced networking environment!",
 		},
 		id: "workshop-3",
 		location: "Gates Ballroom, 2401, 2405",
@@ -174,13 +177,14 @@ const afternoonEvents = [
 		option1: {
 			name: "NASA Workshop",
 			location: "Gates Ballroom",
-			description: "Join NASA for their workshop!",
+			description:
+				"Join NASA as they discuss many aspects of industry life including work life balance, finances, health, and other general advice!",
 		},
 		option2: {
 			name: "Life After College",
 			location: "Room 2405",
 			description:
-				"Join SASE alumni to find out more about what their lives are like after graduation!",
+				"Ever wonder what life after college is like? Join SASE Alumni as they discuss their post-college experiences",
 		},
 		option3: {
 			name: "Origami",

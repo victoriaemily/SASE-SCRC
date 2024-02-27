@@ -1,19 +1,7 @@
-import { React, useState, useEffect } from "react";
+import { React, useState } from "react";
 
-export default function EventCard({
-	event,
-	eventSelect,
-	fullReset,
-	setFullReset,
-}) {
+export default function EventCard({ event, eventSelect }) {
 	const [eventShown, setEventShown] = useState(false);
-
-	useEffect(() => {
-		if (fullReset) {
-			setEventShown(false);
-			setFullReset(false);
-		}
-	}, [fullReset]);
 
 	const start_minutes = event.start_time.getMinutes();
 	const start_hours = event.start_time.getHours();

@@ -12,7 +12,7 @@
   flex: 0 1 auto;
 }
 
-#guide-header h1 {
+.guide-body h1, .guide-page h1 {
   font-family: "League Spartan", "Montserrat";
   font-weight: 800;
   font-size: 5rem;
@@ -38,25 +38,27 @@
 }
 
 .guide-body button:hover:not(.disable-user-click), 
-.guide-body a:hover:not(.disable-user-click) {
+.guide-body a:hover:not(.disable-user-click),
+.guide-page button:hover:not(.disable-user-click), 
+.guide-page a:hover:not(.disable-user-click) {
   background-color: rgb(var(--blue4));
   color: white;
 }
 
 .guide-body button:active:not(.disable-user-click), 
-.guide-body a:active:not(.disable-user-click) {
+.guide-body a:active:not(.disable-user-click),
+.guide-page button:active:not(.disable-user-click), 
+.guide-page a:active:not(.disable-user-click) {
   background-color: rgb(var(--blue1));
   color: rgb(var(--blue6));
 }
 
 .guide-page {
-  position: absolute;
-  top: 0;
-  background-color: rgb(var(--blue-guide));
-  z-index: 102;
   min-height: 100dvh;
   width: 100%;
-  padding: 2.5dvw;
+  /* padding: 2.5dvw; */
+  background-color: rgb(var(--blue-guide));
+  color: rgb(var(--blue6));
 }
 
 .guide-page > div {
@@ -76,7 +78,7 @@
   font-size: inherit;
 }
 
-.guide-page button.return-button:hover {
+.guide-page a.return-button:hover {
   background-color: transparent;
   color: inherit;
 }
@@ -96,6 +98,10 @@
   font-size: 4rem;
   text-align: center;
   margin-inline: auto;
+}
+
+#guide-schedule > div {
+  margin: auto;
 }
 
 .event-header {
@@ -250,7 +256,11 @@
   }
 }
 
+#guide-socials .links-container {
+}
+
 #guide-socials .links-container .link {
+  padding-inline: 5rem;
   margin-block: 2rem;
 }
 

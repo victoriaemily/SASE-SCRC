@@ -1,10 +1,8 @@
-import { React, useState } from "react";
-import EventCard from "./EventCard";
+import { React } from "react";
+import { EventCard } from "@/components";
 import { afternoonEvents, morningEvents } from "@/assets/events";
 
-export default function Schedule({ isOpen, setIsOpen }) {
-	const [fullReset, setFullReset] = useState(false);
-
+export default function GuideSchedule() {
 	const eventSelect = (e, eventShown, setEventShown) => {
 		const buttonElement = e.currentTarget;
 		const contentElement = buttonElement.parentNode;
@@ -41,41 +39,13 @@ export default function Schedule({ isOpen, setIsOpen }) {
 		}
 		setTimeout(() => {
 			buttonElement.classList.remove("disable-user-click");
-			// console.log(buttonElement);
-		}, 1000);
-	};
-
-	const handleClose = () => {
-		setIsOpen(false);
-		setFullReset(true);
-		const eventCards = document.querySelectorAll(".event-card");
-		eventCards.forEach((eventCard) => {
-			eventCard.querySelector(".event-time").classList.remove("hide-overlay");
-			eventCard.querySelector(".event-time").classList.add("flex-column");
-			eventCard
-				.querySelector(".event-label")
-				.classList.remove("expand-event-content");
-			eventCard
-				.querySelector(".event-label")
-				.classList.remove("collapse-event-content");
-			eventCard
-				.querySelector(".event-description")
-				.classList.add("hide-overlay");
-		});
+		}, 750);
 	};
 
 	return (
-		<div
-			id="guide-schedule"
-			className={`guide-page ${isOpen ? "" : "hide-overlay"}`}
-		>
+		<div id="guide-schedule" className="guide-page">
 			<div>
-				<button
-					className="return-button"
-					onClick={() => {
-						setIsOpen(false);
-					}}
-				>
+				<a href="/guide" className="return-button">
 					{/* <label>
 						Return
 						<br />
@@ -87,20 +57,14 @@ export default function Schedule({ isOpen, setIsOpen }) {
 						<br />
 						Home
 					</label> */}
-				</button>
+				</a>
 				<header className="event-header">
 					<h2>Morning Block</h2>
 				</header>
 				{morningEvents.map((event, idx) => {
 					if (!event.isTransition) {
 						return (
-							<EventCard
-								key={idx}
-								event={event}
-								eventSelect={eventSelect}
-								fullReset={fullReset}
-								setFullReset={setFullReset}
-							/>
+							<EventCard key={idx} event={event} eventSelect={eventSelect} />
 						);
 					}
 				})}
@@ -110,13 +74,7 @@ export default function Schedule({ isOpen, setIsOpen }) {
 				{afternoonEvents.map((event, idx) => {
 					if (!event.isTransition) {
 						return (
-							<EventCard
-								key={idx}
-								event={event}
-								eventSelect={eventSelect}
-								fullReset={fullReset}
-								setFullReset={setFullReset}
-							/>
+							<EventCard key={idx} event={event} eventSelect={eventSelect} />
 						);
 					}
 				})}

@@ -1,17 +1,9 @@
 import React from "react";
 
-export default function Socials({ isOpen, setIsOpen }) {
+export default function Socials() {
 	return (
-		<div
-			id="guide-socials"
-			className={`guide-page ${isOpen ? "" : "hide-overlay"}`}
-		>
-			<button
-				className="return-button"
-				onClick={() => {
-					setIsOpen(false);
-				}}
-			>
+		<div id="guide-socials" className="guide-page">
+			<a href="/guide" className="return-button">
 				{/* <label>
 					Return
 					<br />
@@ -23,7 +15,7 @@ export default function Socials({ isOpen, setIsOpen }) {
 					<br />
 					Home
 				</label> */}
-			</button>
+			</a>
 			<ul className="links-container">
 				<li>
 					<a

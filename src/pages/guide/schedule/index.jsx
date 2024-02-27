@@ -1,8 +1,16 @@
-import { React } from "react";
+import { React, useEffect } from "react";
 import { EventCard } from "@/components";
 import { afternoonEvents, morningEvents } from "@/assets/events";
 
 export default function GuideSchedule() {
+	useEffect(() => {
+		document.body.style.backgroundColor = "rgb(var(--blue-guide))";
+
+		return () => {
+			document.body.style.backgroundColor = "white";
+		};
+	}, []);
+
 	const eventSelect = (e, eventShown, setEventShown) => {
 		const buttonElement = e.currentTarget;
 		const contentElement = buttonElement.parentNode;

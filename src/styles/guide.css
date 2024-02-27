@@ -256,15 +256,12 @@
   }
 }
 
-#guide-socials .links-container {
-}
-
-#guide-socials .links-container .link {
-  padding-inline: 5rem;
+#guide-socials .links-container li {
+  padding-inline: 4rem;
   margin-block: 2rem;
 }
 
-#guide-socials .link {
+#guide-socials .links-container .link {
   display: flex;
   flex-direction: row;
   align-items: center;

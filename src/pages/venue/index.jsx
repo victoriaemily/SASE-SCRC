@@ -108,8 +108,16 @@ export default function Venue() {
 											<b>paid parking</b>. All options shown below in the{" "}
 											<a href="#parking-maps">parking map</a> are within 10
 											minute walks of the MSC. All on-campus parking options are
-											subjected to the same rates. The following is a summary of
-											the rates that can be expected:
+											subjected to the same rates. Rates listed here can also be
+											found on the{" "}
+											<a
+												href="https://transport.tamu.edu/parking/visitor.aspx"
+												target="_blank"
+											>
+												official visitor parking page
+											</a>
+											. The following is a summary of the rates that can be
+											expected:
 										</p>
 										<table className="parking-table">
 											<tbody>
@@ -139,7 +147,7 @@ export default function Venue() {
 													<td>$4.50</td>
 												</tr>
 												<tr>
-													<th scope="row">Each additional 1 hour</th>
+													<th scope="row">Each additional 1 hour ($15 max)</th>
 													<td>$1.00</td>
 													<td>$0.50</td>
 												</tr>
@@ -150,7 +158,7 @@ export default function Venue() {
 											<div className="image-container">
 												<div
 													role="img"
-													aria-label="Map of availabel parking lots for access to the Memorial Student Center (MSC)"
+													aria-label="Map of available parking lots for access to the Memorial Student Center (MSC)"
 													id="msc-parking"
 												></div>
 											</div>

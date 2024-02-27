@@ -54,17 +54,7 @@ export default function GuideSchedule() {
 		<div id="guide-schedule" className="guide-page">
 			<div>
 				<a href="/guide" className="return-button">
-					{/* <label>
-						Return
-						<br />
-						Home
-					</label> */}
-					<h1>SCRC Schedule</h1>
-					{/* <label>
-						Return
-						<br />
-						Home
-					</label> */}
+					<h1>Back to Guide</h1>
 				</a>
 				<header className="event-header">
 					<h2>Morning Block</h2>

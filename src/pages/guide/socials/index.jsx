@@ -12,17 +12,7 @@ export default function Socials() {
 	return (
 		<div id="guide-socials" className="guide-page">
 			<a href="/guide" className="return-button">
-				{/* <label>
-					Return
-					<br />
-					Home
-				</label> */}
-				<h1>Socials</h1>
-				{/* <label>
-					Return
-					<br />
-					Home
-				</label> */}
+				<h1>Back to Guide</h1>
 			</a>
 			<ul className="links-container">
 				<li>

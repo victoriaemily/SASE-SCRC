@@ -225,6 +225,26 @@
   animation: collapseEventContent 0.8s ease;
 }
 
+#guide-map .image-container {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+#guide-map .image-container > div {
+  width: 100%;
+  aspect-ratio: 1.25/1;
+}
+
+#guide-map .image-container h2 {
+  font-size: 2rem;
+}
+
+#guide-map .image-container .msc-map {
+  height: 100%;
+  margin: auto;
+}
+
 @keyframes expandEventContent {
   0% {
     height: 80px;

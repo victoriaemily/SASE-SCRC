@@ -22,8 +22,8 @@ export default function Maps() {
 						aria-label="The first level floor map of Memorial Student Center (MSC)"
 						className="msc-map msc-floor1"
 					></div>
-					<a href="/static/maps/msc-floor1.jpg" download>
-						Download Full Image
+					<a href="/static/maps/msc-floor1.png" target="_blank">
+						Open Full Image in New Page
 					</a>
 				</div>
 				<div>
@@ -33,8 +33,8 @@ export default function Maps() {
 						aria-label="The second level floor map of Memorial Student Center (MSC)"
 						className="msc-map msc-floor2"
 					></div>
-					<a href="/static/maps/msc-floor2.jpg" download>
-						Download Full Image
+					<a href="/static/maps/msc-floor1.png" target="_blank">
+						Open Full Image in New Page
 					</a>
 				</div>
 			</div>

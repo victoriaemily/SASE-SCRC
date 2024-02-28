@@ -216,7 +216,7 @@ const afternoonEvents = [
 		id: "closing-ceremony",
 		location: "Gates Ballroom (2400)",
 		description:
-			"The closing ceremony will be held in Gates Ballroom (2400). The event starts at 3:40 PM and runs until 4:20 PM.\nAs we taxi back into the gate, Yash Gidh of Shell will be speaking to us all give us some final words to remember as we continue to advance in our careers. Additionally, we would like to thank everyone for making such a successful event to be possible.\nThank you for the time you spent with us, and we hope that your journey was both comfortable and rewarding.",
+			"The closing ceremony will be held in Gates Ballroom (2400). The event starts at 3:40 PM and runs until 4:20 PM.\nAs we taxi back into the gate, Yash Gidh of Shell will be speaking to us all give us some final words to remember as we continue to advance in our careers. You can read more about who he is and his distinct accomplishments in our magazine linked in the guide. Additionally, we would like to thank everyone for making such a successful event to be possible.\nThank you for the time you spent with us, and we hope that your journey was both comfortable and rewarding.",
 		start_time: new Date("2024-03-02T15:40:00"),
 		end_time: new Date("2024-03-02T16:20:00"),
 		status: "On Time",

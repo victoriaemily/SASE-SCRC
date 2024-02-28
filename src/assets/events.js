@@ -11,7 +11,7 @@ const morningEvents = [
 		id: "check-in",
 		location: "Gates Ballroom (2400)",
 		description:
-			"Check in is available outside the Gates Ballroom starting at 8:30 AM until 9:30 AM.",
+			"Check in and boarding is available outside the Gates Ballroom starting at 8:30 AM and closes at 9:20 AM.",
 		start_time: new Date("2024-03-02T08:30:00"),
 		end_time: new Date("2024-03-02T09:20:00"),
 		status: "On Time",
@@ -23,7 +23,7 @@ const morningEvents = [
 		id: "opening-ceremony",
 		location: "Gates Ballroom (2400)",
 		description:
-			"The opening ceremony will be held at the Gates Ballroom. The event starts at 9:30 AM and runs until 10:30 AM.\nTo welcome you all to SCRC 2024, we have two keynote speakers, Darryl Gaines of NASA and Yash Gidh of Shell, taking the stage. You can find more information about the speakers in our magazine.\nIt is with our best wishes that we will embark on this flight together through the day!",
+			"The opening ceremony will be held at the Gates Ballroom. The event starts at 9:20 AM and runs until 10:30 AM.\nTo welcome you all to SCRC 2024, Darryl Gaines will be taking the stage as our keynote speaker. You can find more information about Mr. Gaines in our magazine linked in the guide.\nIt is with our best wishes that we will embark on this flight together through the day!",
 		start_time: new Date("2024-03-02T09:20:00"),
 		end_time: new Date("2024-03-02T10:30:00"),
 		status: "On Time",
@@ -216,7 +216,7 @@ const afternoonEvents = [
 		id: "closing-ceremony",
 		location: "Gates Ballroom (2400)",
 		description:
-			"The closing ceremony will be held in room 2400. The event starts at 3:40 PM and runs until 4:20 PM.\nCome gather together as we thank everyone for allowing such a successful event to be possible.\nWe will provide you with reminders and any important and final remarks before we end off our journey.",
+			"The closing ceremony will be held in Gates Ballroom (2400). The event starts at 3:40 PM and runs until 4:20 PM.\nAs we taxi back into the gate, Yash Gidh of Shell will be speaking to us all give us some final words to remember as we continue to advance in our careers. Additionally, we would like to thank everyone for making such a successful event to be possible.\nThank you for the time you spent with us, and we hope that your journey was both comfortable and rewarding.",
 		start_time: new Date("2024-03-02T15:40:00"),
 		end_time: new Date("2024-03-02T16:20:00"),
 		status: "On Time",

@@ -91,8 +91,8 @@ export default function Venue() {
 														aria-label="The first level floor map of Memorial Student Center (MSC)"
 														className="msc-map msc-floor1"
 													></div>
-													<a href="/static/maps/msc-floor1.png" download>
-														Download Full Image
+													<a href="/static/maps/msc-floor1.png" target="_blank">
+														Open Full Image in New Page
 													</a>
 												</div>
 												<div>
@@ -102,8 +102,8 @@ export default function Venue() {
 														aria-label="The second level floor map of Memorial Student Center (MSC)"
 														className="msc-map msc-floor2"
 													></div>
-													<a href="/static/maps/msc-floor2.png" download>
-														Download Full Image
+													<a href="/static/maps/msc-floor2.png" target="_blank">
+														Open Full Image in New Page
 													</a>
 												</div>
 											</div>

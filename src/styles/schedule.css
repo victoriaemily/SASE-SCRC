@@ -35,10 +35,10 @@
   text-align: center;
 }
 
-.event-divider:hover {
+/* .event-divider:hover {
   background-color: rgb(var(--blue3));
   color: white;
-}
+} */
 
 /* .event-divider:active {
   background-color: rgb(var(--blue4));

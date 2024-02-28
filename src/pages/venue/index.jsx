@@ -89,16 +89,22 @@ export default function Venue() {
 													<div
 														role="img"
 														aria-label="The first level floor map of Memorial Student Center (MSC)"
-														id="msc-floor1"
+														className="msc-map msc-floor1"
 													></div>
+													<a href="/static/maps/msc-floor1.png" target="_blank">
+														Open Full Image in New Page
+													</a>
 												</div>
 												<div>
 													<h3>2nd Floor</h3>
 													<div
 														role="img"
 														aria-label="The second level floor map of Memorial Student Center (MSC)"
-														id="msc-floor2"
+														className="msc-map msc-floor2"
 													></div>
+													<a href="/static/maps/msc-floor2.png" target="_blank">
+														Open Full Image in New Page
+													</a>
 												</div>
 											</div>
 										</section>
@@ -108,8 +114,16 @@ export default function Venue() {
 											<b>paid parking</b>. All options shown below in the{" "}
 											<a href="#parking-maps">parking map</a> are within 10
 											minute walks of the MSC. All on-campus parking options are
-											subjected to the same rates. The following is a summary of
-											the rates that can be expected:
+											subjected to the same rates. Rates listed here can also be
+											found on the{" "}
+											<a
+												href="https://transport.tamu.edu/parking/visitor.aspx"
+												target="_blank"
+											>
+												official visitor parking page
+											</a>
+											. The following is a summary of the rates that can be
+											expected:
 										</p>
 										<table className="parking-table">
 											<tbody>
@@ -139,7 +153,7 @@ export default function Venue() {
 													<td>$4.50</td>
 												</tr>
 												<tr>
-													<th scope="row">Each additional 1 hour</th>
+													<th scope="row">Each additional 1 hour ($15 max)</th>
 													<td>$1.00</td>
 													<td>$0.50</td>
 												</tr>
@@ -150,7 +164,7 @@ export default function Venue() {
 											<div className="image-container">
 												<div
 													role="img"
-													aria-label="Map of availabel parking lots for access to the Memorial Student Center (MSC)"
+													aria-label="Map of available parking lots for access to the Memorial Student Center (MSC)"
 													id="msc-parking"
 												></div>
 											</div>

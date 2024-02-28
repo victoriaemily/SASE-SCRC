@@ -1,20 +1,18 @@
-import React from "react";
+import { React, useEffect } from "react";
 
 export default function Socials() {
+	useEffect(() => {
+		document.body.style.backgroundColor = "rgb(var(--blue-guide))";
+
+		return () => {
+			document.body.style.backgroundColor = "white";
+		};
+	}, []);
+
 	return (
 		<div id="guide-socials" className="guide-page">
 			<a href="/guide" className="return-button">
-				{/* <label>
-					Return
-					<br />
-					Home
-				</label> */}
-				<h1>Socials</h1>
-				{/* <label>
-					Return
-					<br />
-					Home
-				</label> */}
+				<h1>Back to Guide</h1>
 			</a>
 			<ul className="links-container">
 				<li>

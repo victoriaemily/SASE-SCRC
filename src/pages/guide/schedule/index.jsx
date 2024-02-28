@@ -1,8 +1,16 @@
-import { React } from "react";
+import { React, useEffect } from "react";
 import { EventCard } from "@/components";
 import { afternoonEvents, morningEvents } from "@/assets/events";
 
 export default function GuideSchedule() {
+	useEffect(() => {
+		document.body.style.backgroundColor = "rgb(var(--blue-guide))";
+
+		return () => {
+			document.body.style.backgroundColor = "white";
+		};
+	}, []);
+
 	const eventSelect = (e, eventShown, setEventShown) => {
 		const buttonElement = e.currentTarget;
 		const contentElement = buttonElement.parentNode;
@@ -46,17 +54,7 @@ export default function GuideSchedule() {
 		<div id="guide-schedule" className="guide-page">
 			<div>
 				<a href="/guide" className="return-button">
-					{/* <label>
-						Return
-						<br />
-						Home
-					</label> */}
-					<h1>SCRC Schedule</h1>
-					{/* <label>
-						Return
-						<br />
-						Home
-					</label> */}
+					<h1>Back to Guide</h1>
 				</a>
 				<header className="event-header">
 					<h2>Morning Block</h2>

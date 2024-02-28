@@ -9,11 +9,11 @@ const morningEvents = [
 	{
 		name: "Check In",
 		id: "check-in",
-		location: "Gates Ballroom",
+		location: "Gates Ballroom (2400)",
 		description:
 			"Check in is available outside the Gates Ballroom starting at 8:30 AM until 9:30 AM.",
 		start_time: new Date("2024-03-02T08:30:00"),
-		end_time: new Date("2024-03-02T09:30:00"),
+		end_time: new Date("2024-03-02T09:20:00"),
 		status: "On Time",
 		isTransition: false,
 		isWorkshop: false,
@@ -21,10 +21,10 @@ const morningEvents = [
 	{
 		name: "Opening Ceremony",
 		id: "opening-ceremony",
-		location: "Gates Ballroom",
+		location: "Gates Ballroom (2400)",
 		description:
 			"The opening ceremony will be held at the Gates Ballroom. The event starts at 9:30 AM and runs until 10:30 AM.\nTo welcome you all to SCRC 2024, we have two keynote speakers, Darryl Gaines of NASA and Yash Gidh of Shell, taking the stage. You can find more information about the speakers in our magazine.\nIt is with our best wishes that we will embark on this flight together through the day!",
-		start_time: new Date("2024-03-02T09:30:00"),
+		start_time: new Date("2024-03-02T09:20:00"),
 		end_time: new Date("2024-03-02T10:30:00"),
 		status: "On Time",
 		isTransition: false,
@@ -43,25 +43,25 @@ const morningEvents = [
 	{
 		name: "Workshop I",
 		option1: {
-			name: "TI Workshop",
-			location: "Gates Ballroom",
-			description:
-				"Join Texas Instruments to learn the ins and outs of a perfect resume for standing out in job applications!",
-		},
-		option2: {
 			name: "ACCMA Workshop",
-			location: "Room 2401",
+			location: "Gates Ballroom (2400)",
 			description:
 				"Want to get an Internship or Job with ACCMA? Come and learn more about who they are and what they do!",
 		},
-		option3: {
+		option2: {
 			name: "Graduate Student Panel",
 			location: "Room 2405",
 			description:
 				"Come talk with TAMU graduate students for their experiences on post undergraduate life!",
 		},
+		option3: {
+			name: "Origami",
+			location: "1400",
+			description:
+				"Wake up for the day and let your creativity spill out a little with some arts and crafts!",
+		},
 		id: "workshop-1",
-		location: "Gates Ballroom, 2401, 2405",
+		location: "Gates Ballroom (2400) 2401, 2405",
 		description: "The first block of workshops run from 10:40 AM to 11:30 AM.",
 		start_time: new Date("2024-03-02T10:40:00"),
 		end_time: new Date("2024-03-02T11:30:00"),
@@ -110,12 +110,12 @@ const afternoonEvents = [
 		},
 		option3: {
 			name: "Dance",
-			location: "Gates Ballroom",
+			location: "Gates Ballroom (2400)",
 			description:
 				"Come join TAMU's KDA (Korean Dance Association) where you will be taught to dance Twice's hit song “What is Love?”",
 		},
 		id: "workshop-2",
-		location: "Gates Ballroom, 2401, 2405",
+		location: "Gates Ballroom (2400) 2401, 2405",
 		description: "The second block of workshops run from 12:40 PM to 1:30 PM.",
 		start_time: new Date("2024-03-02T12:40:00"),
 		end_time: new Date("2024-03-02T13:30:00"),
@@ -137,7 +137,7 @@ const afternoonEvents = [
 		name: "Workshop III",
 		option1: {
 			name: "GE Vernova Workshop",
-			location: "Gates Ballroom",
+			location: "Gates Ballroom (2400)",
 			description:
 				"Ever struggle with interviews? Join GE Vernova as they go over their tips and tricks to having a successful interview!",
 		},
@@ -154,7 +154,7 @@ const afternoonEvents = [
 				"Come meet new people with unique stories in a fast paced networking environment!",
 		},
 		id: "workshop-3",
-		location: "Gates Ballroom, 2401, 2405",
+		location: "Gates Ballroom (2400) 2401, 2405",
 		description: "The third block of workshops run from 1:40 PM to 2:30 PM.",
 		start_time: new Date("2024-03-02T13:40:00"),
 		end_time: new Date("2024-03-02T14:30:00"),
@@ -176,7 +176,7 @@ const afternoonEvents = [
 		name: "Workshop IV",
 		option1: {
 			name: "NASA Workshop",
-			location: "Gates Ballroom",
+			location: "Gates Ballroom (2400)",
 			description:
 				"Join NASA as they discuss many aspects of industry life including work life balance, finances, health, and other general advice!",
 		},
@@ -187,13 +187,13 @@ const afternoonEvents = [
 				"Ever wonder what life after college is like? Join SASE Alumni as they discuss their post-college experiences",
 		},
 		option3: {
-			name: "Origami",
-			location: "Room 1400",
+			name: "TI Workshop",
+			location: "Room 2401",
 			description:
-				"Wind down and let your creativity spill out a little with some arts and crafts!",
+				"Join Texas Instruments to learn the ins and outs of a perfect resume for standing out in job applications!",
 		},
 		id: "workshop-4",
-		location: "Gates Ballroom, 1400, 2405",
+		location: "Gates Ballroom (2400) 1400, 2405",
 		description: "The fourth block of workshops run from 2:40 PM to 3:30 PM.",
 		start_time: new Date("2024-03-02T14:40:00"),
 		end_time: new Date("2024-03-02T15:30:00"),
@@ -214,7 +214,7 @@ const afternoonEvents = [
 	{
 		name: "Closing Ceremony",
 		id: "closing-ceremony",
-		location: "2400",
+		location: "Gates Ballroom (2400)",
 		description:
 			"The closing ceremony will be held in room 2400. The event starts at 3:40 PM and runs until 4:20 PM.\nCome gather together as we thank everyone for allowing such a successful event to be possible.\nWe will provide you with reminders and any important and final remarks before we end off our journey.",
 		start_time: new Date("2024-03-02T15:40:00"),

@@ -58,190 +58,208 @@ export default function Venue() {
 										</div>
 									</div>
 									<div id="venue-information">
-										<h2>
-											The SASE South Central Regional Conference will be held at{" "}
-											<b>Texas A&M University</b> in{" "}
-											<b>College Station, Texas</b>. The conference will be held
-											in the Memorial Student Center.
-										</h2>
-										<h3>Memorial Student Center</h3>
-										<p>
-											The Memorial Student Center, commonly referred to as the
-											MSC, is the home of Texas A&M's service, academic and
-											professional development, and cultural awareness.
-										</p>
-										<h3>Conference Space</h3>
-										<p>
-											All conference events will be held on the second floor of
-											the Memorial Student Center. All events will be held in
-											one of rooms{" "}
-											<b>2400 (Gates Ballroom), 2401, 2406A, or 2406B</b>.
-										</p>
-										<p>
-											Below are provided <a href="#floor-maps">floor maps</a> of
-											the venue.
-										</p>
-										<section id="floor-maps" className="resource-section">
-											<h2>Memorial Student Center (MSC)</h2>
-											<div className="image-container">
-												<div>
-													<h3>1st Floor</h3>
-													<div
-														role="img"
-														aria-label="The first level floor map of Memorial Student Center (MSC)"
-														className="msc-map msc-floor1"
-													></div>
-													<a href="/static/maps/msc-floor1.png" target="_blank">
-														Open Full Image in New Page
-													</a>
+										<section id="msc" className="resource-section">
+											<h2>
+												The SASE South Central Regional Conference will be held
+												at <b>Texas A&M University</b> in{" "}
+												<b>College Station, Texas</b>. The conference will be
+												held in the Memorial Student Center.
+											</h2>
+											<h3>Memorial Student Center</h3>
+											<p>
+												The Memorial Student Center, commonly referred to as the
+												MSC, is the home of Texas A&M's service, academic and
+												professional development, and cultural awareness.
+											</p>
+											<h3>Conference Space</h3>
+											<p>
+												All conference events will be held on the second floor
+												of the Memorial Student Center. All events will be held
+												in one of rooms{" "}
+												<b>2400 (Gates Ballroom), 2401, 2406A, or 2406B</b>.
+											</p>
+											<p>
+												Below are provided <a href="#floor-maps">floor maps</a>{" "}
+												of the venue.
+											</p>
+											<section id="floor-maps" className="resource-section">
+												<h2>Memorial Student Center (MSC)</h2>
+												<div className="image-container">
+													<div>
+														<h3>1st Floor</h3>
+														<div
+															role="img"
+															aria-label="The first level floor map of Memorial Student Center (MSC)"
+															className="msc-map msc-floor1"
+														></div>
+														<a
+															href="/static/maps/msc-floor1.png"
+															target="_blank"
+														>
+															Open Full Image in New Page
+														</a>
+													</div>
+													<div>
+														<h3>2nd Floor</h3>
+														<div
+															role="img"
+															aria-label="The second level floor map of Memorial Student Center (MSC)"
+															className="msc-map msc-floor2"
+														></div>
+														<a
+															href="/static/maps/msc-floor2.png"
+															target="_blank"
+														>
+															Open Full Image in New Page
+														</a>
+													</div>
 												</div>
-												<div>
-													<h3>2nd Floor</h3>
-													<div
-														role="img"
-														aria-label="The second level floor map of Memorial Student Center (MSC)"
-														className="msc-map msc-floor2"
-													></div>
-													<a href="/static/maps/msc-floor2.png" target="_blank">
-														Open Full Image in New Page
-													</a>
-												</div>
-											</div>
+											</section>
 										</section>
-										<h3>Parking</h3>
-										<p>
-											All nearby lots/garages will only be available via{" "}
-											<b>paid parking</b>. All options shown below in the{" "}
-											<a href="#parking-maps">parking map</a> are within 10
-											minute walks of the MSC. All on-campus parking options are
-											subjected to the same rates. Rates listed here can also be
-											found on the{" "}
-											<a
-												href="https://transport.tamu.edu/parking/visitor.aspx"
-												target="_blank"
-											>
-												official visitor parking page
-											</a>
-											. The following is a summary of the rates that can be
-											expected:
-										</p>
-										<table className="parking-table">
-											<tbody>
-												<tr className="header-row">
-													<th scope="col">Duration</th>
-													<th scope="row">6:00am - 5:59pm</th>
-													<th scope="row">6:00pm - 5:59am</th>
-												</tr>
-												<tr>
-													<th scope="row">0-1 hour</th>
-													<td>$3.00</td>
-													<td>$1.50</td>
-												</tr>
-												<tr>
-													<th scope="row">1-2 hours</th>
-													<td>$5.00</td>
-													<td>$2.50</td>
-												</tr>
-												<tr>
-													<th scope="row">2-3 hours</th>
-													<td>$7.00</td>
-													<td>$3.50</td>
-												</tr>
-												<tr>
-													<th scope="row">3-4 hours</th>
-													<td>$9.00</td>
-													<td>$4.50</td>
-												</tr>
-												<tr>
-													<th scope="row">Each additional 1 hour ($15 max)</th>
-													<td>$1.00</td>
-													<td>$0.50</td>
-												</tr>
-											</tbody>
-										</table>
-										<section id="parking-maps" className="resource-section">
-											<h2>Parking Maps</h2>
-											<div className="image-container">
+										<section id="parking" className="resource-section">
+											<h3>Parking</h3>
+											<p>
+												All nearby lots/garages will only be available via{" "}
+												<b>paid parking</b>. All options shown below in the{" "}
+												<a href="#parking-maps">parking map</a> are within 10
+												minute walks of the MSC. All on-campus parking options
+												are subjected to the same rates. Rates listed here can
+												also be found on the{" "}
+												<a
+													href="https://transport.tamu.edu/parking/visitor.aspx"
+													target="_blank"
+												>
+													official visitor parking page
+												</a>
+												. The following is a summary of the rates that can be
+												expected:
+											</p>
+											<table className="parking-table">
+												<tbody>
+													<tr className="header-row">
+														<th scope="col">Duration</th>
+														<th scope="row">6:00am - 5:59pm</th>
+														<th scope="row">6:00pm - 5:59am</th>
+													</tr>
+													<tr>
+														<th scope="row">0-1 hour</th>
+														<td>$3.00</td>
+														<td>$1.50</td>
+													</tr>
+													<tr>
+														<th scope="row">1-2 hours</th>
+														<td>$5.00</td>
+														<td>$2.50</td>
+													</tr>
+													<tr>
+														<th scope="row">2-3 hours</th>
+														<td>$7.00</td>
+														<td>$3.50</td>
+													</tr>
+													<tr>
+														<th scope="row">3-4 hours</th>
+														<td>$9.00</td>
+														<td>$4.50</td>
+													</tr>
+													<tr>
+														<th scope="row">
+															Each additional 1 hour ($15 max)
+														</th>
+														<td>$1.00</td>
+														<td>$0.50</td>
+													</tr>
+												</tbody>
+											</table>
+											<section id="parking-maps" className="resource-section">
+												<h2>Parking Maps</h2>
+												<div className="image-container">
+													<div
+														role="img"
+														aria-label="Map of available parking lots for access to the Memorial Student Center (MSC)"
+														id="msc-parking"
+													></div>
+												</div>
+											</section>
+										</section>
+										<section id="hotels">
+											<h3>Hotels</h3>
+											<p>
+												Below are weighable{" "}
+												<a href="#hotels-info">hotel options</a>. The provided
+												selection are hotels that are either:
+											</p>
+											<ul className="info-list">
+												<li>Within walking distance (&lt;1 Mile)</li>
+												<li>Adjacent to campus (1-3 Miles)</li>
+												<li>Along Highway 6 (3+ Miles)</li>
+											</ul>
+											<section id="hotels-info" className="resource-section">
 												<div
-													role="img"
-													aria-label="Map of available parking lots for access to the Memorial Student Center (MSC)"
-													id="msc-parking"
-												></div>
-											</div>
-										</section>
-										<h3>Hotels</h3>
-										<p>
-											Below are weighable <a href="#hotels">hotel options</a>.
-											The provided selection are hotels that are either:
-										</p>
-										<ul className="info-list">
-											<li>Within walking distance (&lt;1 Mile)</li>
-											<li>Adjacent to campus (1-3 Miles)</li>
-											<li>Along Highway 6 (3+ Miles)</li>
-										</ul>
-										<section id="hotels" className="resource-section">
-											<div id="hotel-info-container">
-												<div className="hotel-info-card">
-													<h2>
-														<a
-															href="https://www.texasamhotelcc.com/"
-															target="_blank"
-														>
-															Texas A&M Hotel and Conference Center
-														</a>
-													</h2>
-													<p>
-														<a
-															href="https://www.google.com/travel/search?q=tamu%20hotels&g2lb=2502548%2C2503771%2C2503781%2C2504375%2C4258168%2C4284970%2C4291517%2C4597339%2C4814050%2C4874190%2C4893075%2C4924070%2C4965990%2C10208620%2C72277293%2C72298667%2C72302247%2C72313836%2C72317059%2C72406588%2C72412680%2C72414906%2C72421566%2C72423675%2C72424729%2C72430562%2C72440517%2C72442338%2C72455021%2C72458707%2C72462261%2C72470896&hl=en-US&gl=us&cs=1&ssta=1&ts=CAESCgoCCAMKAggDEAAaXwo_Ej0yJTB4ODY0NjgzZjczM2MwMDAwMToweDk3NDdiOGE0YjljMDNiYzg6FFRleGFzIEEmTSBVbml2ZXJzaXR5EhwSFAoHCOgPEAEYCBIHCOgPEAEYCRgBMgQIABAAKgcKBToDVVNE&qs=CAEyJ0Noa0k5dFdTNXItdjU1WkVHZzB2Wnk4eE1XZG1NemcxWWpkc0VBRTgGQgkJ9qrE_HudLURCCQnVSSQxgpKBCEIJCWIajqYdNVA9SABaAggB&ap=KigKEgnKUnyX0pU-QBFEQCExcBZYwBISCQjH2piOoT5AEURAIcVXE1jAMABoAQ&ictx=1&sa=X&ved=0CAAQ5JsGahgKEwiY8ZK63ceDAxUAAAAAHQAAAAAQiwk&utm_campaign=sharing&utm_medium=link_btn&utm_source=htls"
-															target="_blank"
-														>
-															177 Joe Routt Boulevard (0.2 miles)
-														</a>
-													</p>
-													<p>2 min walk | 0 min drive</p>
-													<p>+1 (979) 260-2235</p>
+													id="hotel-info-container"
+													className="resource-section"
+												>
+													<div className="hotel-info-card">
+														<h2>
+															<a
+																href="https://www.texasamhotelcc.com/"
+																target="_blank"
+															>
+																Texas A&M Hotel and Conference Center
+															</a>
+														</h2>
+														<p>
+															<a
+																href="https://www.google.com/travel/search?q=tamu%20hotels&g2lb=2502548%2C2503771%2C2503781%2C2504375%2C4258168%2C4284970%2C4291517%2C4597339%2C4814050%2C4874190%2C4893075%2C4924070%2C4965990%2C10208620%2C72277293%2C72298667%2C72302247%2C72313836%2C72317059%2C72406588%2C72412680%2C72414906%2C72421566%2C72423675%2C72424729%2C72430562%2C72440517%2C72442338%2C72455021%2C72458707%2C72462261%2C72470896&hl=en-US&gl=us&cs=1&ssta=1&ts=CAESCgoCCAMKAggDEAAaXwo_Ej0yJTB4ODY0NjgzZjczM2MwMDAwMToweDk3NDdiOGE0YjljMDNiYzg6FFRleGFzIEEmTSBVbml2ZXJzaXR5EhwSFAoHCOgPEAEYCBIHCOgPEAEYCRgBMgQIABAAKgcKBToDVVNE&qs=CAEyJ0Noa0k5dFdTNXItdjU1WkVHZzB2Wnk4eE1XZG1NemcxWWpkc0VBRTgGQgkJ9qrE_HudLURCCQnVSSQxgpKBCEIJCWIajqYdNVA9SABaAggB&ap=KigKEgnKUnyX0pU-QBFEQCExcBZYwBISCQjH2piOoT5AEURAIcVXE1jAMABoAQ&ictx=1&sa=X&ved=0CAAQ5JsGahgKEwiY8ZK63ceDAxUAAAAAHQAAAAAQiwk&utm_campaign=sharing&utm_medium=link_btn&utm_source=htls"
+																target="_blank"
+															>
+																177 Joe Routt Boulevard (0.2 miles)
+															</a>
+														</p>
+														<p>2 min walk | 0 min drive</p>
+														<p>+1 (979) 260-2235</p>
+													</div>
+													<div className="hotel-info-card">
+														<h2>
+															<a
+																href="https://www.cavalrycourt.com/"
+																target="_blank"
+															>
+																Cavalry Court
+															</a>
+														</h2>
+														<p>
+															<a
+																href="https://www.google.com/travel/search?q=tamu%20hotels&g2lb=2502548%2C2503771%2C2503781%2C2504375%2C4258168%2C4284970%2C4291517%2C4597339%2C4814050%2C4874190%2C4893075%2C4924070%2C4965990%2C10208620%2C72277293%2C72298667%2C72302247%2C72313836%2C72317059%2C72406588%2C72412680%2C72414906%2C72421566%2C72423675%2C72424729%2C72430562%2C72440517%2C72442338%2C72455021%2C72458707%2C72462261%2C72470896&hl=en-US&gl=us&cs=1&ssta=1&ts=CAESCgoCCAMKAggDEAAaXwo_Ej0yJTB4ODY0NjgzZjczM2MwMDAwMToweDk3NDdiOGE0YjljMDNiYzg6FFRleGFzIEEmTSBVbml2ZXJzaXR5EhwSFAoHCOgPEAEYCBIHCOgPEAEYCRgBMgQIABAAKgcKBToDVVNE&qs=CAEyJ0Noa0lrcDZtdUtDeS1Nb1pHZzB2Wnk4eE1XTXhibVJxWDNoakVBRTgGQgkJ9qrE_HudLURCCQnVSSQxgpKBCEIJCWIajqYdNVA9SABaAggB&ap=KigKEgl9iyNJep4-QBFV-JGoFRZYwBISCQHSfShpoT5AEVX4kY1PFVjAMABoAQ&ictx=1&sa=X&ved=0CAAQ5JsGahgKEwi4tdjD9seDAxUAAAAAHQAAAAAQjQQ&utm_campaign=sharing&utm_medium=link_btn&utm_source=htls"
+																target="_blank"
+															>
+																200 Century Court (1.2 miles)
+															</a>
+														</p>
+														<p>27 min walk | 7 min drive</p>
+														<p>+1 (979) 485-7337</p>
+													</div>
+													<div className="hotel-info-card">
+														<h2>
+															<a
+																href="https://www.hilton.com/en/hotels/clleses-embassy-suites-college-station/?SEO_id=GMB-AMER-ES-CLLESES&y_source=1_ODIyMDg4OS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
+																target="_blank"
+															>
+																Embassy Suites by Hilton
+															</a>
+														</h2>
+														<p>
+															<a
+																href="https://www.google.com/travel/search?q=tamu%20hotels&g2lb=2502548%2C2503771%2C2503781%2C2504375%2C4258168%2C4284970%2C4291517%2C4597339%2C4814050%2C4874190%2C4893075%2C4924070%2C4965990%2C10208620%2C72277293%2C72298667%2C72302247%2C72313836%2C72317059%2C72406588%2C72412680%2C72414906%2C72421566%2C72423675%2C72424729%2C72430562%2C72440517%2C72442338%2C72455021%2C72458707%2C72462261%2C72470896&hl=en-US&gl=us&cs=1&ssta=1&ts=CAESCgoCCAMKAggDEAAaXwo_Ej0yJTB4ODY0NjgzZjczM2MwMDAwMToweDk3NDdiOGE0YjljMDNiYzg6FFRleGFzIEEmTSBVbml2ZXJzaXR5EhwSFAoHCOgPEAEYCBIHCOgPEAEYCRgBMgQIABAAKgcKBToDVVNE&qs=CAEyJ0Noa0kxWk9SaWFQUTVNQUlHZzB2Wnk4eE1XWXdNM0ZyWTJKNEVBRTgGQgkJ9qrE_HudLURCCQnVSSQxgpKBCEIJCWIajqYdNVA9SABaAggB&ap=KigKEgmNqRv3MZ8-QBFof8uV1BVYwBISCQf45NAgoj5AEWh_y3oOFVjAMABoAQ&ictx=1&sa=X&ved=0CAAQ5JsGahgKEwi4tdjD9seDAxUAAAAAHQAAAAAQjgE&utm_campaign=sharing&utm_medium=link_btn&utm_source=htls"
+																target="_blank"
+															>
+																201 University Drive East (1.5 miles)
+															</a>
+														</p>
+														<p>35 min walk | 8 min drive</p>
+														<p>+1 (979) 260-6000</p>
+													</div>
 												</div>
-												<div className="hotel-info-card">
-													<h2>
-														<a
-															href="https://www.cavalrycourt.com/"
-															target="_blank"
-														>
-															Cavalry Court
-														</a>
-													</h2>
-													<p>
-														<a
-															href="https://www.google.com/travel/search?q=tamu%20hotels&g2lb=2502548%2C2503771%2C2503781%2C2504375%2C4258168%2C4284970%2C4291517%2C4597339%2C4814050%2C4874190%2C4893075%2C4924070%2C4965990%2C10208620%2C72277293%2C72298667%2C72302247%2C72313836%2C72317059%2C72406588%2C72412680%2C72414906%2C72421566%2C72423675%2C72424729%2C72430562%2C72440517%2C72442338%2C72455021%2C72458707%2C72462261%2C72470896&hl=en-US&gl=us&cs=1&ssta=1&ts=CAESCgoCCAMKAggDEAAaXwo_Ej0yJTB4ODY0NjgzZjczM2MwMDAwMToweDk3NDdiOGE0YjljMDNiYzg6FFRleGFzIEEmTSBVbml2ZXJzaXR5EhwSFAoHCOgPEAEYCBIHCOgPEAEYCRgBMgQIABAAKgcKBToDVVNE&qs=CAEyJ0Noa0lrcDZtdUtDeS1Nb1pHZzB2Wnk4eE1XTXhibVJxWDNoakVBRTgGQgkJ9qrE_HudLURCCQnVSSQxgpKBCEIJCWIajqYdNVA9SABaAggB&ap=KigKEgl9iyNJep4-QBFV-JGoFRZYwBISCQHSfShpoT5AEVX4kY1PFVjAMABoAQ&ictx=1&sa=X&ved=0CAAQ5JsGahgKEwi4tdjD9seDAxUAAAAAHQAAAAAQjQQ&utm_campaign=sharing&utm_medium=link_btn&utm_source=htls"
-															target="_blank"
-														>
-															200 Century Court (1.2 miles)
-														</a>
-													</p>
-													<p>27 min walk | 7 min drive</p>
-													<p>+1 (979) 485-7337</p>
-												</div>
-												<div className="hotel-info-card">
-													<h2>
-														<a
-															href="https://www.hilton.com/en/hotels/clleses-embassy-suites-college-station/?SEO_id=GMB-AMER-ES-CLLESES&y_source=1_ODIyMDg4OS03MTUtbG9jYXRpb24ud2Vic2l0ZQ%3D%3D"
-															target="_blank"
-														>
-															Embassy Suites by Hilton
-														</a>
-													</h2>
-													<p>
-														<a
-															href="https://www.google.com/travel/search?q=tamu%20hotels&g2lb=2502548%2C2503771%2C2503781%2C2504375%2C4258168%2C4284970%2C4291517%2C4597339%2C4814050%2C4874190%2C4893075%2C4924070%2C4965990%2C10208620%2C72277293%2C72298667%2C72302247%2C72313836%2C72317059%2C72406588%2C72412680%2C72414906%2C72421566%2C72423675%2C72424729%2C72430562%2C72440517%2C72442338%2C72455021%2C72458707%2C72462261%2C72470896&hl=en-US&gl=us&cs=1&ssta=1&ts=CAESCgoCCAMKAggDEAAaXwo_Ej0yJTB4ODY0NjgzZjczM2MwMDAwMToweDk3NDdiOGE0YjljMDNiYzg6FFRleGFzIEEmTSBVbml2ZXJzaXR5EhwSFAoHCOgPEAEYCBIHCOgPEAEYCRgBMgQIABAAKgcKBToDVVNE&qs=CAEyJ0Noa0kxWk9SaWFQUTVNQUlHZzB2Wnk4eE1XWXdNM0ZyWTJKNEVBRTgGQgkJ9qrE_HudLURCCQnVSSQxgpKBCEIJCWIajqYdNVA9SABaAggB&ap=KigKEgmNqRv3MZ8-QBFof8uV1BVYwBISCQf45NAgoj5AEWh_y3oOFVjAMABoAQ&ictx=1&sa=X&ved=0CAAQ5JsGahgKEwi4tdjD9seDAxUAAAAAHQAAAAAQjgE&utm_campaign=sharing&utm_medium=link_btn&utm_source=htls"
-															target="_blank"
-														>
-															201 University Drive East (1.5 miles)
-														</a>
-													</p>
-													<p>35 min walk | 8 min drive</p>
-													<p>+1 (979) 260-6000</p>
-												</div>
-											</div>
+											</section>
 										</section>
 									</div>
 								</section>

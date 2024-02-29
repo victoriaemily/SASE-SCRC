@@ -50,7 +50,7 @@ const morningEvents = [
 		},
 		option2: {
 			name: "Graduate Student Panel",
-			location: "Room 2405",
+			location: "MSC 2405",
 			description:
 				"Come talk with TAMU graduate students for their experiences on post undergraduate life!",
 		},
@@ -82,7 +82,7 @@ const morningEvents = [
 	{
 		name: "Lunch + Boba",
 		id: "lunch-break",
-		location: "2406",
+		location: "MSC 2406",
 		description:
 			"Lunch will be served in room 2406 where you can enjoy catered food and boba while chatting with all other attendees!",
 		start_time: new Date("2024-03-02T11:40:00"),
@@ -98,13 +98,13 @@ const afternoonEvents = [
 		name: "Workshop II",
 		option1: {
 			name: "Shell Workshop",
-			location: "Room 2401",
+			location: "MSC 2401",
 			description:
 				"What comes after joining the industry? Learn from Shell how you can position yourself to climb the corporate ladder!",
 		},
 		option2: {
 			name: "Networking 101",
-			location: "Room 2405",
+			location: "MSC 2405",
 			description:
 				"Learn about the importance of first impressions and strategies for meeting new people!",
 		},
@@ -143,13 +143,13 @@ const afternoonEvents = [
 		},
 		option2: {
 			name: "Women in STEM Mixer",
-			location: "Room 2405",
+			location: "MSC 2405",
 			description:
 				"Have a conversation with women from our corporate sponsors to understand their experiences and impact in various industries!",
 		},
 		option3: {
 			name: "Speed Networking",
-			location: "Room 2401",
+			location: "MSC 2401",
 			description:
 				"Come meet new people with unique stories in a fast paced networking environment!",
 		},
@@ -181,16 +181,16 @@ const afternoonEvents = [
 				"Join NASA as they discuss many aspects of industry life including work life balance, finances, health, and other general advice!",
 		},
 		option2: {
-			name: "Life After College",
-			location: "Room 2405",
-			description:
-				"Ever wonder what life after college is like? Join SASE Alumni as they discuss their post-college experiences",
-		},
-		option3: {
 			name: "TI Workshop",
-			location: "Room 2401",
+			location: "MSC 2401",
 			description:
 				"Join Texas Instruments to learn the ins and outs of a perfect resume for standing out in job applications!",
+		},
+		option3: {
+			name: "Life After College",
+			location: "MSC 2405",
+			description:
+				"Ever wonder what life after college is like? Join SASE Alumni as they discuss their post-college experiences",
 		},
 		id: "workshop-4",
 		location: "Gates Ballroom (2400), 1400, 2405",
@@ -236,9 +236,9 @@ const afternoonEvents = [
 	{
 		name: "Career Fair",
 		id: "career-fair",
-		location: "Stark Galleries",
+		location: "MSC 2406",
 		description:
-			"In the Stark Galleries, we will be holding a career fair in which everyone will have the unique opportunity to speak directly with company representatives of our sponsors and attendees.",
+			"In , we will be holding a career fair in which everyone will have the unique opportunity to speak directly with company representatives of our sponsors and attendees.",
 		start_time: new Date("2024-03-02T16:30:00"),
 		end_time: new Date("2024-03-02T19:30:00"),
 		status: "On Time",

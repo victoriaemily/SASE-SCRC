@@ -181,16 +181,16 @@ const afternoonEvents = [
 				"Join NASA as they discuss many aspects of industry life including work life balance, finances, health, and other general advice!",
 		},
 		option2: {
-			name: "Life After College",
-			location: "MSC 2405",
-			description:
-				"Ever wonder what life after college is like? Join SASE Alumni as they discuss their post-college experiences",
-		},
-		option3: {
 			name: "TI Workshop",
 			location: "MSC 2401",
 			description:
 				"Join Texas Instruments to learn the ins and outs of a perfect resume for standing out in job applications!",
+		},
+		option2: {
+			name: "Life After College",
+			location: "MSC 2405",
+			description:
+				"Ever wonder what life after college is like? Join SASE Alumni as they discuss their post-college experiences",
 		},
 		id: "workshop-4",
 		location: "Gates Ballroom (2400), 1400, 2405",

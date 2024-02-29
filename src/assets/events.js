@@ -186,7 +186,7 @@ const afternoonEvents = [
 			description:
 				"Join Texas Instruments to learn the ins and outs of a perfect resume for standing out in job applications!",
 		},
-		option2: {
+		option3: {
 			name: "Life After College",
 			location: "MSC 2405",
 			description:

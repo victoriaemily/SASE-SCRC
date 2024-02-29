@@ -17,7 +17,7 @@ export default function Guide() {
 			<nav id="guide-menu">
 				<a href="/guide/schedule">Schedule</a>
 				<a href="/guide/maps">Maps</a>
-				<a href="about:blank" target="_blank">
+				<a href="https://drive.google.com/file/d/1FSE2I9_FGfjUDd3J_K4N3lj_rMLiHqPN/view?usp=sharing" target="_blank">
 					Magazine
 				</a>
 				<a href="https://forms.gle/Qdpc8dzyr8uDbPCa8" target="_blank">

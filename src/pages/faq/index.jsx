@@ -142,8 +142,8 @@ export default function FAQ() {
 									<a target="_blank" href="https://www.instagram.com/sasetamu/">
 										@sasetamu
 									</a>{" "}
-									or our chapter's{" "}
-									<a target="_blank" href="https://discord.gg/jYPrkJST4G">
+									or our official{" "}
+									<a target="_blank" href="https://discord.gg/jtEDfQYqtZ">
 										Discord
 									</a>
 								</p>

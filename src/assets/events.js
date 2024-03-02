@@ -43,22 +43,22 @@ const morningEvents = [
 	{
 		name: "Workshop I",
 		option1: {
-			name: "ACCMA Workshop",
+			name: "TI Workshop",
 			location: "Gates Ballroom (MSC 2400)",
+			description:
+				"Join Texas Instruments to learn the ins and outs of a perfect resume for standing out in job applications!",
+		},
+		option2: {
+			name: "ACCMA Workshop",
+			location: "MSC 2401",
 			description:
 				"Want to get an Internship or Job with ACCMA? Come and learn more about who they are and what they do!",
 		},
-		option2: {
+		option3: {
 			name: "Graduate Student Panel",
 			location: "MSC 2405",
 			description:
 				"Come talk with TAMU graduate students for their experiences on post undergraduate life!",
-		},
-		option3: {
-			name: "Origami",
-			location: "1400",
-			description:
-				"Wake up for the day and let your creativity spill out a little with some arts and crafts!",
 		},
 		id: "workshop-1",
 		location: "Gates Ballroom (2400), 2401, 2405",
@@ -181,16 +181,16 @@ const afternoonEvents = [
 				"Join NASA as they discuss many aspects of industry life including work life balance, finances, health, and other general advice!",
 		},
 		option2: {
-			name: "TI Workshop",
-			location: "MSC 2401",
-			description:
-				"Join Texas Instruments to learn the ins and outs of a perfect resume for standing out in job applications!",
-		},
-		option3: {
 			name: "Life After College",
 			location: "MSC 2405",
 			description:
 				"Ever wonder what life after college is like? Join SASE Alumni as they discuss their post-college experiences",
+		},
+		option3: {
+			name: "Origami",
+			location: "1400",
+			description:
+				"Wake up for the day and let your creativity spill out a little with some arts and crafts!",
 		},
 		id: "workshop-4",
 		location: "Gates Ballroom (2400), 1400, 2405",

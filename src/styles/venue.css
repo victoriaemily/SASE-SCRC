@@ -95,7 +95,7 @@ h2#venue-address {
   background-repeat: no-repeat;
   background-image: url("/maps/msc-floor1.svg");
   background-size: contain;
-  background-position: left;
+  background-position: center;
   height: 85vw;
   aspect-ratio: 1.25/1;
 }
@@ -178,7 +178,7 @@ h2#venue-address {
   #floor-maps .image-container > div,
   #parking-maps .image-container > div {
     padding: 1rem;
-    height: 80vh;
+    height: 40vh;
   }
 
   .msc-map {

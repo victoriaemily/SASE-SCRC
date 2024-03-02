@@ -44,7 +44,7 @@ const morningEvents = [
 		name: "Workshop I",
 		option1: {
 			name: "ACCMA Workshop",
-			location: "Gates Ballroom (2400)",
+			location: "Gates Ballroom (MSC 2400)",
 			description:
 				"Want to get an Internship or Job with ACCMA? Come and learn more about who they are and what they do!",
 		},
@@ -56,12 +56,12 @@ const morningEvents = [
 		},
 		option3: {
 			name: "Origami",
-			location: "1400",
+			location: "MSC 1400",
 			description:
 				"Wake up for the day and let your creativity spill out a little with some arts and crafts!",
 		},
 		id: "workshop-1",
-		location: "Gates Ballroom (2400), 2401, 2405",
+		location: "Gates Ballroom (2400), 1400, 2405",
 		description: "The first block of workshops run from 10:40 AM to 11:30 AM.",
 		start_time: new Date("2024-03-02T10:40:00"),
 		end_time: new Date("2024-03-02T11:30:00"),
@@ -110,7 +110,7 @@ const afternoonEvents = [
 		},
 		option3: {
 			name: "Dance",
-			location: "Gates Ballroom (2400)",
+			location: "Gates Ballroom (MSC 2400)",
 			description:
 				"Come join TAMU's KDA (Korean Dance Association) where you will be taught to dance Twice's hit song “What is Love?”",
 		},
@@ -137,7 +137,7 @@ const afternoonEvents = [
 		name: "Workshop III",
 		option1: {
 			name: "GE Vernova Workshop",
-			location: "Gates Ballroom (2400)",
+			location: "Gates Ballroom (MSC 2400)",
 			description:
 				"Ever struggle with interviews? Join GE Vernova as they go over their tips and tricks to having a successful interview!",
 		},
@@ -176,7 +176,7 @@ const afternoonEvents = [
 		name: "Workshop IV",
 		option1: {
 			name: "NASA Workshop",
-			location: "Gates Ballroom (2400)",
+			location: "Gates Ballroom (MSC 2400)",
 			description:
 				"Join NASA as they discuss many aspects of industry life including work life balance, finances, health, and other general advice!",
 		},
@@ -193,7 +193,7 @@ const afternoonEvents = [
 				"Ever wonder what life after college is like? Join SASE Alumni as they discuss their post-college experiences",
 		},
 		id: "workshop-4",
-		location: "Gates Ballroom (2400), 1400, 2405",
+		location: "Gates Ballroom (2400), 2401, 2405",
 		description: "The fourth block of workshops run from 2:40 PM to 3:30 PM.",
 		start_time: new Date("2024-03-02T14:40:00"),
 		end_time: new Date("2024-03-02T15:30:00"),

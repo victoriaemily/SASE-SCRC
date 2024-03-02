@@ -33,7 +33,7 @@ export default function Maps() {
 						aria-label="The second level floor map of Memorial Student Center (MSC)"
 						className="msc-map msc-floor2"
 					></div>
-					<a href="/static/maps/msc-floor1.png" target="_blank">
+					<a href="/static/maps/msc-floor2.png" target="_blank">
 						Open Full Image in New Page
 					</a>
 				</div>

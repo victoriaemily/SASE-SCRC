@@ -193,7 +193,7 @@ const afternoonEvents = [
 				"Ever wonder what life after college is like? Join SASE Alumni as they discuss their post-college experiences",
 		},
 		id: "workshop-4",
-		location: "Gates Ballroom (2400), 2405, 2401",
+		location: "Gates Ballroom (2400), 2401, 2405",
 		description: "The fourth block of workshops run from 2:40 PM to 3:30 PM.",
 		start_time: new Date("2024-03-02T14:40:00"),
 		end_time: new Date("2024-03-02T15:30:00"),

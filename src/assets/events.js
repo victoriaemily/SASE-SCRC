@@ -43,25 +43,25 @@ const morningEvents = [
 	{
 		name: "Workshop I",
 		option1: {
-			name: "TI Workshop",
-			location: "Gates Ballroom (MSC 2400)",
-			description:
-				"Join Texas Instruments to learn the ins and outs of a perfect resume for standing out in job applications!",
-		},
-		option2: {
 			name: "ACCMA Workshop",
-			location: "MSC 2401",
+			location: "Gates Ballroom (MSC 2400)",
 			description:
 				"Want to get an Internship or Job with ACCMA? Come and learn more about who they are and what they do!",
 		},
-		option3: {
+		option2: {
 			name: "Graduate Student Panel",
 			location: "MSC 2405",
 			description:
 				"Come talk with TAMU graduate students for their experiences on post undergraduate life!",
 		},
+		option3: {
+			name: "Origami",
+			location: "1400",
+			description:
+				"Wake up for the day and let your creativity spill out a little with some arts and crafts!",
+		},
 		id: "workshop-1",
-		location: "Gates Ballroom (2400), 2401, 2405",
+		location: "Gates Ballroom (2400), 1400, 2405",
 		description: "The first block of workshops run from 10:40 AM to 11:30 AM.",
 		start_time: new Date("2024-03-02T10:40:00"),
 		end_time: new Date("2024-03-02T11:30:00"),
@@ -181,19 +181,19 @@ const afternoonEvents = [
 				"Join NASA as they discuss many aspects of industry life including work life balance, finances, health, and other general advice!",
 		},
 		option2: {
+			name: "TI Workshop",
+			location: "MSC 2401",
+			description:
+				"Join Texas Instruments to learn the ins and outs of a perfect resume for standing out in job applications!",
+		},
+		option3: {
 			name: "Life After College",
 			location: "MSC 2405",
 			description:
 				"Ever wonder what life after college is like? Join SASE Alumni as they discuss their post-college experiences",
 		},
-		option3: {
-			name: "Origami",
-			location: "1400",
-			description:
-				"Wake up for the day and let your creativity spill out a little with some arts and crafts!",
-		},
 		id: "workshop-4",
-		location: "Gates Ballroom (2400), 1400, 2405",
+		location: "Gates Ballroom (2400), 2405, 2401",
 		description: "The fourth block of workshops run from 2:40 PM to 3:30 PM.",
 		start_time: new Date("2024-03-02T14:40:00"),
 		end_time: new Date("2024-03-02T15:30:00"),

@@ -23,50 +23,65 @@ export default function Schedule() {
 				end_minutes
 			).padStart(2, "0")} ${end_AMPM}`;
 		}
-		if (event.isTransition) {
-			return (
-				<div key={idx} className="schedule-divider transition-divider">
-					<div className="pad-divider">
-						<h3 className="start-time-label time-label">{startTime}</h3>
-						<h3 className="full-time-label time-label">
-							{startTime === endTime ? startTime : `${startTime} - ${endTime}`}
-						</h3>
-						<div className="event-location-labels">
-							<h2 className="departure-label">{event.name}</h2>
-							<h2 className="gate-label"></h2>
-						</div>
-						<h3 className="other-labels"></h3>
+
+	const currentTime = new Date();
+	let isCurrentEvent = 0;
+	if (currentTime >= event.start_time && currentTime <= event.end_time) {
+		isCurrentEvent = 1;
+	} else if (currentTime > event.end_time) {
+		isCurrentEvent = 2;
+	}
+
+	if (event.isTransition) {
+		return (
+			<div key={idx} className="schedule-divider transition-divider">
+				<div className="pad-divider">
+					<h3 className="start-time-label time-label">{startTime}</h3>
+					<h3 className="full-time-label time-label">
+						{startTime === endTime ? startTime : `${startTime} - ${endTime}`}
+					</h3>
+					<div className="event-location-labels">
+						<h2 className="departure-label">{event.name}</h2>
+						<h2 className="gate-label"></h2>
 					</div>
+					<h3 className="other-labels"></h3>
 				</div>
-			);
-		} else {
-			return (
-				<div key={idx} className="schedule-divider event-divider">
-					<button className="pad-divider" type="button" disabled>
-						<h3 className="start-time-label time-label">{startTime}</h3>
-						<h3 className="full-time-label time-label">
-							{startTime === endTime ? startTime : `${startTime} - ${endTime}`}
+			</div>
+		);
+	} else {
+		return (
+			<div key={idx} className="schedule-divider event-divider">
+				<button className="pad-divider" type="button" disabled>
+					<h3 className="start-time-label time-label">{startTime}</h3>
+					<h3 className="full-time-label time-label">
+						{startTime === endTime ? startTime : `${startTime} - ${endTime}`}
+					</h3>
+					<div className="event-location-labels">
+						<h2 className="event-label">{event.name}</h2>
+						<h3 className="gate-label">{event.location}</h3>
+					</div>
+					<div className="other-labels">
+						{event.isWorkshop ? (
+							<ul className="workshop-label">
+								<li>{event.option1.name}</li>
+								<li>{event.option2.name}</li>
+								<li>{event.option3.name}</li>
+							</ul>
+						) : (
+							<div className="workshop-label"></div>
+						)}
+						<h3 className="status-label">
+							{isCurrentEvent == 0
+								? event.status
+								: isCurrentEvent == 1
+								? "Boarding"
+								: "Closed"}
 						</h3>
-						<div className="event-location-labels">
-							<h2 className="event-label">{event.name}</h2>
-							<h3 className="gate-label">{event.location}</h3>
-						</div>
-						<div className="other-labels">
-							{event.isWorkshop ? (
-								<ul className="workshop-label">
-									<li>{event.option1.name}</li>
-									<li>{event.option2.name}</li>
-									<li>{event.option3.name}</li>
-								</ul>
-							) : (
-								<div className="workshop-label"></div>
-							)}
-							<h3 className="status-label">{event.status}</h3>
-						</div>
-					</button>
-				</div>
-			);
-		}
+					</div>
+				</button>
+			</div>
+		);
+	}
 	};
 
 	return (

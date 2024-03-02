@@ -44,7 +44,7 @@ const morningEvents = [
 		name: "Workshop I",
 		option1: {
 			name: "ACCMA Workshop",
-			location: "Gates Ballroom (2400)",
+			location: "Gates Ballroom (MSC 2400)",
 			description:
 				"Want to get an Internship or Job with ACCMA? Come and learn more about who they are and what they do!",
 		},
@@ -110,7 +110,7 @@ const afternoonEvents = [
 		},
 		option3: {
 			name: "Dance",
-			location: "Gates Ballroom (2400)",
+			location: "Gates Ballroom (MSC 2400)",
 			description:
 				"Come join TAMU's KDA (Korean Dance Association) where you will be taught to dance Twice's hit song “What is Love?”",
 		},
@@ -137,7 +137,7 @@ const afternoonEvents = [
 		name: "Workshop III",
 		option1: {
 			name: "GE Vernova Workshop",
-			location: "Gates Ballroom (2400)",
+			location: "Gates Ballroom (MSC 2400)",
 			description:
 				"Ever struggle with interviews? Join GE Vernova as they go over their tips and tricks to having a successful interview!",
 		},
@@ -176,7 +176,7 @@ const afternoonEvents = [
 		name: "Workshop IV",
 		option1: {
 			name: "NASA Workshop",
-			location: "Gates Ballroom (2400)",
+			location: "Gates Ballroom (MSC 2400)",
 			description:
 				"Join NASA as they discuss many aspects of industry life including work life balance, finances, health, and other general advice!",
 		},

@@ -56,7 +56,7 @@ const morningEvents = [
 		},
 		option3: {
 			name: "Origami",
-			location: "1400",
+			location: "MSC 1400",
 			description:
 				"Wake up for the day and let your creativity spill out a little with some arts and crafts!",
 		},
